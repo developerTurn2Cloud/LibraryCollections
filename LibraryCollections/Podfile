@@ -6,5 +6,6 @@ target 'LibraryCollections' do
   use_frameworks!
 
   # Pods for LibraryCollections
+  pod 'Toast-Swift', '~> 5.0.1'
 
 end
