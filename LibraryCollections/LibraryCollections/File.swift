@@ -1,7 +1,7 @@
 import Foundation
 
-open class Utils {
-    open func printString(str:String) {
+open class TestUtils {
+    public static func printString(str:String) {
         print(str)
     }
 }

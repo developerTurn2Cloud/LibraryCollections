@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "LibraryCollections"
-  spec.version      = "1.0.0"
+  spec.version      = "1.0.1"
   spec.summary      = "Common Library"
   spec.description  = "LibraryCollections is a library for common usage."
   spec.homepage     = "https://github.com/YomiRY/LibraryCollections"
@@ -10,17 +10,6 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/YomiRY/LibraryCollections.git", :tag => "1.0.0" }
   spec.source_files  = "LibraryCollections", "LibraryCollections/**/*.{h,m,swift}"
   spec.exclude_files = "Classes/Exclude"
-
-  # spec.public_header_files = "Classes/**/*.h"
-
-
-  # ――― Resources ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
-  #
-  #  A list of resources included with the Pod. These are copied into the
-  #  target bundle with a build phase script. Anything else will be cleaned.
-  #  You can preserve files from being cleaned, please don't preserve
-  #  non-essential files like tests, examples and documentation.
-  #
 
   # spec.resource  = "icon.png"
   # spec.resources = "Resources/*.png"
