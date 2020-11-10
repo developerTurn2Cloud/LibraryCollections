@@ -7,7 +7,7 @@ Pod::Spec.new do |spec|
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author             = { "Randy" => "o1984531@gmail.com" }
   spec.platform     = :ios, "11.0"
-  spec.source       = { :git => "https://github.com/YomiRY/LibraryCollections.git", :tag => "1.0.0" }
+  spec.source       = { :git => "https://github.com/YomiRY/LibraryCollections.git", :tag => "1.0.1" }
   spec.source_files  = "LibraryCollections", "LibraryCollections/**/*.{h,m,swift}"
   spec.exclude_files = "Classes/Exclude"
 
