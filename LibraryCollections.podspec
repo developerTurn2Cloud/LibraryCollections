@@ -1,13 +1,13 @@
 Pod::Spec.new do |spec|
   spec.name         = "LibraryCollections"
-  spec.version      = "1.0.3"
+  spec.version      = "1.0.5"
   spec.summary      = "Common Library"
   spec.description  = "LibraryCollections is a library for common usage."
   spec.homepage     = "https://github.com/YomiRY/LibraryCollections"
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author             = { "Randy" => "o1984531@gmail.com" }
   spec.platform     = :ios, "11.0"
-  spec.source       = { :git => "https://github.com/YomiRY/LibraryCollections.git", :tag => "1.0.3" }
+  spec.source       = { :git => "https://github.com/YomiRY/LibraryCollections.git", :tag => "1.0.5" }
   spec.source_files  = "LibraryCollections", "LibraryCollections/**/*.{h,m,swift}"
   spec.exclude_files = "Classes/Exclude"
 
@@ -40,6 +40,7 @@ Pod::Spec.new do |spec|
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   spec.dependency "Toast-Swift", "~> 5.0.1"
+  spec.dependency "Moya/RxSwift", "~> 13.0"
 
   spec.swift_versions = ['5.1', '5.2', '5.3']
 
