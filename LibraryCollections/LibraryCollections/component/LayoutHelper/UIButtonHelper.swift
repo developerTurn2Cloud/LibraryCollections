@@ -8,7 +8,7 @@
 
 import UIKit
 
-@IBDesignable class UIButtonHelper : UIButton {
+@IBDesignable public class UIButtonHelper : UIButton {
     @IBInspectable var iPhone4s: CGFloat = 0.0 {
         didSet { deviceFont(.i3_5Inch,value:iPhone4s) }
     }

@@ -4,8 +4,8 @@
 //  Created by Kuldeep Tanwar on 4/15/19.
 //  Copyright © 2019 Kuldeep Tanwar. All rights reserved.
 import UIKit
-@IBDesignable class NSLayoutHelper : NSLayoutConstraint {
-    @IBInspectable var iPhone4s: CGFloat = 0.0 {
+@IBDesignable public class NSLayoutHelper : NSLayoutConstraint {
+    @IBInspectable var iPhone4s: CGFloat = 0.0 { 
         didSet { deviceConstant(.i3_5Inch,value:iPhone4s) }
     }
     @IBInspectable var iPhoneSE: CGFloat = 0.0 {

@@ -5,7 +5,7 @@
 //  Copyright © 2019 Kuldeep Tanwar. All rights reserved.
 import UIKit
 
-@IBDesignable class UITextViewHelper : UITextView {
+@IBDesignable public class UITextViewHelper : UITextView {
     @IBInspectable var iPhone4s: CGFloat = 0.0 {
         didSet { deviceFont(.i3_5Inch,value:iPhone4s) }
     }

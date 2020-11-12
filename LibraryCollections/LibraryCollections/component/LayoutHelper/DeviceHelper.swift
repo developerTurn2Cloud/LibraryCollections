@@ -4,7 +4,8 @@
 //  Copyright © 2019 Kuldeep Tanwar. All rights reserved.
 
 import UIKit
-enum UIDeviceSize  {
+
+public enum UIDeviceSize  {
     case i3_5Inch
     case i4Inch
     case i4_7Inch
@@ -19,7 +20,7 @@ enum UIDeviceSize  {
     case unknown
 }
 
-let deviceSize : UIDeviceSize = {
+public let deviceSize : UIDeviceSize = {
     let w: Double = Double(UIScreen.main.bounds.width)
     let h: Double = Double(UIScreen.main.bounds.height)
     let screenHeight: Double = max(w, h)
