@@ -10,8 +10,10 @@ public protocol IApiCallback {
 
 public class ApiUtils {
     
+    // MARK: - Properties
     public static let API_ERROR_RETRY_COUNT = 3
     
+    // MARK: - API Body Handling
     public static func getBodyParams<Type:Codable>(obj:Type) -> [String:Any] {
         var dict: Dictionary<String, Any>? = nil
         
@@ -37,6 +39,7 @@ public class ApiUtils {
         }
     }
     
+    // MARK: - API request
     public static func requestApi<ApiType:TargetType, ResponseType:Codable>(apiType:ApiType
         , responseType:ResponseType.Type
         , onSuccess: @escaping (ResponseType) -> ()

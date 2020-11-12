@@ -9,9 +9,23 @@
 /* Begin PBXBuildFile section */
 		ED33F7CD255CC99400C7C90C /* ApiUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33F7CC255CC99400C7C90C /* ApiUtils.swift */; };
 		ED33F7D8255CCF4200C7C90C /* CommonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33F7D7255CCF4200C7C90C /* CommonUtils.swift */; };
+		ED33F8F2255D1A7B00C7C90C /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33F8F1255D1A7B00C7C90C /* CustomTextField.swift */; };
+		ED33F904255D1E9300C7C90C /* CaptchaGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33F903255D1E9300C7C90C /* CaptchaGenerator.swift */; };
+		ED33F90D255D20A600C7C90C /* UIButtonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33F907255D20A600C7C90C /* UIButtonHelper.swift */; };
+		ED33F90E255D20A600C7C90C /* NSLayoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33F908255D20A600C7C90C /* NSLayoutHelper.swift */; };
+		ED33F90F255D20A600C7C90C /* DeviceHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33F909255D20A600C7C90C /* DeviceHelper.swift */; };
+		ED33F910255D20A600C7C90C /* UITextViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33F90A255D20A600C7C90C /* UITextViewHelper.swift */; };
+		ED33F911255D20A600C7C90C /* UILabelHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33F90B255D20A600C7C90C /* UILabelHelper.swift */; };
+		ED33F912255D20A600C7C90C /* UITextFieldHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33F90C255D20A600C7C90C /* UITextFieldHelper.swift */; };
+		ED33F91C255D21FB00C7C90C /* PasswordTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33F915255D21FB00C7C90C /* PasswordTextField.swift */; };
+		ED33F91D255D21FB00C7C90C /* BundleUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33F916255D21FB00C7C90C /* BundleUtil.swift */; };
+		ED33F91E255D21FB00C7C90C /* PasswordRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33F917255D21FB00C7C90C /* PasswordRule.swift */; };
+		ED33F91F255D21FB00C7C90C /* RegexRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33F918255D21FB00C7C90C /* RegexRule.swift */; };
+		ED33F920255D21FB00C7C90C /* Ruleable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33F919255D21FB00C7C90C /* Ruleable.swift */; };
+		ED33F921255D21FB00C7C90C /* PasswordTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = ED33F91A255D21FB00C7C90C /* PasswordTextField.h */; };
+		ED33F922255D21FB00C7C90C /* SecureTextToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33F91B255D21FB00C7C90C /* SecureTextToggleButton.swift */; };
 		EDC2AAFA165C7AB6EF7E36A4 /* Pods_LibraryCollections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D05BBE899326F0DBB4455D9 /* Pods_LibraryCollections.framework */; };
 		EDD15993255A81EA00011C8E /* LibraryCollections.h in Headers */ = {isa = PBXBuildFile; fileRef = EDD15991255A81EA00011C8E /* LibraryCollections.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EDD1599B255A823900011C8E /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD1599A255A823900011C8E /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +34,24 @@
 		C5294EA4EBB0CCAF2BA5D1CC /* Pods-LibraryCollections.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LibraryCollections.release.xcconfig"; path = "Target Support Files/Pods-LibraryCollections/Pods-LibraryCollections.release.xcconfig"; sourceTree = "<group>"; };
 		ED33F7CC255CC99400C7C90C /* ApiUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiUtils.swift; sourceTree = "<group>"; };
 		ED33F7D7255CCF4200C7C90C /* CommonUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonUtils.swift; sourceTree = "<group>"; };
+		ED33F8F1255D1A7B00C7C90C /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		ED33F903255D1E9300C7C90C /* CaptchaGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptchaGenerator.swift; sourceTree = "<group>"; };
+		ED33F907255D20A600C7C90C /* UIButtonHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonHelper.swift; sourceTree = "<group>"; };
+		ED33F908255D20A600C7C90C /* NSLayoutHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSLayoutHelper.swift; sourceTree = "<group>"; };
+		ED33F909255D20A600C7C90C /* DeviceHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeviceHelper.swift; sourceTree = "<group>"; };
+		ED33F90A255D20A600C7C90C /* UITextViewHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextViewHelper.swift; sourceTree = "<group>"; };
+		ED33F90B255D20A600C7C90C /* UILabelHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UILabelHelper.swift; sourceTree = "<group>"; };
+		ED33F90C255D20A600C7C90C /* UITextFieldHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldHelper.swift; sourceTree = "<group>"; };
+		ED33F915255D21FB00C7C90C /* PasswordTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordTextField.swift; sourceTree = "<group>"; };
+		ED33F916255D21FB00C7C90C /* BundleUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BundleUtil.swift; sourceTree = "<group>"; };
+		ED33F917255D21FB00C7C90C /* PasswordRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PasswordRule.swift; sourceTree = "<group>"; };
+		ED33F918255D21FB00C7C90C /* RegexRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RegexRule.swift; sourceTree = "<group>"; };
+		ED33F919255D21FB00C7C90C /* Ruleable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ruleable.swift; sourceTree = "<group>"; };
+		ED33F91A255D21FB00C7C90C /* PasswordTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordTextField.h; sourceTree = "<group>"; };
+		ED33F91B255D21FB00C7C90C /* SecureTextToggleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecureTextToggleButton.swift; sourceTree = "<group>"; };
 		EDD1598E255A81EA00011C8E /* LibraryCollections.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LibraryCollections.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDD15991255A81EA00011C8E /* LibraryCollections.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LibraryCollections.h; sourceTree = "<group>"; };
 		EDD15992255A81EA00011C8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EDD1599A255A823900011C8E /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +99,75 @@
 			path = util;
 			sourceTree = "<group>";
 		};
+		ED33F8E8255D19D400C7C90C /* component */ = {
+			isa = PBXGroup;
+			children = (
+				ED33F902255D1E9300C7C90C /* captcha */,
+				ED33F906255D20A600C7C90C /* LayoutHelper */,
+				ED33F8F0255D1A7B00C7C90C /* textfield */,
+				ED33F8F4255D1B6600C7C90C /* view */,
+			);
+			path = component;
+			sourceTree = "<group>";
+		};
+		ED33F8F0255D1A7B00C7C90C /* textfield */ = {
+			isa = PBXGroup;
+			children = (
+				ED33F914255D21FB00C7C90C /* PasswordTextField */,
+				ED33F8F1255D1A7B00C7C90C /* CustomTextField.swift */,
+			);
+			path = textfield;
+			sourceTree = "<group>";
+		};
+		ED33F8F4255D1B6600C7C90C /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		ED33F900255D1E0E00C7C90C /* images */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		ED33F902255D1E9300C7C90C /* captcha */ = {
+			isa = PBXGroup;
+			children = (
+				ED33F903255D1E9300C7C90C /* CaptchaGenerator.swift */,
+			);
+			path = captcha;
+			sourceTree = "<group>";
+		};
+		ED33F906255D20A600C7C90C /* LayoutHelper */ = {
+			isa = PBXGroup;
+			children = (
+				ED33F907255D20A600C7C90C /* UIButtonHelper.swift */,
+				ED33F908255D20A600C7C90C /* NSLayoutHelper.swift */,
+				ED33F909255D20A600C7C90C /* DeviceHelper.swift */,
+				ED33F90A255D20A600C7C90C /* UITextViewHelper.swift */,
+				ED33F90B255D20A600C7C90C /* UILabelHelper.swift */,
+				ED33F90C255D20A600C7C90C /* UITextFieldHelper.swift */,
+			);
+			path = LayoutHelper;
+			sourceTree = "<group>";
+		};
+		ED33F914255D21FB00C7C90C /* PasswordTextField */ = {
+			isa = PBXGroup;
+			children = (
+				ED33F915255D21FB00C7C90C /* PasswordTextField.swift */,
+				ED33F916255D21FB00C7C90C /* BundleUtil.swift */,
+				ED33F917255D21FB00C7C90C /* PasswordRule.swift */,
+				ED33F918255D21FB00C7C90C /* RegexRule.swift */,
+				ED33F919255D21FB00C7C90C /* Ruleable.swift */,
+				ED33F91A255D21FB00C7C90C /* PasswordTextField.h */,
+				ED33F91B255D21FB00C7C90C /* SecureTextToggleButton.swift */,
+			);
+			path = PasswordTextField;
+			sourceTree = "<group>";
+		};
 		EDD15984255A81EA00011C8E = {
 			isa = PBXGroup;
 			children = (
@@ -92,11 +189,12 @@
 		EDD15990255A81EA00011C8E /* LibraryCollections */ = {
 			isa = PBXGroup;
 			children = (
-				ED33F7D6255CCF3300C7C90C /* util */,
+				ED33F900255D1E0E00C7C90C /* images */,
 				ED33F7C7255CC90E00C7C90C /* api */,
+				ED33F8E8255D19D400C7C90C /* component */,
+				ED33F7D6255CCF3300C7C90C /* util */,
 				EDD15991255A81EA00011C8E /* LibraryCollections.h */,
 				EDD15992255A81EA00011C8E /* Info.plist */,
-				EDD1599A255A823900011C8E /* File.swift */,
 			);
 			path = LibraryCollections;
 			sourceTree = "<group>";
@@ -109,6 +207,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDD15993255A81EA00011C8E /* LibraryCollections.h in Headers */,
+				ED33F921255D21FB00C7C90C /* PasswordTextField.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -206,9 +305,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED33F904255D1E9300C7C90C /* CaptchaGenerator.swift in Sources */,
+				ED33F922255D21FB00C7C90C /* SecureTextToggleButton.swift in Sources */,
+				ED33F91F255D21FB00C7C90C /* RegexRule.swift in Sources */,
+				ED33F912255D20A600C7C90C /* UITextFieldHelper.swift in Sources */,
 				ED33F7CD255CC99400C7C90C /* ApiUtils.swift in Sources */,
+				ED33F90E255D20A600C7C90C /* NSLayoutHelper.swift in Sources */,
 				ED33F7D8255CCF4200C7C90C /* CommonUtils.swift in Sources */,
-				EDD1599B255A823900011C8E /* File.swift in Sources */,
+				ED33F90F255D20A600C7C90C /* DeviceHelper.swift in Sources */,
+				ED33F90D255D20A600C7C90C /* UIButtonHelper.swift in Sources */,
+				ED33F920255D21FB00C7C90C /* Ruleable.swift in Sources */,
+				ED33F91E255D21FB00C7C90C /* PasswordRule.swift in Sources */,
+				ED33F8F2255D1A7B00C7C90C /* CustomTextField.swift in Sources */,
+				ED33F910255D20A600C7C90C /* UITextViewHelper.swift in Sources */,
+				ED33F91C255D21FB00C7C90C /* PasswordTextField.swift in Sources */,
+				ED33F911255D20A600C7C90C /* UILabelHelper.swift in Sources */,
+				ED33F91D255D21FB00C7C90C /* BundleUtil.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
