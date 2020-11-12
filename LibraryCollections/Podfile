@@ -7,5 +7,6 @@ target 'LibraryCollections' do
 
   # Pods for LibraryCollections
   pod 'Toast-Swift', '~> 5.0.1'
+  pod 'Moya/RxSwift', '~> 13.0'
 
 end
