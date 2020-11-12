@@ -2,17 +2,17 @@ import Foundation
 import Moya
 import RxSwift
 
-protocol IApiCallback {
+public protocol IApiCallback {
     func onSuccess<T>(par1:T)
     func onFail<T>(par1:T)
     func onFinally()
 }
 
-class ApiUtils {
+public class ApiUtils {
     
-    static let API_ERROR_RETRY_COUNT = 3
+    public static let API_ERROR_RETRY_COUNT = 3
     
-    static func getBodyParams<Type:Codable>(obj:Type) -> [String:Any] {
+    public static func getBodyParams<Type:Codable>(obj:Type) -> [String:Any] {
         var dict: Dictionary<String, Any>? = nil
         
         do {

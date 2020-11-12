@@ -3,7 +3,7 @@ import CommonCrypto
 import UIKit
 import Alamofire
 
-class CommonUtils {
+public class CommonUtils {
     
     // MARK: - Properties
     private static let jsonEncoder:JSONEncoder = JSONEncoder()
@@ -12,30 +12,30 @@ class CommonUtils {
     private static let networkManager:NetworkReachabilityManager? = NetworkReachabilityManager()
     
     // MARK: - JSON
-    static func getJsonEncoder() -> JSONEncoder {
+    public static func getJsonEncoder() -> JSONEncoder {
         return jsonEncoder
     }
     
-    static func getJsonDecoder() -> JSONDecoder {
+    public func getJsonDecoder() -> JSONDecoder {
         return jsonDecorder
     }
     
-    static func getJsonData<Type:Codable>(data:Type) -> Data {
+    public static func getJsonData<Type:Codable>(data:Type) -> Data {
         return (try? jsonEncoder.encode(data)) ?? Data()
     }
     
     // MARK: - Date
-    static func convertDateToString(formatStr:String, date:Date) -> String {
+    public static func convertDateToString(formatStr:String, date:Date) -> String {
         dateFormatter.dateFormat = formatStr
         return dateFormatter.string(from: date)
     }
     
-    static func convertStringToDate(formatStr:String, dateStr:String) -> Date {
+    public static func convertStringToDate(formatStr:String, dateStr:String) -> Date {
         dateFormatter.dateFormat = formatStr
         return dateFormatter.date(from: dateStr) ?? Date()
     }
     
-    static func convertStringToDate(timezone:TimeZone? = TimeZone.current, dateStr:String, dateFormatStr:String, amSymbol:String? = nil, pmSymbol:String? = nil) -> Date? {
+    public static func convertStringToDate(timezone:TimeZone? = TimeZone.current, dateStr:String, dateFormatStr:String, amSymbol:String? = nil, pmSymbol:String? = nil) -> Date? {
         let dateFormatter:DateFormatter = DateFormatter()
         dateFormatter.dateFormat = dateFormatStr
         dateFormatter.timeZone = timezone
@@ -45,7 +45,7 @@ class CommonUtils {
         return dateFormatter.date(from: dateStr)
     }
     
-    static func convertDateToString(timezone:TimeZone? = TimeZone.current, date:Date, targetDateFormatStr:String, amSymbol:String? = nil, pmSymbol:String? = nil) -> String {
+    public static func convertDateToString(timezone:TimeZone? = TimeZone.current, date:Date, targetDateFormatStr:String, amSymbol:String? = nil, pmSymbol:String? = nil) -> String {
         let dateFormatter:DateFormatter = DateFormatter()
         dateFormatter.dateFormat = targetDateFormatStr
         dateFormatter.timeZone = timezone
@@ -56,7 +56,7 @@ class CommonUtils {
     }
     
     // MARK: - UserDefault
-    static func writeToUserDefault<DataType:Codable>(key:String, data:DataType) {
+    public static func writeToUserDefault<DataType:Codable>(key:String, data:DataType) {
         let userDefaultStand = UserDefaults.standard
         if data is Array<Any> {
             let data = try? jsonEncoder.encode(data)
@@ -67,7 +67,7 @@ class CommonUtils {
         userDefaultStand.synchronize()
     }
     
-    static func readFromUserDefault<DataType:Codable>(key:String) -> DataType? {
+    public static func readFromUserDefault<DataType:Codable>(key:String) -> DataType? {
         let userDefaultStand = UserDefaults.standard
         
         if DataType.self is String.Type {
@@ -83,13 +83,13 @@ class CommonUtils {
         }
     }
     
-    static func clearUserDefault(key:String) {
+    public static func clearUserDefault(key:String) {
         UserDefaults.standard.removeObject(forKey: key)
         UserDefaults.standard.synchronize()
     }
     
     // MARK: - Encryption
-    static func convertToSha512(input: String) -> String {
+    public static func convertToSha512(input: String) -> String {
         let data = input.data(using: .utf8) ?? Data()
         var digest = [UInt8](repeating: 0, count: Int(CC_SHA512_DIGEST_LENGTH))
         data.withUnsafeBytes {
@@ -99,7 +99,7 @@ class CommonUtils {
     }
     
     // MARK: - QR & Bar
-    static func generateQRCode(qrCode: String) -> UIImage? {
+    public static func generateQRCode(qrCode: String) -> UIImage? {
         let data = qrCode.data(using: String.Encoding.ascii)
         
         if let filter = CIFilter(name: "CIQRCodeGenerator") {
@@ -113,7 +113,7 @@ class CommonUtils {
         return nil
     }
     
-    static func generateBarCode(barcode: String) -> UIImage? {
+    public static func generateBarCode(barcode: String) -> UIImage? {
         let data = barcode.data(using: .ascii)
         
         if let filter = CIFilter(name: "CICode128BarcodeGenerator") {
@@ -127,7 +127,7 @@ class CommonUtils {
     }
     
     // MARK: - Network
-    static func getQueryStringParameter(url: String, keyStr: String, separator:String) -> String? {
+    public static func getQueryStringParameter(url: String, keyStr: String, separator:String) -> String? {
         let params = url.components(separatedBy: separator)
         let matchParam = params.first { param -> Bool in
             return param.contains(keyStr)
@@ -135,7 +135,7 @@ class CommonUtils {
         return matchParam
     }
     
-    static func openUrl(urlStr:String) {
+    public static func openUrl(urlStr:String) {
         guard let url = URL(string:urlStr), UIApplication.shared.canOpenURL(url) else {
             return
         }
@@ -145,7 +145,7 @@ class CommonUtils {
     }
     
     //MARK: - Global
-    static func openSettings() {
+    public static func openSettings() {
         let url = URL(string:UIApplication.openSettingsURLString)
         if UIApplication.shared.canOpenURL(url!){
             // can open succeeded.. opening the url
@@ -153,7 +153,7 @@ class CommonUtils {
         }
     }
     
-    static func isConnected() -> Bool {
+    public static func isConnected() -> Bool {
         networkManager?.isReachable ?? true
     }
 }
