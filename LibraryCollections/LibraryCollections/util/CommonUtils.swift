@@ -16,7 +16,7 @@ public class CommonUtils {
         return jsonEncoder
     }
     
-    public func getJsonDecoder() -> JSONDecoder {
+    public static func getJsonDecoder() -> JSONDecoder {
         return jsonDecorder
     }
     
