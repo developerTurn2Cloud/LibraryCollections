@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17132" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17105.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomSpinner" customModule="LaLaport_iOS" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="Ehc-5y-ATZ"/>
+                <outlet property="dropDownArrow" destination="EVJ-40-jPV" id="eyx-U2-J7v"/>
+                <outlet property="leftPaddingConstraint" destination="REt-Yc-SeG" id="tGU-wE-NIQ"/>
+                <outlet property="placeholdLabel" destination="ahd-Im-4wh" id="vz5-YI-Rjn"/>
+                <outlet property="rightPaddingConstraint" destination="H3M-CD-QJN" id="gYy-vr-TLi"/>
+                <outlet property="textLabel" destination="RF5-qN-ITx" id="tr3-2B-LrV"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="107"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="ic_blue_down" translatesAutoresizingMaskIntoConstraints="NO" id="EVJ-40-jPV">
+                    <rect key="frame" x="390" y="62.5" width="24" height="24"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Country of Citizenship" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RF5-qN-ITx" userLabel="text">
+                    <rect key="frame" x="0.0" y="52" width="380" height="45"/>
+                    <fontDescription key="fontDescription" name="PingFangTC-Semibold" family="PingFang TC" pointSize="14"/>
+                    <color key="textColor" red="0.34901960784313724" green="0.3411764705882353" blue="0.3411764705882353" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="placehold" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ahd-Im-4wh">
+                    <rect key="frame" x="0.0" y="52" width="380" height="45"/>
+                    <fontDescription key="fontDescription" name="PingFangTC-Semibold" family="PingFang TC" pointSize="14"/>
+                    <color key="textColor" red="0.76862745098039209" green="0.76862745098039209" blue="0.77647058823529413" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <gestureRecognizers/>
+            <constraints>
+                <constraint firstItem="RF5-qN-ITx" firstAttribute="centerY" secondItem="EVJ-40-jPV" secondAttribute="centerY" id="0Cq-KB-cWZ"/>
+                <constraint firstItem="EVJ-40-jPV" firstAttribute="leading" secondItem="RF5-qN-ITx" secondAttribute="trailing" constant="10" id="Eoe-m5-Qzn"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="EVJ-40-jPV" secondAttribute="trailing" id="H3M-CD-QJN"/>
+                <constraint firstItem="ahd-Im-4wh" firstAttribute="leading" secondItem="RF5-qN-ITx" secondAttribute="leading" id="O7v-46-3nd"/>
+                <constraint firstItem="RF5-qN-ITx" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="REt-Yc-SeG"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="RF5-qN-ITx" secondAttribute="bottom" constant="10" id="Sr3-YY-22O"/>
+                <constraint firstItem="RF5-qN-ITx" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="Wmh-vD-oBP"/>
+                <constraint firstItem="ahd-Im-4wh" firstAttribute="bottom" secondItem="RF5-qN-ITx" secondAttribute="bottom" id="glf-hs-wno"/>
+                <constraint firstItem="ahd-Im-4wh" firstAttribute="top" secondItem="RF5-qN-ITx" secondAttribute="top" id="l4y-pn-cga"/>
+                <constraint firstItem="ahd-Im-4wh" firstAttribute="trailing" secondItem="RF5-qN-ITx" secondAttribute="trailing" id="mvp-8Y-vtQ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outletCollection property="gestureRecognizers" destination="Did-7C-I4f" appends="YES" id="b2P-Nb-e9j"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="-178.45982142857142"/>
+        </view>
+        <tapGestureRecognizer id="Did-7C-I4f">
+            <connections>
+                <action selector="onSpinnerClicked:" destination="-1" id="tDg-vv-6AZ"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <resources>
+        <image name="ic_blue_down" width="24" height="24"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

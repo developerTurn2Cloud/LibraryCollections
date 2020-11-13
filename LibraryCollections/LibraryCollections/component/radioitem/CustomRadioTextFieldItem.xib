@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomRadioTextFieldItem" customModule="LaLaport_iOS_TEST_" customModuleProvider="target">
+            <connections>
+                <outlet property="inputTextField" destination="xV4-9d-LfY" id="bCc-nn-bp6"/>
+                <outlet property="leftPaddingConstraint" destination="DBu-Ga-Ipx" id="Iv5-g8-IrZ"/>
+                <outlet property="rightPaddingConstraint" destination="RPr-0I-Syi" id="LYO-ec-Nm4"/>
+                <outlet property="selectionRadioImageView" destination="gNs-d2-0xl" id="32y-fC-FAY"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_radio_unselected" translatesAutoresizingMaskIntoConstraints="NO" id="gNs-d2-0xl" userLabel="select_radio">
+                    <rect key="frame" x="0.0" y="57.5" width="25" height="25"/>
+                    <gestureRecognizers/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="25" id="4cU-xe-tm2"/>
+                        <constraint firstAttribute="width" secondItem="gNs-d2-0xl" secondAttribute="height" multiplier="1:1" id="goS-1q-7Hx"/>
+                    </constraints>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="4Mg-zI-Ssl" appends="YES" id="qNz-oR-yza"/>
+                    </connections>
+                </imageView>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xV4-9d-LfY" userLabel="content_input" customClass="CustomTextField" customModule="LaLaport_iOS_TEST_" customModuleProvider="target">
+                    <rect key="frame" x="35" y="44" width="379" height="52"/>
+                    <fontDescription key="fontDescription" name="PingFangTC-Semibold" family="PingFang TC" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="gNs-d2-0xl" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="DBu-Ga-Ipx"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="xV4-9d-LfY" secondAttribute="trailing" id="RPr-0I-Syi"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="xV4-9d-LfY" secondAttribute="bottom" id="VlP-la-Nnm"/>
+                <constraint firstItem="xV4-9d-LfY" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="Ywj-EX-HZV"/>
+                <constraint firstItem="xV4-9d-LfY" firstAttribute="leading" secondItem="gNs-d2-0xl" secondAttribute="trailing" constant="10" id="gI0-b9-cKG"/>
+                <constraint firstItem="xV4-9d-LfY" firstAttribute="centerY" secondItem="gNs-d2-0xl" secondAttribute="centerY" id="uRJ-rP-kmI"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="137.68115942028987" y="-121.875"/>
+        </view>
+        <tapGestureRecognizer id="4Mg-zI-Ssl">
+            <connections>
+                <action selector="onRadioChecked:" destination="-1" id="wf9-2k-T6W"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+    <designables>
+        <designable name="xV4-9d-LfY">
+            <size key="intrinsicContentSize" width="5" height="21.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="ic_radio_unselected" width="28" height="28"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

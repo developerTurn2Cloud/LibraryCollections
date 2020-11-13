@@ -24,6 +24,19 @@
 		ED33F920255D21FB00C7C90C /* Ruleable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33F919255D21FB00C7C90C /* Ruleable.swift */; };
 		ED33F921255D21FB00C7C90C /* PasswordTextField.h in Headers */ = {isa = PBXBuildFile; fileRef = ED33F91A255D21FB00C7C90C /* PasswordTextField.h */; };
 		ED33F922255D21FB00C7C90C /* SecureTextToggleButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33F91B255D21FB00C7C90C /* SecureTextToggleButton.swift */; };
+		ED33F9ED255E232900C7C90C /* QRScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33F9E9255E232900C7C90C /* QRScannerView.swift */; };
+		ED33F9EE255E232900C7C90C /* QRScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = ED33F9EA255E232900C7C90C /* QRScanner.h */; };
+		ED33F9EF255E232900C7C90C /* QRScannerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33F9EB255E232900C7C90C /* QRScannerError.swift */; };
+		ED33F9F0255E232900C7C90C /* QRScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33F9EC255E232900C7C90C /* QRScanViewController.swift */; };
+		ED33F9FA255E275100C7C90C /* CustomSpinner.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED33F9F3255E275000C7C90C /* CustomSpinner.xib */; };
+		ED33F9FB255E275100C7C90C /* CustomSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33F9F4255E275000C7C90C /* CustomSpinner.swift */; };
+		ED33F9FC255E275100C7C90C /* CustomRadioLabelItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED33F9F6255E275000C7C90C /* CustomRadioLabelItem.xib */; };
+		ED33F9FD255E275100C7C90C /* CustomRadioTextFieldItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED33F9F7255E275100C7C90C /* CustomRadioTextFieldItem.xib */; };
+		ED33F9FE255E275100C7C90C /* CustomRadioTextFieldItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33F9F8255E275100C7C90C /* CustomRadioTextFieldItem.swift */; };
+		ED33F9FF255E275100C7C90C /* CustomRadioLabelItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33F9F9255E275100C7C90C /* CustomRadioLabelItem.swift */; };
+		ED33FA02255E276100C7C90C /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33FA01255E276100C7C90C /* NibLoadable.swift */; };
+		ED33FA07255E280E00C7C90C /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33FA06255E280E00C7C90C /* UIViewExtension.swift */; };
+		ED33FA0F255E29AF00C7C90C /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33FA0E255E29AF00C7C90C /* UITextFieldExtension.swift */; };
 		EDC2AAFA165C7AB6EF7E36A4 /* Pods_LibraryCollections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D05BBE899326F0DBB4455D9 /* Pods_LibraryCollections.framework */; };
 		EDD15993255A81EA00011C8E /* LibraryCollections.h in Headers */ = {isa = PBXBuildFile; fileRef = EDD15991255A81EA00011C8E /* LibraryCollections.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -49,6 +62,19 @@
 		ED33F919255D21FB00C7C90C /* Ruleable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Ruleable.swift; sourceTree = "<group>"; };
 		ED33F91A255D21FB00C7C90C /* PasswordTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PasswordTextField.h; sourceTree = "<group>"; };
 		ED33F91B255D21FB00C7C90C /* SecureTextToggleButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecureTextToggleButton.swift; sourceTree = "<group>"; };
+		ED33F9E9255E232900C7C90C /* QRScannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerView.swift; sourceTree = "<group>"; };
+		ED33F9EA255E232900C7C90C /* QRScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRScanner.h; sourceTree = "<group>"; };
+		ED33F9EB255E232900C7C90C /* QRScannerError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerError.swift; sourceTree = "<group>"; };
+		ED33F9EC255E232900C7C90C /* QRScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScanViewController.swift; sourceTree = "<group>"; };
+		ED33F9F3255E275000C7C90C /* CustomSpinner.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomSpinner.xib; sourceTree = "<group>"; };
+		ED33F9F4255E275000C7C90C /* CustomSpinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSpinner.swift; sourceTree = "<group>"; };
+		ED33F9F6255E275000C7C90C /* CustomRadioLabelItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomRadioLabelItem.xib; sourceTree = "<group>"; };
+		ED33F9F7255E275100C7C90C /* CustomRadioTextFieldItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomRadioTextFieldItem.xib; sourceTree = "<group>"; };
+		ED33F9F8255E275100C7C90C /* CustomRadioTextFieldItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomRadioTextFieldItem.swift; sourceTree = "<group>"; };
+		ED33F9F9255E275100C7C90C /* CustomRadioLabelItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomRadioLabelItem.swift; sourceTree = "<group>"; };
+		ED33FA01255E276100C7C90C /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		ED33FA06255E280E00C7C90C /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		ED33FA0E255E29AF00C7C90C /* UITextFieldExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
 		EDD1598E255A81EA00011C8E /* LibraryCollections.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LibraryCollections.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDD15991255A81EA00011C8E /* LibraryCollections.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LibraryCollections.h; sourceTree = "<group>"; };
 		EDD15992255A81EA00011C8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -102,10 +128,14 @@
 		ED33F8E8255D19D400C7C90C /* component */ = {
 			isa = PBXGroup;
 			children = (
+				ED33F9F5255E275000C7C90C /* radioitem */,
+				ED33F9F2255E275000C7C90C /* spinner */,
 				ED33F902255D1E9300C7C90C /* captcha */,
 				ED33F906255D20A600C7C90C /* LayoutHelper */,
+				ED33F9E8255E232900C7C90C /* qrscanner */,
 				ED33F8F0255D1A7B00C7C90C /* textfield */,
 				ED33F8F4255D1B6600C7C90C /* view */,
+				ED33FA01255E276100C7C90C /* NibLoadable.swift */,
 			);
 			path = component;
 			sourceTree = "<group>";
@@ -168,6 +198,46 @@
 			path = PasswordTextField;
 			sourceTree = "<group>";
 		};
+		ED33F9E8255E232900C7C90C /* qrscanner */ = {
+			isa = PBXGroup;
+			children = (
+				ED33F9E9255E232900C7C90C /* QRScannerView.swift */,
+				ED33F9EA255E232900C7C90C /* QRScanner.h */,
+				ED33F9EB255E232900C7C90C /* QRScannerError.swift */,
+				ED33F9EC255E232900C7C90C /* QRScanViewController.swift */,
+			);
+			path = qrscanner;
+			sourceTree = "<group>";
+		};
+		ED33F9F2255E275000C7C90C /* spinner */ = {
+			isa = PBXGroup;
+			children = (
+				ED33F9F3255E275000C7C90C /* CustomSpinner.xib */,
+				ED33F9F4255E275000C7C90C /* CustomSpinner.swift */,
+			);
+			path = spinner;
+			sourceTree = "<group>";
+		};
+		ED33F9F5255E275000C7C90C /* radioitem */ = {
+			isa = PBXGroup;
+			children = (
+				ED33F9F6255E275000C7C90C /* CustomRadioLabelItem.xib */,
+				ED33F9F7255E275100C7C90C /* CustomRadioTextFieldItem.xib */,
+				ED33F9F8255E275100C7C90C /* CustomRadioTextFieldItem.swift */,
+				ED33F9F9255E275100C7C90C /* CustomRadioLabelItem.swift */,
+			);
+			path = radioitem;
+			sourceTree = "<group>";
+		};
+		ED33FA05255E27D400C7C90C /* extension */ = {
+			isa = PBXGroup;
+			children = (
+				ED33FA0E255E29AF00C7C90C /* UITextFieldExtension.swift */,
+				ED33FA06255E280E00C7C90C /* UIViewExtension.swift */,
+			);
+			path = extension;
+			sourceTree = "<group>";
+		};
 		EDD15984255A81EA00011C8E = {
 			isa = PBXGroup;
 			children = (
@@ -189,9 +259,10 @@
 		EDD15990255A81EA00011C8E /* LibraryCollections */ = {
 			isa = PBXGroup;
 			children = (
-				ED33F900255D1E0E00C7C90C /* images */,
 				ED33F7C7255CC90E00C7C90C /* api */,
 				ED33F8E8255D19D400C7C90C /* component */,
+				ED33FA05255E27D400C7C90C /* extension */,
+				ED33F900255D1E0E00C7C90C /* images */,
 				ED33F7D6255CCF3300C7C90C /* util */,
 				EDD15991255A81EA00011C8E /* LibraryCollections.h */,
 				EDD15992255A81EA00011C8E /* Info.plist */,
@@ -207,6 +278,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDD15993255A81EA00011C8E /* LibraryCollections.h in Headers */,
+				ED33F9EE255E232900C7C90C /* QRScanner.h in Headers */,
 				ED33F921255D21FB00C7C90C /* PasswordTextField.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -270,6 +342,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED33F9FD255E275100C7C90C /* CustomRadioTextFieldItem.xib in Resources */,
+				ED33F9FC255E275100C7C90C /* CustomRadioLabelItem.xib in Resources */,
+				ED33F9FA255E275100C7C90C /* CustomSpinner.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,22 +380,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED33F9FE255E275100C7C90C /* CustomRadioTextFieldItem.swift in Sources */,
+				ED33F9FB255E275100C7C90C /* CustomSpinner.swift in Sources */,
+				ED33F9FF255E275100C7C90C /* CustomRadioLabelItem.swift in Sources */,
 				ED33F904255D1E9300C7C90C /* CaptchaGenerator.swift in Sources */,
 				ED33F922255D21FB00C7C90C /* SecureTextToggleButton.swift in Sources */,
 				ED33F91F255D21FB00C7C90C /* RegexRule.swift in Sources */,
+				ED33FA07255E280E00C7C90C /* UIViewExtension.swift in Sources */,
 				ED33F912255D20A600C7C90C /* UITextFieldHelper.swift in Sources */,
 				ED33F7CD255CC99400C7C90C /* ApiUtils.swift in Sources */,
+				ED33FA02255E276100C7C90C /* NibLoadable.swift in Sources */,
+				ED33FA0F255E29AF00C7C90C /* UITextFieldExtension.swift in Sources */,
 				ED33F90E255D20A600C7C90C /* NSLayoutHelper.swift in Sources */,
+				ED33F9F0255E232900C7C90C /* QRScanViewController.swift in Sources */,
 				ED33F7D8255CCF4200C7C90C /* CommonUtils.swift in Sources */,
 				ED33F90F255D20A600C7C90C /* DeviceHelper.swift in Sources */,
 				ED33F90D255D20A600C7C90C /* UIButtonHelper.swift in Sources */,
 				ED33F920255D21FB00C7C90C /* Ruleable.swift in Sources */,
+				ED33F9EF255E232900C7C90C /* QRScannerError.swift in Sources */,
 				ED33F91E255D21FB00C7C90C /* PasswordRule.swift in Sources */,
 				ED33F8F2255D1A7B00C7C90C /* CustomTextField.swift in Sources */,
 				ED33F910255D20A600C7C90C /* UITextViewHelper.swift in Sources */,
 				ED33F91C255D21FB00C7C90C /* PasswordTextField.swift in Sources */,
 				ED33F911255D20A600C7C90C /* UILabelHelper.swift in Sources */,
 				ED33F91D255D21FB00C7C90C /* BundleUtil.swift in Sources */,
+				ED33F9ED255E232900C7C90C /* QRScannerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
