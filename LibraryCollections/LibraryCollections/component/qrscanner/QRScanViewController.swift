@@ -1,19 +1,19 @@
 import UIKit
 
-protocol IQRScanEvent:class {
+public protocol IQRScanEvent:class {
     func onScanResult(code:String?, error:Error?)
 }
 
-class QRScanViewController: UIViewController {
+public class QRScanViewController: UIViewController {
     
-    var qrReaderView:QRScannerView!
-    @IBOutlet weak var qrReaderContentView: UIView!
-    @IBOutlet weak var flashlightImageView: UIImageView!
+    public var qrReaderView:QRScannerView!
+    @IBOutlet public  weak var qrReaderContentView: UIView!
+    @IBOutlet public weak var flashlightImageView: UIImageView!
     
-    var isFlashlightToggled:Bool = false
-    weak var eventDelegate:IQRScanEvent?
+    public var isFlashlightToggled:Bool = false
+    public weak var eventDelegate:IQRScanEvent?
     
-    override func viewDidLoad() {
+    public override func viewDidLoad() {
         super.viewDidLoad()
         
         self.qrReaderView = {
@@ -40,7 +40,7 @@ class QRScanViewController: UIViewController {
 }
 
 extension QRScanViewController: QRScannerViewDelegate {
-    func qrScannerView(_ qrScannerView: QRScannerView, didFailure qrError: QRScannerError) {
+    public func qrScannerView(_ qrScannerView: QRScannerView, didFailure qrError: QRScannerError) {
         let qrError = qrError as NSError
         let error = NSError(domain: qrError.domain, code: qrError.code, userInfo: nil)
         
@@ -48,7 +48,7 @@ extension QRScanViewController: QRScannerViewDelegate {
         self.eventDelegate?.onScanResult(code: nil, error: error)
     }
 
-    func qrScannerView(_ qrScannerView: QRScannerView, didSuccess code: String) {
+    public func qrScannerView(_ qrScannerView: QRScannerView, didSuccess code: String) {
         self.onBackClicked(self)
         self.eventDelegate?.onScanResult(code: code, error: nil)
     }

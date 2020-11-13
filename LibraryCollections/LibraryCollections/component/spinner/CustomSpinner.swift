@@ -1,50 +1,50 @@
 import UIKit
 
-protocol ISpinnerDelegate {
+public protocol ISpinnerDelegate {
     func onSpinnerClick(spinner:CustomSpinner)
 }
 
-@IBDesignable class CustomSpinner: UIView, NibLoadable {
+@IBDesignable public  class CustomSpinner: UIView, NibLoadable {
     
-    @IBInspectable var leftPadding: CGFloat = 0.0 {
+    @IBInspectable public var leftPadding: CGFloat = 0.0 {
         didSet {
             self.leftPaddingConstraint.constant = self.leftPadding
             updateConstraints()
         }
     }
     
-    @IBInspectable var rightPadding:CGFloat = 0.0 {
+    @IBInspectable public var rightPadding:CGFloat = 0.0 {
         didSet {
             self.rightPaddingConstraint.constant = self.rightPadding
             updateConstraints()
         }
     }
     
-    @IBInspectable override var borderW:CGFloat {
+    @IBInspectable public override var borderW:CGFloat {
         didSet {
             self.layer.borderWidth = self.borderW
         }
     }
     
-    @IBInspectable override var borderRGB:UIColor {
+    @IBInspectable public override var borderRGB:UIColor {
         didSet {
             self.layer.borderColor = borderRGB.cgColor
         }
     }
     
-    @IBInspectable override var cornerR:CGFloat {
+    @IBInspectable public override var cornerR:CGFloat {
         didSet {
             self.layer.cornerRadius = self.cornerR
         }
     }
     
-    @IBInspectable var textColor:UIColor = UIColor.black {
+    @IBInspectable public var textColor:UIColor = UIColor.black {
         didSet {
             self.textLabel.textColor = self.textColor
         }
     }
     
-    @IBInspectable var textSize:CGFloat = 0.0 {
+    @IBInspectable public var textSize:CGFloat = 0.0 {
         didSet {
             guard self.textLabel != nil, self.placeholdLabel != nil else {
                 return
@@ -54,7 +54,7 @@ protocol ISpinnerDelegate {
         }
     }
     
-    @IBInspectable var dropDownImage:UIImage {
+    @IBInspectable public var dropDownImage:UIImage {
         get {
             return self.dropDownArrow.image ?? UIImage(named: "ic_blue_down")!
         }
@@ -64,7 +64,7 @@ protocol ISpinnerDelegate {
         }
     }
     
-    @IBInspectable var text: String = "" {
+    @IBInspectable public var text: String = "" {
         didSet {
             self.placeholdLabel.isHidden = (!text.isEmpty)
             self.textLabel.isHidden = (text.isEmpty)
@@ -72,7 +72,7 @@ protocol ISpinnerDelegate {
         }
     }
     
-    @IBInspectable var placehold: String = "" {
+    @IBInspectable public var placehold: String = "" {
         didSet {
             self.textLabel.isHidden = (!placehold.isEmpty)
             self.placeholdLabel.isHidden = (placehold.isEmpty)
@@ -80,22 +80,22 @@ protocol ISpinnerDelegate {
         }
     }
     
-    @IBOutlet weak var contentView: UIView!
-    @IBOutlet weak var dropDownArrow: UIImageView!
-    @IBOutlet weak var placeholdLabel: UILabel!
-    @IBOutlet weak var textLabel: UILabel!
-    @IBOutlet weak var leftPaddingConstraint: NSLayoutConstraint!
-    @IBOutlet weak var rightPaddingConstraint: NSLayoutConstraint!
+    @IBOutlet public weak var contentView: UIView!
+    @IBOutlet public weak var dropDownArrow: UIImageView!
+    @IBOutlet public weak var placeholdLabel: UILabel!
+    @IBOutlet public weak var textLabel: UILabel!
+    @IBOutlet public weak var leftPaddingConstraint: NSLayoutConstraint!
+    @IBOutlet public weak var rightPaddingConstraint: NSLayoutConstraint!
     
     var delegate:ISpinnerDelegate?
     
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         fromNib()
         initView()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    public required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         fromNib()
         initView()

@@ -402,7 +402,7 @@ extension QRScannerView: AVCaptureVideoDataOutputSampleBufferDelegate {
 }
 
 private extension UIImage {
-    func crop(_ path: UIBezierPath) -> UIImage? {
+    public func crop(_ path: UIBezierPath) -> UIImage? {
         let rect = CGRect(origin: CGPoint(), size: CGSize(width: size.width * scale, height: size.height * scale))
         UIGraphicsBeginImageContextWithOptions(rect.size, false, scale)
 
