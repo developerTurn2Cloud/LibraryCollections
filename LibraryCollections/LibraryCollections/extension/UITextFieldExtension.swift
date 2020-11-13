@@ -3,9 +3,9 @@ import UIKit
 
 private var __maxLengths = [UITextField: Int]()
 
-@IBDesignable extension UITextField {
+@IBDesignable public extension UITextField {
     
-    @IBInspectable override var cornerR:CGFloat  {
+    @IBInspectable public override var cornerR:CGFloat  {
         get {
             self.layer.cornerRadius
         }
@@ -14,7 +14,7 @@ private var __maxLengths = [UITextField: Int]()
         }
     }
     
-    @IBInspectable var borderColor: UIColor {
+    @IBInspectable public var borderColor: UIColor {
         get {
             UIColor(cgColor: self.layer.borderColor ?? UIColor.clear.cgColor)
         }
@@ -23,7 +23,7 @@ private var __maxLengths = [UITextField: Int]()
         }
     }
     
-    @IBInspectable override var borderW: CGFloat {
+    @IBInspectable public override var borderW: CGFloat {
         get {
             self.layer.borderWidth
         }
@@ -32,7 +32,7 @@ private var __maxLengths = [UITextField: Int]()
         }
     }
     
-    @IBInspectable var maxLength: Int {
+    @IBInspectable public var maxLength: Int {
         get {
             guard let l = __maxLengths[self] else {
                 return Int.max // (global default-limit. or just, Int.max)
@@ -50,7 +50,7 @@ private var __maxLengths = [UITextField: Int]()
         textField.text = String(t?.suffix(maxLength) ?? "")
     }
     
-    @IBInspectable var leftPadding:CGFloat {
+    @IBInspectable public var leftPadding:CGFloat {
         get {
             return self.leftView?.frame.width ?? 0
         }
@@ -59,7 +59,7 @@ private var __maxLengths = [UITextField: Int]()
         }
     }
     
-    @IBInspectable var rightPadding:CGFloat {
+    @IBInspectable public var rightPadding:CGFloat {
         get {
             return self.rightView?.frame.width ?? 0
         }
@@ -68,12 +68,12 @@ private var __maxLengths = [UITextField: Int]()
         }
     }
     
-    func setLeftPaddingPoints(_ amount:CGFloat){
+    public func setLeftPaddingPoints(_ amount:CGFloat){
         let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: amount, height: self.frame.size.height))
         self.leftView = paddingView
         self.leftViewMode = .always
     }
-    func setRightPaddingPoints(_ amount:CGFloat) {
+    public func setRightPaddingPoints(_ amount:CGFloat) {
         let paddingView = UIView(frame: CGRect(x: 0, y: 0, width: amount, height: self.frame.size.height))
         self.rightView = paddingView
         self.rightViewMode = .always

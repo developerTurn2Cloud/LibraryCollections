@@ -3,7 +3,7 @@
  
  extension UIView {
     
-    @IBInspectable var borderW:CGFloat  {
+    @IBInspectable public var borderW:CGFloat  {
         get {
             self.layer.borderWidth
         }
@@ -12,7 +12,7 @@
         }
     }
     
-    @IBInspectable var borderRGB:UIColor  {
+    @IBInspectable public var borderRGB:UIColor  {
         get {
             UIColor(cgColor:self.layer.borderColor ?? UIColor.gray.cgColor)
         }
@@ -21,7 +21,7 @@
         }
     }
     
-    @IBInspectable var cornerR:CGFloat  {
+    @IBInspectable public var cornerR:CGFloat  {
         get {
             self.layer.cornerRadius
         }
@@ -31,7 +31,7 @@
     }
     
     /// Constrain 4 edges of `self` to specified `view`.
-    func edges(to view: UIView, top: CGFloat = 0, left: CGFloat = 0, bottom: CGFloat = 0, right: CGFloat = 0) {
+    public func edges(to view: UIView, top: CGFloat = 0, left: CGFloat = 0, bottom: CGFloat = 0, right: CGFloat = 0) {
         NSLayoutConstraint.activate([
             self.leftAnchor.constraint(equalTo: view.leftAnchor, constant: left),
             self.rightAnchor.constraint(equalTo: view.rightAnchor, constant: right),

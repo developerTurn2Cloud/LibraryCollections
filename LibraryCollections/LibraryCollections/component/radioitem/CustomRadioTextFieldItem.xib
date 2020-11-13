@@ -9,7 +9,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomRadioTextFieldItem" customModule="LaLaport_iOS_TEST_" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomRadioTextFieldItem" customModule="LibraryCollections" customModuleProvider="target">
             <connections>
                 <outlet property="inputTextField" destination="xV4-9d-LfY" id="bCc-nn-bp6"/>
                 <outlet property="leftPaddingConstraint" destination="DBu-Ga-Ipx" id="Iv5-g8-IrZ"/>
@@ -33,7 +33,7 @@
                         <outletCollection property="gestureRecognizers" destination="4Mg-zI-Ssl" appends="YES" id="qNz-oR-yza"/>
                     </connections>
                 </imageView>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xV4-9d-LfY" userLabel="content_input" customClass="CustomTextField" customModule="LaLaport_iOS_TEST_" customModuleProvider="target">
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xV4-9d-LfY" userLabel="content_input" customClass="CustomTextField" customModule="LibraryCollections" customModuleProvider="target">
                     <rect key="frame" x="35" y="44" width="379" height="52"/>
                     <fontDescription key="fontDescription" name="PingFangTC-Semibold" family="PingFang TC" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
