@@ -37,6 +37,8 @@
 		ED33FA02255E276100C7C90C /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33FA01255E276100C7C90C /* NibLoadable.swift */; };
 		ED33FA07255E280E00C7C90C /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33FA06255E280E00C7C90C /* UIViewExtension.swift */; };
 		ED33FA0F255E29AF00C7C90C /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33FA0E255E29AF00C7C90C /* UITextFieldExtension.swift */; };
+		ED33FA4D255E7DDA00C7C90C /* AESCipher.m in Sources */ = {isa = PBXBuildFile; fileRef = ED33FA4B255E7DDA00C7C90C /* AESCipher.m */; };
+		ED33FA4E255E7DDA00C7C90C /* AESCipher.h in Headers */ = {isa = PBXBuildFile; fileRef = ED33FA4C255E7DDA00C7C90C /* AESCipher.h */; };
 		EDC2AAFA165C7AB6EF7E36A4 /* Pods_LibraryCollections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D05BBE899326F0DBB4455D9 /* Pods_LibraryCollections.framework */; };
 		EDD15993255A81EA00011C8E /* LibraryCollections.h in Headers */ = {isa = PBXBuildFile; fileRef = EDD15991255A81EA00011C8E /* LibraryCollections.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -75,6 +77,8 @@
 		ED33FA01255E276100C7C90C /* NibLoadable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
 		ED33FA06255E280E00C7C90C /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		ED33FA0E255E29AF00C7C90C /* UITextFieldExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
+		ED33FA4B255E7DDA00C7C90C /* AESCipher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESCipher.m; sourceTree = "<group>"; };
+		ED33FA4C255E7DDA00C7C90C /* AESCipher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESCipher.h; sourceTree = "<group>"; };
 		EDD1598E255A81EA00011C8E /* LibraryCollections.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LibraryCollections.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDD15991255A81EA00011C8E /* LibraryCollections.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LibraryCollections.h; sourceTree = "<group>"; };
 		EDD15992255A81EA00011C8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -120,6 +124,8 @@
 		ED33F7D6255CCF3300C7C90C /* util */ = {
 			isa = PBXGroup;
 			children = (
+				ED33FA4C255E7DDA00C7C90C /* AESCipher.h */,
+				ED33FA4B255E7DDA00C7C90C /* AESCipher.m */,
 				ED33F7D7255CCF4200C7C90C /* CommonUtils.swift */,
 			);
 			path = util;
@@ -278,6 +284,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EDD15993255A81EA00011C8E /* LibraryCollections.h in Headers */,
+				ED33FA4E255E7DDA00C7C90C /* AESCipher.h in Headers */,
 				ED33F9EE255E232900C7C90C /* QRScanner.h in Headers */,
 				ED33F921255D21FB00C7C90C /* PasswordTextField.h in Headers */,
 			);
@@ -404,6 +411,7 @@
 				ED33F91C255D21FB00C7C90C /* PasswordTextField.swift in Sources */,
 				ED33F911255D20A600C7C90C /* UILabelHelper.swift in Sources */,
 				ED33F91D255D21FB00C7C90C /* BundleUtil.swift in Sources */,
+				ED33FA4D255E7DDA00C7C90C /* AESCipher.m in Sources */,
 				ED33F9ED255E232900C7C90C /* QRScannerView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
