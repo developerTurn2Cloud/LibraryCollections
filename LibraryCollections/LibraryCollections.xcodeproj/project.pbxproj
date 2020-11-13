@@ -39,6 +39,8 @@
 		ED33FA0F255E29AF00C7C90C /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33FA0E255E29AF00C7C90C /* UITextFieldExtension.swift */; };
 		ED33FA4D255E7DDA00C7C90C /* AESCipher.m in Sources */ = {isa = PBXBuildFile; fileRef = ED33FA4B255E7DDA00C7C90C /* AESCipher.m */; };
 		ED33FA4E255E7DDA00C7C90C /* AESCipher.h in Headers */ = {isa = PBXBuildFile; fileRef = ED33FA4C255E7DDA00C7C90C /* AESCipher.h */; };
+		ED33FA51255E7E7000C7C90C /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33FA50255E7E7000C7C90C /* ViewUtils.swift */; };
+		ED33FA54255E8B1100C7C90C /* CustomLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33FA53255E8B1100C7C90C /* CustomLoadingView.swift */; };
 		EDC2AAFA165C7AB6EF7E36A4 /* Pods_LibraryCollections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D05BBE899326F0DBB4455D9 /* Pods_LibraryCollections.framework */; };
 		EDD15993255A81EA00011C8E /* LibraryCollections.h in Headers */ = {isa = PBXBuildFile; fileRef = EDD15991255A81EA00011C8E /* LibraryCollections.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -79,6 +81,8 @@
 		ED33FA0E255E29AF00C7C90C /* UITextFieldExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
 		ED33FA4B255E7DDA00C7C90C /* AESCipher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESCipher.m; sourceTree = "<group>"; };
 		ED33FA4C255E7DDA00C7C90C /* AESCipher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESCipher.h; sourceTree = "<group>"; };
+		ED33FA50255E7E7000C7C90C /* ViewUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewUtils.swift; sourceTree = "<group>"; };
+		ED33FA53255E8B1100C7C90C /* CustomLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLoadingView.swift; sourceTree = "<group>"; };
 		EDD1598E255A81EA00011C8E /* LibraryCollections.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LibraryCollections.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDD15991255A81EA00011C8E /* LibraryCollections.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LibraryCollections.h; sourceTree = "<group>"; };
 		EDD15992255A81EA00011C8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -127,6 +131,7 @@
 				ED33FA4C255E7DDA00C7C90C /* AESCipher.h */,
 				ED33FA4B255E7DDA00C7C90C /* AESCipher.m */,
 				ED33F7D7255CCF4200C7C90C /* CommonUtils.swift */,
+				ED33FA50255E7E7000C7C90C /* ViewUtils.swift */,
 			);
 			path = util;
 			sourceTree = "<group>";
@@ -158,6 +163,7 @@
 		ED33F8F4255D1B6600C7C90C /* view */ = {
 			isa = PBXGroup;
 			children = (
+				ED33FA53255E8B1100C7C90C /* CustomLoadingView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -398,8 +404,10 @@
 				ED33F7CD255CC99400C7C90C /* ApiUtils.swift in Sources */,
 				ED33FA02255E276100C7C90C /* NibLoadable.swift in Sources */,
 				ED33FA0F255E29AF00C7C90C /* UITextFieldExtension.swift in Sources */,
+				ED33FA51255E7E7000C7C90C /* ViewUtils.swift in Sources */,
 				ED33F90E255D20A600C7C90C /* NSLayoutHelper.swift in Sources */,
 				ED33F9F0255E232900C7C90C /* QRScanViewController.swift in Sources */,
+				ED33FA54255E8B1100C7C90C /* CustomLoadingView.swift in Sources */,
 				ED33F7D8255CCF4200C7C90C /* CommonUtils.swift in Sources */,
 				ED33F90F255D20A600C7C90C /* DeviceHelper.swift in Sources */,
 				ED33F90D255D20A600C7C90C /* UIButtonHelper.swift in Sources */,
