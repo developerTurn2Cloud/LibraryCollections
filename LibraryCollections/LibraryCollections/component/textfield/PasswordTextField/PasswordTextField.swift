@@ -126,7 +126,7 @@ open class PasswordTextField: UITextField {
         }
     }
     
-    @IBInspectable open var rightPadding:CGFloat {
+    @IBInspectable open override var rightPadding:CGFloat {
         get {
             return self.rightView?.frame.width ?? 0
         }
