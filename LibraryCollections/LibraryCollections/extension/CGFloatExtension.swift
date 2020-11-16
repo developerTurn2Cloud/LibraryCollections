@@ -11,7 +11,7 @@ import UIKit
 extension CGFloat {
     
     /// Random cg float
-    static func random() -> CGFloat {
+    public static func random() -> CGFloat {
         return CGFloat(arc4random()) / CGFloat(UInt32.max)
     }
 }

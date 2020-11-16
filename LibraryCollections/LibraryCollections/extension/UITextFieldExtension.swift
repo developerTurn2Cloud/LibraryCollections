@@ -3,7 +3,7 @@ import UIKit
 
 private var __maxLengths = [UITextField: Int]()
 
-@IBDesignable public extension UITextField {
+@IBDesignable extension UITextField {
     
     @IBInspectable public override var cornerR:CGFloat  {
         get {
