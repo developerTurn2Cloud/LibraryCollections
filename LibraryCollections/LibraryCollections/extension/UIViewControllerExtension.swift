@@ -3,7 +3,7 @@ import UIKit
 
 extension UIViewController {
     
-    func showAlert(title:String,
+    public func showAlert(title:String,
                    content:String,
                    conformTitle:String? = NSLocalizedString("Global.Confirm", comment: ""),
                    confirmHandler:((UIAlertAction) -> Void)? = nil,
@@ -25,7 +25,7 @@ extension UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
-    func openShare(sharedObjects:[Any]) {
+    public func openShare(sharedObjects:[Any]) {
         let activityViewController = UIActivityViewController(activityItems : sharedObjects, applicationActivities: nil)
         activityViewController.popoverPresentationController?.sourceView = self.view
         self.present(activityViewController, animated: true, completion: nil)

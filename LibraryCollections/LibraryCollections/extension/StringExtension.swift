@@ -13,29 +13,29 @@ extension String {
         return !isEmpty
     }
     
-    var isValidEmail: Bool {
+    public var isValidEmail: Bool {
         NSPredicate(format: "SELF MATCHES %@", "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}").evaluate(with: self)
     }
     
-    func toHtml() -> String {
+    public func toHtml() -> String {
         """
         <html><header><meta charset="UTF-8"><style>img{max-width:100%;height:auto !important;width:100% !important;};</style></header><body style='margin:0; padding:10px; -webkit-text-size-adjust: 220%;'>\(self)</body></html>
         """
     }
     
-    func trim() -> String {
+    public func trim() -> String {
         return self.trimmingCharacters(in: .whitespacesAndNewlines)
     }
     
     //將原始的url編碼轉為合法的url
-    func urlEncoded() -> String {
+    public func urlEncoded() -> String {
         let encodeUrlString = self.addingPercentEncoding(withAllowedCharacters:
             .urlQueryAllowed)
         return encodeUrlString ?? ""
     }
     
     //將編碼後的url轉換回原始的url
-    func urlDecoded() -> String {
+    public func urlDecoded() -> String {
         return self.removingPercentEncoding ?? ""
     }
 }
