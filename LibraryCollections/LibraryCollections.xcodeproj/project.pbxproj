@@ -46,6 +46,7 @@
 		EDB9DBA52562178400C6F2A7 /* CGFloatExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB9DB9F2562178400C6F2A7 /* CGFloatExtension.swift */; };
 		EDB9DBA62562178400C6F2A7 /* CALayerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB9DBA02562178400C6F2A7 /* CALayerExtension.swift */; };
 		EDB9DBA72562178400C6F2A7 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB9DBA12562178400C6F2A7 /* DateExtension.swift */; };
+		EDB9DC932562283300C6F2A7 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB9DC922562283300C6F2A7 /* UIButtonExtension.swift */; };
 		EDC2AAFA165C7AB6EF7E36A4 /* Pods_LibraryCollections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D05BBE899326F0DBB4455D9 /* Pods_LibraryCollections.framework */; };
 		EDD15993255A81EA00011C8E /* LibraryCollections.h in Headers */ = {isa = PBXBuildFile; fileRef = EDD15991255A81EA00011C8E /* LibraryCollections.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
@@ -93,6 +94,7 @@
 		EDB9DB9F2562178400C6F2A7 /* CGFloatExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloatExtension.swift; sourceTree = "<group>"; };
 		EDB9DBA02562178400C6F2A7 /* CALayerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CALayerExtension.swift; sourceTree = "<group>"; };
 		EDB9DBA12562178400C6F2A7 /* DateExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
+		EDB9DC922562283300C6F2A7 /* UIButtonExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonExtension.swift; sourceTree = "<group>"; };
 		EDD1598E255A81EA00011C8E /* LibraryCollections.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LibraryCollections.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDD15991255A81EA00011C8E /* LibraryCollections.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LibraryCollections.h; sourceTree = "<group>"; };
 		EDD15992255A81EA00011C8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -254,6 +256,7 @@
 		ED33FA05255E27D400C7C90C /* extension */ = {
 			isa = PBXGroup;
 			children = (
+				EDB9DC922562283300C6F2A7 /* UIButtonExtension.swift */,
 				EDB9DBA02562178400C6F2A7 /* CALayerExtension.swift */,
 				EDB9DB9F2562178400C6F2A7 /* CGFloatExtension.swift */,
 				EDB9DBA12562178400C6F2A7 /* DateExtension.swift */,
@@ -415,6 +418,7 @@
 				ED33F904255D1E9300C7C90C /* CaptchaGenerator.swift in Sources */,
 				EDB9DBA42562178400C6F2A7 /* StringExtension.swift in Sources */,
 				ED33F922255D21FB00C7C90C /* SecureTextToggleButton.swift in Sources */,
+				EDB9DC932562283300C6F2A7 /* UIButtonExtension.swift in Sources */,
 				ED33F91F255D21FB00C7C90C /* RegexRule.swift in Sources */,
 				ED33FA07255E280E00C7C90C /* UIViewExtension.swift in Sources */,
 				ED33F912255D20A600C7C90C /* UITextFieldHelper.swift in Sources */,
