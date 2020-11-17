@@ -87,7 +87,7 @@ public protocol ISpinnerDelegate {
     @IBOutlet public weak var leftPaddingConstraint: NSLayoutConstraint!
     @IBOutlet public weak var rightPaddingConstraint: NSLayoutConstraint!
     
-    var delegate:ISpinnerDelegate?
+    public var delegate:ISpinnerDelegate?
     
     public override init(frame: CGRect) {
         super.init(frame: frame)
