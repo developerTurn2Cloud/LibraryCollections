@@ -2,6 +2,7 @@ import Foundation
 import UIKit
 
 private var __maxLengths = [UITextField: Int]()
+private var __isSurfix = false
 
 @IBDesignable extension UITextField {
     
@@ -45,9 +46,23 @@ private var __maxLengths = [UITextField: Int]()
         }
     }
     
+    @IBInspectable public var isSurfix:Bool {
+        get {
+            __isSurfix
+        }
+        set {
+            __isSurfix = newValue
+        }
+    }
+    
     @objc func fix(textField: UITextField, maxLen:Int) {
         let t = textField.text
-        textField.text = String(t?.suffix(maxLength) ?? "")
+        
+        if self.isSurfix {
+            textField.text = String(t?.suffix(maxLength) ?? "")
+        } else {
+            textField.text = String(t?.prefix(maxLength) ?? "")
+        }
     }
     
     @IBInspectable public var leftPadding:CGFloat {

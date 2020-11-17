@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		ED33F7CD255CC99400C7C90C /* ApiUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33F7CC255CC99400C7C90C /* ApiUtils.swift */; };
 		ED33F7D8255CCF4200C7C90C /* CommonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33F7D7255CCF4200C7C90C /* CommonUtils.swift */; };
-		ED33F8F2255D1A7B00C7C90C /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33F8F1255D1A7B00C7C90C /* CustomTextField.swift */; };
 		ED33F904255D1E9300C7C90C /* CaptchaGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33F903255D1E9300C7C90C /* CaptchaGenerator.swift */; };
 		ED33F90D255D20A600C7C90C /* UIButtonHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33F907255D20A600C7C90C /* UIButtonHelper.swift */; };
 		ED33F90E255D20A600C7C90C /* NSLayoutHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33F908255D20A600C7C90C /* NSLayoutHelper.swift */; };
@@ -63,7 +62,6 @@
 		C5294EA4EBB0CCAF2BA5D1CC /* Pods-LibraryCollections.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LibraryCollections.release.xcconfig"; path = "Target Support Files/Pods-LibraryCollections/Pods-LibraryCollections.release.xcconfig"; sourceTree = "<group>"; };
 		ED33F7CC255CC99400C7C90C /* ApiUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiUtils.swift; sourceTree = "<group>"; };
 		ED33F7D7255CCF4200C7C90C /* CommonUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonUtils.swift; sourceTree = "<group>"; };
-		ED33F8F1255D1A7B00C7C90C /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		ED33F903255D1E9300C7C90C /* CaptchaGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptchaGenerator.swift; sourceTree = "<group>"; };
 		ED33F907255D20A600C7C90C /* UIButtonHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIButtonHelper.swift; sourceTree = "<group>"; };
 		ED33F908255D20A600C7C90C /* NSLayoutHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSLayoutHelper.swift; sourceTree = "<group>"; };
@@ -180,7 +178,6 @@
 			isa = PBXGroup;
 			children = (
 				ED33F914255D21FB00C7C90C /* PasswordTextField */,
-				ED33F8F1255D1A7B00C7C90C /* CustomTextField.swift */,
 			);
 			path = textfield;
 			sourceTree = "<group>";
@@ -468,7 +465,6 @@
 				EDA607552563752E004C6530 /* OrderedDictionary+Description.swift in Sources */,
 				ED33F9EF255E232900C7C90C /* QRScannerError.swift in Sources */,
 				ED33F91E255D21FB00C7C90C /* PasswordRule.swift in Sources */,
-				ED33F8F2255D1A7B00C7C90C /* CustomTextField.swift in Sources */,
 				ED33F910255D20A600C7C90C /* UITextViewHelper.swift in Sources */,
 				ED33F91C255D21FB00C7C90C /* PasswordTextField.swift in Sources */,
 				EDA607532563752E004C6530 /* OrderedDictionary+Codable.swift in Sources */,
