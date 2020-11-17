@@ -4,7 +4,7 @@ public protocol ISpinnerDelegate {
     func onSpinnerClick(spinner:CustomSpinner)
 }
 
-@IBDesignable public  class CustomSpinner: UIView, NibLoadable {
+@IBDesignable public class CustomSpinner: UIView, NibLoadable {
     
     @IBInspectable public var leftPadding: CGFloat = 0.0 {
         didSet {
