@@ -45,6 +45,8 @@
 		EDA607532563752E004C6530 /* OrderedDictionary+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA6074F2563752E004C6530 /* OrderedDictionary+Codable.swift */; };
 		EDA607542563752E004C6530 /* OrderedDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA607502563752E004C6530 /* OrderedDictionary.swift */; };
 		EDA607552563752E004C6530 /* OrderedDictionary+Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA607512563752E004C6530 /* OrderedDictionary+Description.swift */; };
+		EDA608C32563BEAC004C6530 /* visibility_off.png in Resources */ = {isa = PBXBuildFile; fileRef = EDA608C12563BEAC004C6530 /* visibility_off.png */; };
+		EDA608C42563BEAC004C6530 /* visibility_on.png in Resources */ = {isa = PBXBuildFile; fileRef = EDA608C22563BEAC004C6530 /* visibility_on.png */; };
 		EDB9DB9A2562177A00C6F2A7 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB9DB982562177900C6F2A7 /* UIViewControllerExtension.swift */; };
 		EDB9DBA42562178400C6F2A7 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB9DB9E2562178400C6F2A7 /* StringExtension.swift */; };
 		EDB9DBA52562178400C6F2A7 /* CGFloatExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB9DB9F2562178400C6F2A7 /* CGFloatExtension.swift */; };
@@ -97,6 +99,8 @@
 		EDA6074F2563752E004C6530 /* OrderedDictionary+Codable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OrderedDictionary+Codable.swift"; sourceTree = "<group>"; };
 		EDA607502563752E004C6530 /* OrderedDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderedDictionary.swift; sourceTree = "<group>"; };
 		EDA607512563752E004C6530 /* OrderedDictionary+Description.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OrderedDictionary+Description.swift"; sourceTree = "<group>"; };
+		EDA608C12563BEAC004C6530 /* visibility_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = visibility_off.png; sourceTree = "<group>"; };
+		EDA608C22563BEAC004C6530 /* visibility_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = visibility_on.png; sourceTree = "<group>"; };
 		EDB9DB982562177900C6F2A7 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		EDB9DB9E2562178400C6F2A7 /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		EDB9DB9F2562178400C6F2A7 /* CGFloatExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloatExtension.swift; sourceTree = "<group>"; };
@@ -192,6 +196,8 @@
 		ED33F900255D1E0E00C7C90C /* images */ = {
 			isa = PBXGroup;
 			children = (
+				EDA608C12563BEAC004C6530 /* visibility_off.png */,
+				EDA608C22563BEAC004C6530 /* visibility_on.png */,
 			);
 			path = images;
 			sourceTree = "<group>";
@@ -395,7 +401,9 @@
 			files = (
 				ED33F9FD255E275100C7C90C /* CustomRadioTextFieldItem.xib in Resources */,
 				ED33F9FC255E275100C7C90C /* CustomRadioLabelItem.xib in Resources */,
+				EDA608C42563BEAC004C6530 /* visibility_on.png in Resources */,
 				ED33F9FA255E275100C7C90C /* CustomSpinner.xib in Resources */,
+				EDA608C32563BEAC004C6530 /* visibility_off.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -616,7 +624,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.12;
+				MARKETING_VERSION = 1.1.13;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.library-collection.LibraryCollections";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -645,7 +653,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.12;
+				MARKETING_VERSION = 1.1.13;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.library-collection.LibraryCollections";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
