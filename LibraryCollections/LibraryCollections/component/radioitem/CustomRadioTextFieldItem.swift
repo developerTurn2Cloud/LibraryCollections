@@ -74,7 +74,7 @@ public class CustomRadioTextFieldItem: UIView, NibLoadable {
     
     @IBInspectable public var maxTextLength:Int = 30 {
         didSet {
-            self.inputTextField.maxTextLength = self.maxTextLength
+            self.inputTextField.maxLength = self.maxTextLength
         }
     }
     
@@ -120,7 +120,7 @@ public class CustomRadioTextFieldItem: UIView, NibLoadable {
     }
     
     @IBOutlet weak public var selectionRadioImageView: UIImageView!
-    @IBOutlet weak public var inputTextField: CustomTextField!
+    @IBOutlet weak public var inputTextField: UITextField!
     @IBOutlet weak public var leftPaddingConstraint: NSLayoutConstraint!
     @IBOutlet weak public var rightPaddingConstraint: NSLayoutConstraint!
     
