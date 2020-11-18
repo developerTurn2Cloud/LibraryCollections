@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		ED25EB0C2564F99A00C297D6 /* scan_qr_focus.pdf in Resources */ = {isa = PBXBuildFile; fileRef = ED25EB0B2564F99A00C297D6 /* scan_qr_focus.pdf */; };
+		ED25EB322564FE7800C297D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED25EB312564FE7800C297D6 /* Assets.xcassets */; };
 		ED33F7CD255CC99400C7C90C /* ApiUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33F7CC255CC99400C7C90C /* ApiUtils.swift */; };
 		ED33F7D8255CCF4200C7C90C /* CommonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33F7D7255CCF4200C7C90C /* CommonUtils.swift */; };
 		ED33F904255D1E9300C7C90C /* CaptchaGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33F903255D1E9300C7C90C /* CaptchaGenerator.swift */; };
@@ -60,7 +60,7 @@
 		420535B4894ADE9AB2A3F647 /* Pods-LibraryCollections.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LibraryCollections.debug.xcconfig"; path = "Target Support Files/Pods-LibraryCollections/Pods-LibraryCollections.debug.xcconfig"; sourceTree = "<group>"; };
 		6D05BBE899326F0DBB4455D9 /* Pods_LibraryCollections.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LibraryCollections.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5294EA4EBB0CCAF2BA5D1CC /* Pods-LibraryCollections.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LibraryCollections.release.xcconfig"; path = "Target Support Files/Pods-LibraryCollections/Pods-LibraryCollections.release.xcconfig"; sourceTree = "<group>"; };
-		ED25EB0B2564F99A00C297D6 /* scan_qr_focus.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = scan_qr_focus.pdf; sourceTree = "<group>"; };
+		ED25EB312564FE7800C297D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ED33F7CC255CC99400C7C90C /* ApiUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiUtils.swift; sourceTree = "<group>"; };
 		ED33F7D7255CCF4200C7C90C /* CommonUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonUtils.swift; sourceTree = "<group>"; };
 		ED33F903255D1E9300C7C90C /* CaptchaGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CaptchaGenerator.swift; sourceTree = "<group>"; };
@@ -193,7 +193,6 @@
 		ED33F900255D1E0E00C7C90C /* images */ = {
 			isa = PBXGroup;
 			children = (
-				ED25EB0B2564F99A00C297D6 /* scan_qr_focus.pdf */,
 				EDA608C12563BEAC004C6530 /* visibility_off.png */,
 				EDA608C22563BEAC004C6530 /* visibility_on.png */,
 			);
@@ -319,6 +318,7 @@
 				ED33F7D6255CCF3300C7C90C /* util */,
 				EDD15991255A81EA00011C8E /* LibraryCollections.h */,
 				EDD15992255A81EA00011C8E /* Info.plist */,
+				ED25EB312564FE7800C297D6 /* Assets.xcassets */,
 			);
 			path = LibraryCollections;
 			sourceTree = "<group>";
@@ -400,8 +400,8 @@
 				ED33F9FC255E275100C7C90C /* CustomRadioLabelItem.xib in Resources */,
 				EDA608C42563BEAC004C6530 /* visibility_on.png in Resources */,
 				ED33F9FA255E275100C7C90C /* CustomSpinner.xib in Resources */,
+				ED25EB322564FE7800C297D6 /* Assets.xcassets in Resources */,
 				EDA608C32563BEAC004C6530 /* visibility_off.png in Resources */,
-				ED25EB0C2564F99A00C297D6 /* scan_qr_focus.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -620,7 +620,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.19;
+				MARKETING_VERSION = 1.1.20;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.library-collection.LibraryCollections";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -649,7 +649,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.19;
+				MARKETING_VERSION = 1.1.20;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.library-collection.LibraryCollections";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
