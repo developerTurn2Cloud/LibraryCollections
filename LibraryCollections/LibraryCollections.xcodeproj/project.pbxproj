@@ -26,7 +26,6 @@
 		ED33F9ED255E232900C7C90C /* QRScannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33F9E9255E232900C7C90C /* QRScannerView.swift */; };
 		ED33F9EE255E232900C7C90C /* QRScanner.h in Headers */ = {isa = PBXBuildFile; fileRef = ED33F9EA255E232900C7C90C /* QRScanner.h */; };
 		ED33F9EF255E232900C7C90C /* QRScannerError.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33F9EB255E232900C7C90C /* QRScannerError.swift */; };
-		ED33F9F0255E232900C7C90C /* QRScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33F9EC255E232900C7C90C /* QRScanViewController.swift */; };
 		ED33F9FA255E275100C7C90C /* CustomSpinner.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED33F9F3255E275000C7C90C /* CustomSpinner.xib */; };
 		ED33F9FB255E275100C7C90C /* CustomSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33F9F4255E275000C7C90C /* CustomSpinner.swift */; };
 		ED33F9FC255E275100C7C90C /* CustomRadioLabelItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED33F9F6255E275000C7C90C /* CustomRadioLabelItem.xib */; };
@@ -79,7 +78,6 @@
 		ED33F9E9255E232900C7C90C /* QRScannerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerView.swift; sourceTree = "<group>"; };
 		ED33F9EA255E232900C7C90C /* QRScanner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QRScanner.h; sourceTree = "<group>"; };
 		ED33F9EB255E232900C7C90C /* QRScannerError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScannerError.swift; sourceTree = "<group>"; };
-		ED33F9EC255E232900C7C90C /* QRScanViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRScanViewController.swift; sourceTree = "<group>"; };
 		ED33F9F3255E275000C7C90C /* CustomSpinner.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomSpinner.xib; sourceTree = "<group>"; };
 		ED33F9F4255E275000C7C90C /* CustomSpinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSpinner.swift; sourceTree = "<group>"; };
 		ED33F9F6255E275000C7C90C /* CustomRadioLabelItem.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomRadioLabelItem.xib; sourceTree = "<group>"; };
@@ -240,7 +238,6 @@
 				ED33F9E9255E232900C7C90C /* QRScannerView.swift */,
 				ED33F9EA255E232900C7C90C /* QRScanner.h */,
 				ED33F9EB255E232900C7C90C /* QRScannerError.swift */,
-				ED33F9EC255E232900C7C90C /* QRScanViewController.swift */,
 			);
 			path = qrscanner;
 			sourceTree = "<group>";
@@ -454,7 +451,6 @@
 				ED33FA51255E7E7000C7C90C /* ViewUtils.swift in Sources */,
 				ED33F90E255D20A600C7C90C /* NSLayoutHelper.swift in Sources */,
 				EDA607522563752E004C6530 /* OrderedDictionary+Deprecated.swift in Sources */,
-				ED33F9F0255E232900C7C90C /* QRScanViewController.swift in Sources */,
 				ED33FA54255E8B1100C7C90C /* CustomLoadingView.swift in Sources */,
 				EDB9DB9A2562177A00C6F2A7 /* UIViewControllerExtension.swift in Sources */,
 				ED33F7D8255CCF4200C7C90C /* CommonUtils.swift in Sources */,
@@ -620,7 +616,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.17;
+				MARKETING_VERSION = 1.1.18;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.library-collection.LibraryCollections";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -649,7 +645,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.17;
+				MARKETING_VERSION = 1.1.18;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.library-collection.LibraryCollections";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
