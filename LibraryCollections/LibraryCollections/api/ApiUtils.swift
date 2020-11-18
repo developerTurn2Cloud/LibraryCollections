@@ -80,7 +80,7 @@ public class ApiUtils {
                     var errDomain:String
                     
                     switch cfNetworkError.rawValue {
-                    case 302:
+                    case 302, -1009:
                         errDomain = "Network connection is lost, please check and retry."
                     case -1001:
                         errDomain = "Network connection is unstable, please check and retry."
