@@ -1,14 +1,14 @@
 Pod::Spec.new do |spec|
   spec.name         = "LibraryCollections"
-  spec.version      = "1.1.18"
+  spec.version      = "1.1.19"
   spec.summary      = "Common Library"
   spec.description  = "LibraryCollections is a library for common usage."
   spec.homepage     = "https://github.com/YomiRY/LibraryCollections"
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author             = { "Randy" => "o1984531@gmail.com" }
   spec.platform     = :ios, "11.0"
-  spec.source       = { :git => "https://github.com/YomiRY/LibraryCollections.git", :tag => "1.1.18" }
-  spec.source_files  = "LibraryCollections", "LibraryCollections/**/*.{png,xib,h,m,swift}"
+  spec.source       = { :git => "https://github.com/YomiRY/LibraryCollections.git", :tag => "1.1.19" }
+  spec.source_files  = "LibraryCollections", "LibraryCollections/**/*.{pdf,png,xib,h,m,swift}"
   spec.exclude_files = "Classes/Exclude"
 
   # spec.resource  = "icon.png"
