@@ -10,7 +10,7 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/YomiRY/LibraryCollections.git", :tag => "1.1.22" }
   spec.source_files  = "LibraryCollections", "LibraryCollections/**/*.{pdf,png,xib,h,m,swift}"
   spec.exclude_files = "Classes/Exclude"
-  spec.resource_bundles = {'AssetsBundle' => ['LibraryCollections/**/*.xcassets']}
+  #spec.resource_bundles = {'AssetsBundle' => ['LibraryCollections/**/*.xcassets']}
 
   # spec.resource  = "icon.png"
   # spec.resources = "Resources/*.png"
