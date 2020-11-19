@@ -40,6 +40,7 @@
 		ED33FA4E255E7DDA00C7C90C /* AESCipher.h in Headers */ = {isa = PBXBuildFile; fileRef = ED33FA4C255E7DDA00C7C90C /* AESCipher.h */; };
 		ED33FA51255E7E7000C7C90C /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33FA50255E7E7000C7C90C /* ViewUtils.swift */; };
 		ED33FA54255E8B1100C7C90C /* CustomLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33FA53255E8B1100C7C90C /* CustomLoadingView.swift */; };
+		ED59FE4225665EDD00745289 /* WMSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59FE4125665EDD00745289 /* WMSegment.swift */; };
 		EDA607522563752E004C6530 /* OrderedDictionary+Deprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA6074E2563752E004C6530 /* OrderedDictionary+Deprecated.swift */; };
 		EDA607532563752E004C6530 /* OrderedDictionary+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA6074F2563752E004C6530 /* OrderedDictionary+Codable.swift */; };
 		EDA607542563752E004C6530 /* OrderedDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA607502563752E004C6530 /* OrderedDictionary.swift */; };
@@ -93,6 +94,7 @@
 		ED33FA4C255E7DDA00C7C90C /* AESCipher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESCipher.h; sourceTree = "<group>"; };
 		ED33FA50255E7E7000C7C90C /* ViewUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewUtils.swift; sourceTree = "<group>"; };
 		ED33FA53255E8B1100C7C90C /* CustomLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLoadingView.swift; sourceTree = "<group>"; };
+		ED59FE4125665EDD00745289 /* WMSegment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WMSegment.swift; sourceTree = "<group>"; };
 		EDA6074E2563752E004C6530 /* OrderedDictionary+Deprecated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OrderedDictionary+Deprecated.swift"; sourceTree = "<group>"; };
 		EDA6074F2563752E004C6530 /* OrderedDictionary+Codable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OrderedDictionary+Codable.swift"; sourceTree = "<group>"; };
 		EDA607502563752E004C6530 /* OrderedDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderedDictionary.swift; sourceTree = "<group>"; };
@@ -162,6 +164,7 @@
 		ED33F8E8255D19D400C7C90C /* component */ = {
 			isa = PBXGroup;
 			children = (
+				ED59FE4025665EDD00745289 /* wmsegmentcontrol */,
 				ED33F9F5255E275000C7C90C /* radioitem */,
 				ED33F9F2255E275000C7C90C /* spinner */,
 				ED33F902255D1E9300C7C90C /* captcha */,
@@ -278,6 +281,14 @@
 				ED33FA06255E280E00C7C90C /* UIViewExtension.swift */,
 			);
 			path = extension;
+			sourceTree = "<group>";
+		};
+		ED59FE4025665EDD00745289 /* wmsegmentcontrol */ = {
+			isa = PBXGroup;
+			children = (
+				ED59FE4125665EDD00745289 /* WMSegment.swift */,
+			);
+			path = wmsegmentcontrol;
 			sourceTree = "<group>";
 		};
 		EDA6074D2563752E004C6530 /* dictionary */ = {
@@ -458,6 +469,7 @@
 				ED33FA54255E8B1100C7C90C /* CustomLoadingView.swift in Sources */,
 				EDB9DB9A2562177A00C6F2A7 /* UIViewControllerExtension.swift in Sources */,
 				ED33F7D8255CCF4200C7C90C /* CommonUtils.swift in Sources */,
+				ED59FE4225665EDD00745289 /* WMSegment.swift in Sources */,
 				EDA607542563752E004C6530 /* OrderedDictionary.swift in Sources */,
 				ED33F90F255D20A600C7C90C /* DeviceHelper.swift in Sources */,
 				ED33F90D255D20A600C7C90C /* UIButtonHelper.swift in Sources */,
@@ -620,7 +632,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.23;
+				MARKETING_VERSION = 1.1.24;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.library-collection.LibraryCollections";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -649,7 +661,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.23;
+				MARKETING_VERSION = 1.1.24;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.library-collection.LibraryCollections";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
