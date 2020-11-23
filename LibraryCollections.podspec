@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "LibraryCollections"
-  spec.version      = "1.1.24"
+  spec.version      = "1.1.25"
   spec.summary      = "Common Library"
   spec.description  = "LibraryCollections is a library for common usage."
   spec.homepage     = "https://github.com/YomiRY/LibraryCollections"
@@ -43,6 +43,7 @@ Pod::Spec.new do |spec|
   spec.dependency "Toast-Swift", "~> 5.0.1"
   spec.dependency "Moya/RxSwift", "~> 13.0"
   spec.dependency "Kingfisher", "~> 5.0"
+  spec.dependency "Firebase/Crashlytics"
 
   spec.swift_versions = ['5.1', '5.2', '5.3']
 
