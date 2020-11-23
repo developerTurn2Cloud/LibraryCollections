@@ -9,5 +9,7 @@ target 'LibraryCollections' do
   pod 'Toast-Swift', '~> 5.0.1'
   pod 'Moya/RxSwift', '~> 13.0'
   pod 'Kingfisher', '~> 5.0'
+  pod 'Firebase/Crashlytics'
+
 
 end
