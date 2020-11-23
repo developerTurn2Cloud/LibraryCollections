@@ -1,23 +1,23 @@
 import Foundation
 import FirebaseCrashlytics
 
-class CrashlyticManager {
+public class CrashlyticManager {
     
-    static let shared:CrashlyticManager = CrashlyticManager()
+    public static let shared:CrashlyticManager = CrashlyticManager()
     
-    func setCustomValue(value:Any?, key:String) {
+    public func setCustomValue(value:Any?, key:String) {
         Crashlytics.crashlytics().setCustomValue(value ?? "", forKey: key)
     }
     
-    func setCustomLog(logMsg:String) {
+    public func setCustomLog(logMsg:String) {
         Crashlytics.crashlytics().log(logMsg)
     }
     
-    func setUserId(userId:String) {
+    public func setUserId(userId:String) {
         Crashlytics.crashlytics().setUserID(userId)
     }
     
-    func uploadError(error:Error) {
+    public func uploadError(error:Error) {
         Crashlytics.crashlytics().record(error: error)
     }
 }
