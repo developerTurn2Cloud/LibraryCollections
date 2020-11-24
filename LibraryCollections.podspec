@@ -1,13 +1,13 @@
 Pod::Spec.new do |spec|
   spec.name         = "LibraryCollections"
-  spec.version      = "1.1.27"
+  spec.version      = "1.1.28"
   spec.summary      = "Common Library"
   spec.description  = "LibraryCollections is a library for common usage."
   spec.homepage     = "https://github.com/YomiRY/LibraryCollections"
   spec.license      = { :type => "MIT", :file => "LICENSE" }
   spec.author             = { "Randy" => "o1984531@gmail.com" }
   spec.platform     = :ios, "11.0"
-  spec.source       = { :git => "https://github.com/YomiRY/LibraryCollections.git", :tag => "1.1.27" }
+  spec.source       = { :git => "https://github.com/YomiRY/LibraryCollections.git", :tag => "1.1.28" }
   spec.source_files  = "LibraryCollections", "LibraryCollections/**/*.{pdf,png,xib,h,m,swift}"
   spec.exclude_files = "Classes/Exclude"
   #spec.resource_bundles = {'AssetsBundle' => ['LibraryCollections/**/*.xcassets']}
@@ -43,7 +43,7 @@ Pod::Spec.new do |spec|
   spec.dependency "Toast-Swift", "~> 5.0.1"
   spec.dependency "Moya/RxSwift", "~> 13.0"
   spec.dependency "Kingfisher", "~> 5.0"
-  spec.dependency "Firebase/Crashlytics"
+  spec.dependency "Firebase/Crashlytics", "~> 7.1.0"
 
   spec.swift_versions = ['5.1', '5.2', '5.3']
 
