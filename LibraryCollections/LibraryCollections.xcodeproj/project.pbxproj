@@ -40,7 +40,6 @@
 		ED33FA4E255E7DDA00C7C90C /* AESCipher.h in Headers */ = {isa = PBXBuildFile; fileRef = ED33FA4C255E7DDA00C7C90C /* AESCipher.h */; };
 		ED33FA51255E7E7000C7C90C /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33FA50255E7E7000C7C90C /* ViewUtils.swift */; };
 		ED33FA54255E8B1100C7C90C /* CustomLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33FA53255E8B1100C7C90C /* CustomLoadingView.swift */; };
-		ED5321BD256B620D00399EC7 /* CrashlyticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5321BC256B620D00399EC7 /* CrashlyticManager.swift */; };
 		ED59FE4225665EDD00745289 /* WMSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59FE4125665EDD00745289 /* WMSegment.swift */; };
 		EDA607522563752E004C6530 /* OrderedDictionary+Deprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA6074E2563752E004C6530 /* OrderedDictionary+Deprecated.swift */; };
 		EDA607532563752E004C6530 /* OrderedDictionary+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA6074F2563752E004C6530 /* OrderedDictionary+Codable.swift */; };
@@ -95,7 +94,6 @@
 		ED33FA4C255E7DDA00C7C90C /* AESCipher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESCipher.h; sourceTree = "<group>"; };
 		ED33FA50255E7E7000C7C90C /* ViewUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewUtils.swift; sourceTree = "<group>"; };
 		ED33FA53255E8B1100C7C90C /* CustomLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLoadingView.swift; sourceTree = "<group>"; };
-		ED5321BC256B620D00399EC7 /* CrashlyticManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrashlyticManager.swift; sourceTree = "<group>"; };
 		ED59FE4125665EDD00745289 /* WMSegment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WMSegment.swift; sourceTree = "<group>"; };
 		EDA6074E2563752E004C6530 /* OrderedDictionary+Deprecated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OrderedDictionary+Deprecated.swift"; sourceTree = "<group>"; };
 		EDA6074F2563752E004C6530 /* OrderedDictionary+Codable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OrderedDictionary+Codable.swift"; sourceTree = "<group>"; };
@@ -288,7 +286,6 @@
 		ED5321BB256B61CA00399EC7 /* manager */ = {
 			isa = PBXGroup;
 			children = (
-				ED5321BC256B620D00399EC7 /* CrashlyticManager.swift */,
 			);
 			path = manager;
 			sourceTree = "<group>";
@@ -466,7 +463,6 @@
 				ED33F904255D1E9300C7C90C /* CaptchaGenerator.swift in Sources */,
 				EDB9DBA42562178400C6F2A7 /* StringExtension.swift in Sources */,
 				ED33F922255D21FB00C7C90C /* SecureTextToggleButton.swift in Sources */,
-				ED5321BD256B620D00399EC7 /* CrashlyticManager.swift in Sources */,
 				EDB9DC932562283300C6F2A7 /* UIButtonExtension.swift in Sources */,
 				ED33F91F255D21FB00C7C90C /* RegexRule.swift in Sources */,
 				ED33FA07255E280E00C7C90C /* UIViewExtension.swift in Sources */,
@@ -644,7 +640,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.30;
+				MARKETING_VERSION = 1.1.31;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.library-collection.LibraryCollections";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -673,7 +669,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.30;
+				MARKETING_VERSION = 1.1.31;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.library-collection.LibraryCollections";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;

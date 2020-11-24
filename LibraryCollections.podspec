@@ -43,9 +43,9 @@ Pod::Spec.new do |spec|
   spec.dependency "Toast-Swift", "~> 5.0.1"
   spec.dependency "Moya/RxSwift", "~> 13.0"
   spec.dependency "Kingfisher", "~> 5.0"
-  spec.dependency "Firebase/Crashlytics", "~> 7.1.0"
-  spec.dependency "Firebase/Performance", "~> 7.1.0"
-  spec.dependency "Firebase/Analytics", "~> 7.1.0"
+  #spec.dependency "Firebase/Crashlytics", "~> 7.1.0"
+  #spec.dependency "Firebase/Performance"
+  #spec.dependency "Firebase/Analytics", "~> 7.1.0"
 
   spec.swift_versions = ['5.1', '5.2', '5.3']
 
