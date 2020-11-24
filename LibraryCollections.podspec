@@ -44,6 +44,7 @@ Pod::Spec.new do |spec|
   spec.dependency "Moya/RxSwift", "~> 13.0"
   spec.dependency "Kingfisher", "~> 5.0"
   spec.dependency "Firebase/Crashlytics", "~> 7.1.0"
+  spec.dependency "Firebase/Performance", "~> 7.1.0"
 
   spec.swift_versions = ['5.1', '5.2', '5.3']
 
