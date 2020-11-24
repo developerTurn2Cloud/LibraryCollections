@@ -9,6 +9,10 @@ extension String {
         return (Double(newStr) ?? 0) >= 2
     }
     
+    public var intValue:Int {
+        Int(self) ?? 0
+    }
+    
     public var isNotEmpty: Bool {
         return !isEmpty
     }
