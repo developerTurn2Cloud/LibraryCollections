@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED119B18257486BD00AD0EFA /* CrashlyticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED119B16257486BD00AD0EFA /* CrashlyticManager.swift */; };
+		ED119B19257486BE00AD0EFA /* PerformanceMonitorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED119B17257486BD00AD0EFA /* PerformanceMonitorManager.swift */; };
 		ED25EB412565062000C297D6 /* scan_qr_focus.png in Resources */ = {isa = PBXBuildFile; fileRef = ED25EB402565062000C297D6 /* scan_qr_focus.png */; };
 		ED33F7CD255CC99400C7C90C /* ApiUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33F7CC255CC99400C7C90C /* ApiUtils.swift */; };
 		ED33F7D8255CCF4200C7C90C /* CommonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33F7D7255CCF4200C7C90C /* CommonUtils.swift */; };
@@ -61,6 +63,8 @@
 		420535B4894ADE9AB2A3F647 /* Pods-LibraryCollections.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LibraryCollections.debug.xcconfig"; path = "Target Support Files/Pods-LibraryCollections/Pods-LibraryCollections.debug.xcconfig"; sourceTree = "<group>"; };
 		6D05BBE899326F0DBB4455D9 /* Pods_LibraryCollections.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LibraryCollections.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5294EA4EBB0CCAF2BA5D1CC /* Pods-LibraryCollections.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LibraryCollections.release.xcconfig"; path = "Target Support Files/Pods-LibraryCollections/Pods-LibraryCollections.release.xcconfig"; sourceTree = "<group>"; };
+		ED119B16257486BD00AD0EFA /* CrashlyticManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrashlyticManager.swift; sourceTree = "<group>"; };
+		ED119B17257486BD00AD0EFA /* PerformanceMonitorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerformanceMonitorManager.swift; sourceTree = "<group>"; };
 		ED25EB402565062000C297D6 /* scan_qr_focus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scan_qr_focus.png; sourceTree = "<group>"; };
 		ED33F7CC255CC99400C7C90C /* ApiUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiUtils.swift; sourceTree = "<group>"; };
 		ED33F7D7255CCF4200C7C90C /* CommonUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonUtils.swift; sourceTree = "<group>"; };
@@ -286,6 +290,8 @@
 		ED5321BB256B61CA00399EC7 /* manager */ = {
 			isa = PBXGroup;
 			children = (
+				ED119B16257486BD00AD0EFA /* CrashlyticManager.swift */,
+				ED119B17257486BD00AD0EFA /* PerformanceMonitorManager.swift */,
 			);
 			path = manager;
 			sourceTree = "<group>";
@@ -463,6 +469,7 @@
 				ED33F904255D1E9300C7C90C /* CaptchaGenerator.swift in Sources */,
 				EDB9DBA42562178400C6F2A7 /* StringExtension.swift in Sources */,
 				ED33F922255D21FB00C7C90C /* SecureTextToggleButton.swift in Sources */,
+				ED119B18257486BD00AD0EFA /* CrashlyticManager.swift in Sources */,
 				EDB9DC932562283300C6F2A7 /* UIButtonExtension.swift in Sources */,
 				ED33F91F255D21FB00C7C90C /* RegexRule.swift in Sources */,
 				ED33FA07255E280E00C7C90C /* UIViewExtension.swift in Sources */,
@@ -476,6 +483,7 @@
 				EDA607522563752E004C6530 /* OrderedDictionary+Deprecated.swift in Sources */,
 				ED33FA54255E8B1100C7C90C /* CustomLoadingView.swift in Sources */,
 				EDB9DB9A2562177A00C6F2A7 /* UIViewControllerExtension.swift in Sources */,
+				ED119B19257486BE00AD0EFA /* PerformanceMonitorManager.swift in Sources */,
 				ED33F7D8255CCF4200C7C90C /* CommonUtils.swift in Sources */,
 				ED59FE4225665EDD00745289 /* WMSegment.swift in Sources */,
 				EDA607542563752E004C6530 /* OrderedDictionary.swift in Sources */,
