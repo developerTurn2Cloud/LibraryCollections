@@ -10,7 +10,18 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target = '11.0'
   spec.source       = { :git => "https://github.com/YomiRY/LibraryCollections.git", :tag => "1.1.32" }
   spec.source_files  = "LibraryCollections", "LibraryCollections/**/*.{pdf,png,xib,h,m,swift}"
+  spec.swift_versions = ['5.1', '5.2', '5.3']
   spec.exclude_files = "Classes/Exclude"
+  spec.static_framework = true
+  spec.frameworks = [
+    'Foundation',
+    'UIKit',
+    'QuartzCore',
+    'CoreText', 
+    'CoreGraphics',
+    'AVFoundation',
+    'WebKit'
+]
   #spec.resource_bundles = {'AssetsBundle' => ['LibraryCollections/**/*.xcassets']}
 
   # spec.resource  = "icon.png"
@@ -25,7 +36,7 @@ Pod::Spec.new do |spec|
   #  the lib prefix of their name.
   #
 
-  spec.framework  = "UIKit"
+  # spec.framework  = "UIKit"
   # spec.frameworks = "SomeFramework", "AnotherFramework"
 
   # spec.library   = "iconv"
@@ -44,11 +55,13 @@ Pod::Spec.new do |spec|
   spec.dependency "Toast-Swift", "~> 5.0.1"
   spec.dependency "Moya/RxSwift", "~> 13.0"
   spec.dependency "Kingfisher", "~> 5.0"
-  #spec.dependency "Firebase/Crashlytics", "~> 7.1.0"
-  #spec.dependency "Firebase/Performance"
-  #spec.dependency "Firebase/Analytics", "~> 7.1.0"
+  #spec.dependency 'Firebase'
+  spec.dependency 'Firebase/Performance'
+  spec.dependency 'Firebase/Crashlytics'
+  spec.dependency "Firebase/Analytics"
 
-  spec.swift_versions = ['5.1', '5.2', '5.3']
-
+  spec.xcconfig = { 'SWIFT_INCLUDE_PATHS' => '$(PODS_ROOT)/Firebase/CoreOnly/Sources' }
+  spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+  spec.user_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
 
 end
