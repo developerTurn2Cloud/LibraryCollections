@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "LibraryCollections"
-  spec.version      = "1.1.35"
+  spec.version      = "1.1.36"
   spec.summary      = "Common Library"
   spec.description  = "LibraryCollections is a library for common usage."
   spec.homepage     = "https://github.com/YomiRY/LibraryCollections"
@@ -8,11 +8,9 @@ Pod::Spec.new do |spec|
   spec.author             = { "Randy" => "o1984531@gmail.com" }
   spec.platform     = :ios, "11.0"
   spec.ios.deployment_target = '11.0'
-  spec.source       = { :git => "https://github.com/YomiRY/LibraryCollections.git", :tag => "1.1.35" }
+  spec.source       = { :git => "https://github.com/YomiRY/LibraryCollections.git", :tag => "1.1.36" }
   spec.source_files  = "LibraryCollections", "LibraryCollections/**/*.{pdf,png,xib,h,m,swift}"
   spec.swift_versions = ['5.1', '5.2', '5.3']
-  spec.exclude_files = "Classes/Exclude"
-  spec.static_framework = true
   spec.frameworks = [
     'Foundation',
     'UIKit',
@@ -22,6 +20,7 @@ Pod::Spec.new do |spec|
     'AVFoundation',
     'WebKit'
 ]
+# spec.static_framework = true
   #spec.resource_bundles = {'AssetsBundle' => ['LibraryCollections/**/*.xcassets']}
 
   # spec.resource  = "icon.png"
