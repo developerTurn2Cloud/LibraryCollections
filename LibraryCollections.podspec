@@ -11,6 +11,7 @@ Pod::Spec.new do |spec|
   spec.source       = { :git => "https://github.com/YomiRY/LibraryCollections.git", :tag => "1.1.36" }
   spec.source_files  = "LibraryCollections", "LibraryCollections/**/*.{pdf,png,xib,h,m,swift}"
   spec.swift_versions = ['5.1', '5.2', '5.3']
+  spec.static_framework = true
   spec.frameworks = [
     'Foundation',
     'UIKit',
@@ -20,7 +21,7 @@ Pod::Spec.new do |spec|
     'AVFoundation',
     'WebKit'
 ]
-# spec.static_framework = true
+
   #spec.resource_bundles = {'AssetsBundle' => ['LibraryCollections/**/*.xcassets']}
 
   # spec.resource  = "icon.png"
@@ -54,7 +55,6 @@ Pod::Spec.new do |spec|
   spec.dependency "Toast-Swift", "~> 5.0.1"
   spec.dependency "Moya/RxSwift", "~> 13.0"
   spec.dependency "Kingfisher", "~> 5.0"
-  #spec.dependency 'Firebase'
   spec.dependency 'Firebase/Performance'
   spec.dependency 'Firebase/Crashlytics'
   spec.dependency "Firebase/Analytics"
