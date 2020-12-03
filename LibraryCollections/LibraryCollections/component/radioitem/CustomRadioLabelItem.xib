@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomRadioLabelItem" customModule="LaLaport_iOS" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomRadioLabelItem" customModule="LibraryCollections" customModuleProvider="target">
             <connections>
                 <outlet property="leftPaddingConstraint" destination="u2G-ff-eZP" id="kTZ-U9-0X1"/>
                 <outlet property="radioLabel" destination="snB-My-m9a" id="ypf-TJ-MyB"/>
@@ -20,7 +20,7 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_radio_unselected" translatesAutoresizingMaskIntoConstraints="NO" id="Ud8-DN-nac" userLabel="selection_radio_image_view">
+                <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_radio_unselected.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ud8-DN-nac" userLabel="selection_radio_image_view">
                     <rect key="frame" x="0.0" y="57.5" width="25" height="25"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <gestureRecognizers/>
@@ -43,6 +43,7 @@
                     <nil key="highlightedColor"/>
                 </label>
             </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="snB-My-m9a" firstAttribute="leading" secondItem="Ud8-DN-nac" secondAttribute="trailing" constant="5" id="2n5-jd-m5V"/>
@@ -51,7 +52,6 @@
                 <constraint firstItem="Ud8-DN-nac" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="u2G-ff-eZP"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <point key="canvasLocation" x="137.68115942028987" y="105.80357142857143"/>
         </view>
         <tapGestureRecognizer id="NGo-Vr-TqO">
@@ -61,6 +61,6 @@
         </tapGestureRecognizer>
     </objects>
     <resources>
-        <image name="ic_radio_unselected" width="28" height="28"/>
+        <image name="ic_radio_unselected.png" width="56" height="56"/>
     </resources>
 </document>

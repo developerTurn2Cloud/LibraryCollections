@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -22,7 +22,7 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_radio_unselected" translatesAutoresizingMaskIntoConstraints="NO" id="gNs-d2-0xl" userLabel="select_radio">
+                <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_radio_unselected.png" translatesAutoresizingMaskIntoConstraints="NO" id="gNs-d2-0xl" userLabel="select_radio">
                     <rect key="frame" x="0.0" y="57.5" width="25" height="25"/>
                     <gestureRecognizers/>
                     <constraints>
@@ -58,13 +58,8 @@
             </connections>
         </tapGestureRecognizer>
     </objects>
-    <designables>
-        <designable name="xV4-9d-LfY">
-            <size key="intrinsicContentSize" width="5" height="21.5"/>
-        </designable>
-    </designables>
     <resources>
-        <image name="ic_radio_unselected" width="28" height="28"/>
+        <image name="ic_radio_unselected.png" width="56" height="56"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

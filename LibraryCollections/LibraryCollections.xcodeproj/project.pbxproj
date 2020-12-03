@@ -57,6 +57,8 @@
 		EDB9DC932562283300C6F2A7 /* UIButtonExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDB9DC922562283300C6F2A7 /* UIButtonExtension.swift */; };
 		EDC2AAFA165C7AB6EF7E36A4 /* Pods_LibraryCollections.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D05BBE899326F0DBB4455D9 /* Pods_LibraryCollections.framework */; };
 		EDD15993255A81EA00011C8E /* LibraryCollections.h in Headers */ = {isa = PBXBuildFile; fileRef = EDD15991255A81EA00011C8E /* LibraryCollections.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EDD2A29A2578ED0C00CEEF4D /* ic_radio_unselected.png in Resources */ = {isa = PBXBuildFile; fileRef = EDD2A2992578ED0C00CEEF4D /* ic_radio_unselected.png */; };
+		EDD2A29D2578ED5900CEEF4D /* ic_blue_down.png in Resources */ = {isa = PBXBuildFile; fileRef = EDD2A29C2578ED5900CEEF4D /* ic_blue_down.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -114,6 +116,8 @@
 		EDD1598E255A81EA00011C8E /* LibraryCollections.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = LibraryCollections.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDD15991255A81EA00011C8E /* LibraryCollections.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LibraryCollections.h; sourceTree = "<group>"; };
 		EDD15992255A81EA00011C8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EDD2A2992578ED0C00CEEF4D /* ic_radio_unselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_radio_unselected.png; sourceTree = "<group>"; };
+		EDD2A29C2578ED5900CEEF4D /* ic_blue_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_blue_down.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +204,8 @@
 		ED33F900255D1E0E00C7C90C /* images */ = {
 			isa = PBXGroup;
 			children = (
+				EDD2A29C2578ED5900CEEF4D /* ic_blue_down.png */,
+				EDD2A2992578ED0C00CEEF4D /* ic_radio_unselected.png */,
 				ED25EB402565062000C297D6 /* scan_qr_focus.png */,
 				EDA608C12563BEAC004C6530 /* visibility_off.png */,
 				EDA608C22563BEAC004C6530 /* visibility_on.png */,
@@ -424,7 +430,9 @@
 				ED33F9FD255E275100C7C90C /* CustomRadioTextFieldItem.xib in Resources */,
 				ED33F9FC255E275100C7C90C /* CustomRadioLabelItem.xib in Resources */,
 				ED25EB412565062000C297D6 /* scan_qr_focus.png in Resources */,
+				EDD2A29A2578ED0C00CEEF4D /* ic_radio_unselected.png in Resources */,
 				EDA608C42563BEAC004C6530 /* visibility_on.png in Resources */,
+				EDD2A29D2578ED5900CEEF4D /* ic_blue_down.png in Resources */,
 				ED33F9FA255E275100C7C90C /* CustomSpinner.xib in Resources */,
 				EDA608C32563BEAC004C6530 /* visibility_off.png in Resources */,
 			);
