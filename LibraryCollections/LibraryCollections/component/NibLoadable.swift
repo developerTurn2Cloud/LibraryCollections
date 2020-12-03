@@ -9,9 +9,9 @@ public protocol NibLoadable where Self: UIView {
     func fromNib() -> UIView?
 }
 
-extension NibLoadable {
+public extension NibLoadable {
     @discardableResult
-    public func fromNib() -> UIView? {
+    func fromNib() -> UIView? {
         let contentView = Bundle(for: type(of: self)).loadNibNamed(String(describing: type(of: self)), owner: self, options: nil)?.first as! UIView
         self.addSubview(contentView)
         contentView.translatesAutoresizingMaskIntoConstraints = false
