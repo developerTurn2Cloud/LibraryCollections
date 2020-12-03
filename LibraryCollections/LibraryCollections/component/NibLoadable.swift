@@ -14,7 +14,7 @@ public extension NibLoadable {
     func fromNib() -> UIView? {
         let bundle = Bundle(for: self.classForCoder)
         let nib = UINib(nibName: String(describing: type(of: self)), bundle: bundle)
-        let contentView = nib.instantiate(withOwner: self, options: nil)
+        let contentView = nib.instantiate(withOwner: self, options: nil).first as! UIView
         self.addSubview(contentView)
         
         contentView.translatesAutoresizingMaskIntoConstraints = false
