@@ -2,12 +2,12 @@ import Foundation
 import UIKit
 
 open class BaseLoadingView: UIView {
-    override init(frame: CGRect) {
+    public override init(frame: CGRect) {
         super.init(frame: frame)
         self.initLoadingContentView()
     }
     
-    public init?(coder: NSCoder) {
+    public required init?(coder: NSCoder) {
         super.init(coder: coder)
         fatalError("init(coder:) has not been implemented")
     }
