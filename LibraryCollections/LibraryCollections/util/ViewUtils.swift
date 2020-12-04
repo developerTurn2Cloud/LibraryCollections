@@ -3,7 +3,7 @@ import UIKit
 
 public class ViewUtils {
     
-    static var loadingView:CustomLoadingView? = nil
+    static var loadingView:BaseLoadingView? = nil
     
     public static func closeKeyboard<T>(obj:T) {
         var view:UIView? = nil
@@ -23,10 +23,11 @@ public class ViewUtils {
         v.endEditing(true)
     }
     
-    public static func showLoading(container:UIView, imageUrl:URL, msg:String) {
+    public static func showLoading<T:BaseLoadingView>(customLoadingView:T,
+                                   container:UIView) {
         closeLoading()
         
-        loadingView = CustomLoadingView(frame: .zero, imageUrl: imageUrl, msg: msg)
+        loadingView = customLoadingView
         loadingView?.showLoading(container: container)
     }
     
