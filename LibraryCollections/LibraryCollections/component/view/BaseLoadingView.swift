@@ -7,7 +7,7 @@ open class BaseLoadingView: UIView {
         self.initLoadingContentView()
     }
     
-    required init?(coder: NSCoder) {
+    open required init?(coder: NSCoder) {
         super.init(coder: coder)
         fatalError("init(coder:) has not been implemented")
     }
