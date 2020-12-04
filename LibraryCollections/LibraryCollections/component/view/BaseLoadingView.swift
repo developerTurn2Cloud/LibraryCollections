@@ -2,7 +2,7 @@ import Foundation
 import UIKit
 
 open class BaseLoadingView: UIView {
-    open init(frame: CGRect, imageUrl:URL, msg:String) {
+    open init(frame: CGRect) {
         super.init(frame: frame)
         self.initLoadingContentView()
     }
