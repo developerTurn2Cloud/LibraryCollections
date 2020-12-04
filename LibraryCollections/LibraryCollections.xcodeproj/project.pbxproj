@@ -41,7 +41,7 @@
 		ED33FA4D255E7DDA00C7C90C /* AESCipher.m in Sources */ = {isa = PBXBuildFile; fileRef = ED33FA4B255E7DDA00C7C90C /* AESCipher.m */; };
 		ED33FA4E255E7DDA00C7C90C /* AESCipher.h in Headers */ = {isa = PBXBuildFile; fileRef = ED33FA4C255E7DDA00C7C90C /* AESCipher.h */; };
 		ED33FA51255E7E7000C7C90C /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33FA50255E7E7000C7C90C /* ViewUtils.swift */; };
-		ED33FA54255E8B1100C7C90C /* CustomLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33FA53255E8B1100C7C90C /* CustomLoadingView.swift */; };
+		ED3D73D1257A0C620067CDA4 /* BaseLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3D73D0257A0C620067CDA4 /* BaseLoadingView.swift */; };
 		ED59FE4225665EDD00745289 /* WMSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59FE4125665EDD00745289 /* WMSegment.swift */; };
 		EDA607522563752E004C6530 /* OrderedDictionary+Deprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA6074E2563752E004C6530 /* OrderedDictionary+Deprecated.swift */; };
 		EDA607532563752E004C6530 /* OrderedDictionary+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA6074F2563752E004C6530 /* OrderedDictionary+Codable.swift */; };
@@ -99,7 +99,7 @@
 		ED33FA4B255E7DDA00C7C90C /* AESCipher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESCipher.m; sourceTree = "<group>"; };
 		ED33FA4C255E7DDA00C7C90C /* AESCipher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESCipher.h; sourceTree = "<group>"; };
 		ED33FA50255E7E7000C7C90C /* ViewUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewUtils.swift; sourceTree = "<group>"; };
-		ED33FA53255E8B1100C7C90C /* CustomLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLoadingView.swift; sourceTree = "<group>"; };
+		ED3D73D0257A0C620067CDA4 /* BaseLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLoadingView.swift; sourceTree = "<group>"; };
 		ED59FE4125665EDD00745289 /* WMSegment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WMSegment.swift; sourceTree = "<group>"; };
 		EDA6074E2563752E004C6530 /* OrderedDictionary+Deprecated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OrderedDictionary+Deprecated.swift"; sourceTree = "<group>"; };
 		EDA6074F2563752E004C6530 /* OrderedDictionary+Codable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OrderedDictionary+Codable.swift"; sourceTree = "<group>"; };
@@ -196,7 +196,7 @@
 		ED33F8F4255D1B6600C7C90C /* view */ = {
 			isa = PBXGroup;
 			children = (
-				ED33FA53255E8B1100C7C90C /* CustomLoadingView.swift */,
+				ED3D73D0257A0C620067CDA4 /* BaseLoadingView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -483,6 +483,7 @@
 				ED33FA07255E280E00C7C90C /* UIViewExtension.swift in Sources */,
 				ED33F912255D20A600C7C90C /* UITextFieldHelper.swift in Sources */,
 				ED33F7CD255CC99400C7C90C /* ApiUtils.swift in Sources */,
+				ED3D73D1257A0C620067CDA4 /* BaseLoadingView.swift in Sources */,
 				EDB9DBA52562178400C6F2A7 /* CGFloatExtension.swift in Sources */,
 				ED33FA02255E276100C7C90C /* NibLoadable.swift in Sources */,
 				ED33FA0F255E29AF00C7C90C /* UITextFieldExtension.swift in Sources */,
@@ -490,7 +491,6 @@
 				ED119B2025748A8600AD0EFA /* CrashlyticManager.swift in Sources */,
 				ED33F90E255D20A600C7C90C /* NSLayoutHelper.swift in Sources */,
 				EDA607522563752E004C6530 /* OrderedDictionary+Deprecated.swift in Sources */,
-				ED33FA54255E8B1100C7C90C /* CustomLoadingView.swift in Sources */,
 				EDB9DB9A2562177A00C6F2A7 /* UIViewControllerExtension.swift in Sources */,
 				ED33F7D8255CCF4200C7C90C /* CommonUtils.swift in Sources */,
 				ED59FE4225665EDD00745289 /* WMSegment.swift in Sources */,
@@ -656,7 +656,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.44;
+				MARKETING_VERSION = 1.1.45;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.library-collection.LibraryCollections";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -685,7 +685,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.44;
+				MARKETING_VERSION = 1.1.45;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.library-collection.LibraryCollections";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
