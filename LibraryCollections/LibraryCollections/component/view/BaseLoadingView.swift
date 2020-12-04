@@ -7,6 +7,11 @@ open class BaseLoadingView: UIView {
         self.initLoadingContentView()
     }
     
+    public init?(coder: NSCoder) {
+        super.init(coder: coder)
+        fatalError("init(coder:) has not been implemented")
+    }
+    
     open func initLoadingContentView() {
         fatalError("initLoadingContentView has not been implemented")
     }
