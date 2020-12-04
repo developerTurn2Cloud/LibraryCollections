@@ -11,6 +11,8 @@ target 'LibraryCollections' do
   pod 'Kingfisher', '~> 5.0'
   pod 'Firebase/Crashlytics'
   pod "Firebase/Performance"
+  pod "Firebase/Analytics"
+  pod "Firebase/InAppMessaging"
 
 
 end
