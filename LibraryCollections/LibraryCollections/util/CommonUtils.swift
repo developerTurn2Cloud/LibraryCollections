@@ -144,6 +144,17 @@ public class CommonUtils {
         UIApplication.shared.open(url, options: [:], completionHandler: nil)
     }
     
+    // MARK: - String matcher
+    static func isMatchFormat(data:String, pattern:String, options:NSRegularExpression.Options) -> Bool {
+        do {
+            let regex:NSRegularExpression = try NSRegularExpression(pattern: pattern, options: options)
+            return regex.matches(in: data, options: [], range: NSMakeRange(0, data.count)).count > 0
+        } catch {
+            print("isMatchFormat error: \(error.localizedDescription)")
+            return false
+        }
+    }
+    
     //MARK: - Global
     public static func openSettings() {
         let url = URL(string:UIApplication.openSettingsURLString)
