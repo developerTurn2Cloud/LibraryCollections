@@ -13,6 +13,7 @@ target 'LibraryCollections' do
   pod "Firebase/Performance"
   pod "Firebase/Analytics"
   pod "Firebase/InAppMessaging"
+  pod 'Swifter', '~> 1.4.5'
 
 
 end

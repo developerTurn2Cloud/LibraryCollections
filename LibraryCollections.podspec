@@ -9,7 +9,7 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "11.0"
   spec.ios.deployment_target = '11.0'
   spec.source       = { :git => "https://github.com/YomiRY/LibraryCollections.git", :tag => "1.1.52" }
-  spec.source_files  = "LibraryCollections", "LibraryCollections/**/*.{pdf,png,h,m,swift}"
+  spec.source_files  = "LibraryCollections", "LibraryCollections/**/*.{jpg,pdf,png,h,m,swift}"
   spec.resources = "LibraryCollections/**/*.xib"
   spec.swift_versions = ['5.1', '5.2', '5.3']
   spec.static_framework = true
@@ -60,6 +60,7 @@ Pod::Spec.new do |spec|
   spec.dependency 'Firebase/Crashlytics'
   spec.dependency "Firebase/Analytics"
   spec.dependency "Firebase/InAppMessaging"
+  spec.dependency "Swifter", "~> 1.4.5"
 
   spec.xcconfig = { 'SWIFT_INCLUDE_PATHS' => '$(PODS_ROOT)/Firebase/CoreOnly/Sources' }
   spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
