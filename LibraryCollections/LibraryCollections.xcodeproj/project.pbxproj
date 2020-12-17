@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		ED119B1F25748A8600AD0EFA /* PerformanceMonitorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED119B1D25748A8600AD0EFA /* PerformanceMonitorManager.swift */; };
 		ED119B2025748A8600AD0EFA /* CrashlyticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED119B1E25748A8600AD0EFA /* CrashlyticManager.swift */; };
+		ED1D5662258B441100A0CC97 /* ic_deeplink_shortcut.png in Resources */ = {isa = PBXBuildFile; fileRef = ED1D565F258B441100A0CC97 /* ic_deeplink_shortcut.png */; };
+		ED1D5663258B441100A0CC97 /* img_sbackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ED1D5660258B441100A0CC97 /* img_sbackground.jpg */; };
+		ED1D5664258B441100A0CC97 /* img_splash.jpg in Resources */ = {isa = PBXBuildFile; fileRef = ED1D5661258B441100A0CC97 /* img_splash.jpg */; };
 		ED25EB412565062000C297D6 /* scan_qr_focus.png in Resources */ = {isa = PBXBuildFile; fileRef = ED25EB402565062000C297D6 /* scan_qr_focus.png */; };
 		ED33F7CD255CC99400C7C90C /* ApiUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33F7CC255CC99400C7C90C /* ApiUtils.swift */; };
 		ED33F7D8255CCF4200C7C90C /* CommonUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33F7D7255CCF4200C7C90C /* CommonUtils.swift */; };
@@ -43,6 +46,10 @@
 		ED33FA51255E7E7000C7C90C /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33FA50255E7E7000C7C90C /* ViewUtils.swift */; };
 		ED3D73D1257A0C620067CDA4 /* BaseLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3D73D0257A0C620067CDA4 /* BaseLoadingView.swift */; };
 		ED59FE4225665EDD00745289 /* WMSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59FE4125665EDD00745289 /* WMSegment.swift */; };
+		ED9F1EEC258B3595003DD400 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9F1EE8258B3595003DD400 /* AuthenticationManager.swift */; };
+		ED9F1EED258B3595003DD400 /* DeepLinkShortcutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9F1EE9258B3595003DD400 /* DeepLinkShortcutManager.swift */; };
+		ED9F1EEE258B3595003DD400 /* EventCalendarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9F1EEA258B3595003DD400 /* EventCalendarManager.swift */; };
+		ED9F1EEF258B3595003DD400 /* SpotlightManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9F1EEB258B3595003DD400 /* SpotlightManager.swift */; };
 		EDA607522563752E004C6530 /* OrderedDictionary+Deprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA6074E2563752E004C6530 /* OrderedDictionary+Deprecated.swift */; };
 		EDA607532563752E004C6530 /* OrderedDictionary+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA6074F2563752E004C6530 /* OrderedDictionary+Codable.swift */; };
 		EDA607542563752E004C6530 /* OrderedDictionary.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA607502563752E004C6530 /* OrderedDictionary.swift */; };
@@ -67,6 +74,9 @@
 		C5294EA4EBB0CCAF2BA5D1CC /* Pods-LibraryCollections.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LibraryCollections.release.xcconfig"; path = "Target Support Files/Pods-LibraryCollections/Pods-LibraryCollections.release.xcconfig"; sourceTree = "<group>"; };
 		ED119B1D25748A8600AD0EFA /* PerformanceMonitorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerformanceMonitorManager.swift; sourceTree = "<group>"; };
 		ED119B1E25748A8600AD0EFA /* CrashlyticManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrashlyticManager.swift; sourceTree = "<group>"; };
+		ED1D565F258B441100A0CC97 /* ic_deeplink_shortcut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_deeplink_shortcut.png; sourceTree = "<group>"; };
+		ED1D5660258B441100A0CC97 /* img_sbackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img_sbackground.jpg; sourceTree = "<group>"; };
+		ED1D5661258B441100A0CC97 /* img_splash.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = img_splash.jpg; sourceTree = "<group>"; };
 		ED25EB402565062000C297D6 /* scan_qr_focus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = scan_qr_focus.png; sourceTree = "<group>"; };
 		ED33F7CC255CC99400C7C90C /* ApiUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ApiUtils.swift; sourceTree = "<group>"; };
 		ED33F7D7255CCF4200C7C90C /* CommonUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonUtils.swift; sourceTree = "<group>"; };
@@ -101,6 +111,10 @@
 		ED33FA50255E7E7000C7C90C /* ViewUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewUtils.swift; sourceTree = "<group>"; };
 		ED3D73D0257A0C620067CDA4 /* BaseLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLoadingView.swift; sourceTree = "<group>"; };
 		ED59FE4125665EDD00745289 /* WMSegment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WMSegment.swift; sourceTree = "<group>"; };
+		ED9F1EE8258B3595003DD400 /* AuthenticationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		ED9F1EE9258B3595003DD400 /* DeepLinkShortcutManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeepLinkShortcutManager.swift; sourceTree = "<group>"; };
+		ED9F1EEA258B3595003DD400 /* EventCalendarManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCalendarManager.swift; sourceTree = "<group>"; };
+		ED9F1EEB258B3595003DD400 /* SpotlightManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotlightManager.swift; sourceTree = "<group>"; };
 		EDA6074E2563752E004C6530 /* OrderedDictionary+Deprecated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OrderedDictionary+Deprecated.swift"; sourceTree = "<group>"; };
 		EDA6074F2563752E004C6530 /* OrderedDictionary+Codable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OrderedDictionary+Codable.swift"; sourceTree = "<group>"; };
 		EDA607502563752E004C6530 /* OrderedDictionary.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OrderedDictionary.swift; sourceTree = "<group>"; };
@@ -204,6 +218,9 @@
 		ED33F900255D1E0E00C7C90C /* images */ = {
 			isa = PBXGroup;
 			children = (
+				ED1D565F258B441100A0CC97 /* ic_deeplink_shortcut.png */,
+				ED1D5660258B441100A0CC97 /* img_sbackground.jpg */,
+				ED1D5661258B441100A0CC97 /* img_splash.jpg */,
 				EDD2A29C2578ED5900CEEF4D /* ic_blue_down.png */,
 				EDD2A2992578ED0C00CEEF4D /* ic_radio_unselected.png */,
 				ED25EB402565062000C297D6 /* scan_qr_focus.png */,
@@ -296,6 +313,10 @@
 		ED5321BB256B61CA00399EC7 /* manager */ = {
 			isa = PBXGroup;
 			children = (
+				ED9F1EE8258B3595003DD400 /* AuthenticationManager.swift */,
+				ED9F1EE9258B3595003DD400 /* DeepLinkShortcutManager.swift */,
+				ED9F1EEA258B3595003DD400 /* EventCalendarManager.swift */,
+				ED9F1EEB258B3595003DD400 /* SpotlightManager.swift */,
 				ED119B1E25748A8600AD0EFA /* CrashlyticManager.swift */,
 				ED119B1D25748A8600AD0EFA /* PerformanceMonitorManager.swift */,
 			);
@@ -427,10 +448,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ED1D5662258B441100A0CC97 /* ic_deeplink_shortcut.png in Resources */,
+				ED1D5663258B441100A0CC97 /* img_sbackground.jpg in Resources */,
 				ED33F9FD255E275100C7C90C /* CustomRadioTextFieldItem.xib in Resources */,
 				ED33F9FC255E275100C7C90C /* CustomRadioLabelItem.xib in Resources */,
 				ED25EB412565062000C297D6 /* scan_qr_focus.png in Resources */,
 				EDD2A29A2578ED0C00CEEF4D /* ic_radio_unselected.png in Resources */,
+				ED1D5664258B441100A0CC97 /* img_splash.jpg in Resources */,
 				EDA608C42563BEAC004C6530 /* visibility_on.png in Resources */,
 				EDD2A29D2578ED5900CEEF4D /* ic_blue_down.png in Resources */,
 				ED33F9FA255E275100C7C90C /* CustomSpinner.xib in Resources */,
@@ -475,6 +499,8 @@
 				ED33F9FB255E275100C7C90C /* CustomSpinner.swift in Sources */,
 				ED119B1F25748A8600AD0EFA /* PerformanceMonitorManager.swift in Sources */,
 				ED33F9FF255E275100C7C90C /* CustomRadioLabelItem.swift in Sources */,
+				ED9F1EEF258B3595003DD400 /* SpotlightManager.swift in Sources */,
+				ED9F1EED258B3595003DD400 /* DeepLinkShortcutManager.swift in Sources */,
 				ED33F904255D1E9300C7C90C /* CaptchaGenerator.swift in Sources */,
 				EDB9DBA42562178400C6F2A7 /* StringExtension.swift in Sources */,
 				ED33F922255D21FB00C7C90C /* SecureTextToggleButton.swift in Sources */,
@@ -491,6 +517,7 @@
 				ED119B2025748A8600AD0EFA /* CrashlyticManager.swift in Sources */,
 				ED33F90E255D20A600C7C90C /* NSLayoutHelper.swift in Sources */,
 				EDA607522563752E004C6530 /* OrderedDictionary+Deprecated.swift in Sources */,
+				ED9F1EEE258B3595003DD400 /* EventCalendarManager.swift in Sources */,
 				EDB9DB9A2562177A00C6F2A7 /* UIViewControllerExtension.swift in Sources */,
 				ED33F7D8255CCF4200C7C90C /* CommonUtils.swift in Sources */,
 				ED59FE4225665EDD00745289 /* WMSegment.swift in Sources */,
@@ -503,6 +530,7 @@
 				ED33F91E255D21FB00C7C90C /* PasswordRule.swift in Sources */,
 				ED33F910255D20A600C7C90C /* UITextViewHelper.swift in Sources */,
 				ED33F91C255D21FB00C7C90C /* PasswordTextField.swift in Sources */,
+				ED9F1EEC258B3595003DD400 /* AuthenticationManager.swift in Sources */,
 				EDA607532563752E004C6530 /* OrderedDictionary+Codable.swift in Sources */,
 				ED33F911255D20A600C7C90C /* UILabelHelper.swift in Sources */,
 				ED33F91D255D21FB00C7C90C /* BundleUtil.swift in Sources */,
@@ -656,7 +684,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.52;
+				MARKETING_VERSION = 1.1.53;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.library-collection.LibraryCollections";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -685,7 +713,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.52;
+				MARKETING_VERSION = 1.1.53;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.library-collection.LibraryCollections";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
