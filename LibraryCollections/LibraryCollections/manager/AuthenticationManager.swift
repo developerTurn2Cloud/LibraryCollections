@@ -4,7 +4,7 @@ import LocalAuthentication
 public class AuthenticationManager {
     public static var share:AuthenticationManager = AuthenticationManager()
     
-    enum BiometricType {
+    public enum BiometricType {
         case none
         case touch
         case face

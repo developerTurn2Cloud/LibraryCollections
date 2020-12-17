@@ -60,7 +60,6 @@ Pod::Spec.new do |spec|
   spec.dependency 'Firebase/Crashlytics'
   spec.dependency "Firebase/Analytics"
   spec.dependency "Firebase/InAppMessaging"
-  spec.dependency "Swifter", "~> 1.4.5"
 
   spec.xcconfig = { 'SWIFT_INCLUDE_PATHS' => '$(PODS_ROOT)/Firebase/CoreOnly/Sources' }
   spec.pod_target_xcconfig = { 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }

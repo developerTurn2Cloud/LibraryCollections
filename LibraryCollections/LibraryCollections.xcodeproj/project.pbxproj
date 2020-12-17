@@ -47,7 +47,6 @@
 		ED3D73D1257A0C620067CDA4 /* BaseLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3D73D0257A0C620067CDA4 /* BaseLoadingView.swift */; };
 		ED59FE4225665EDD00745289 /* WMSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59FE4125665EDD00745289 /* WMSegment.swift */; };
 		ED9F1EEC258B3595003DD400 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9F1EE8258B3595003DD400 /* AuthenticationManager.swift */; };
-		ED9F1EED258B3595003DD400 /* DeepLinkShortcutManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9F1EE9258B3595003DD400 /* DeepLinkShortcutManager.swift */; };
 		ED9F1EEE258B3595003DD400 /* EventCalendarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9F1EEA258B3595003DD400 /* EventCalendarManager.swift */; };
 		ED9F1EEF258B3595003DD400 /* SpotlightManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9F1EEB258B3595003DD400 /* SpotlightManager.swift */; };
 		EDA607522563752E004C6530 /* OrderedDictionary+Deprecated.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDA6074E2563752E004C6530 /* OrderedDictionary+Deprecated.swift */; };
@@ -112,7 +111,6 @@
 		ED3D73D0257A0C620067CDA4 /* BaseLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLoadingView.swift; sourceTree = "<group>"; };
 		ED59FE4125665EDD00745289 /* WMSegment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WMSegment.swift; sourceTree = "<group>"; };
 		ED9F1EE8258B3595003DD400 /* AuthenticationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
-		ED9F1EE9258B3595003DD400 /* DeepLinkShortcutManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DeepLinkShortcutManager.swift; sourceTree = "<group>"; };
 		ED9F1EEA258B3595003DD400 /* EventCalendarManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCalendarManager.swift; sourceTree = "<group>"; };
 		ED9F1EEB258B3595003DD400 /* SpotlightManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotlightManager.swift; sourceTree = "<group>"; };
 		EDA6074E2563752E004C6530 /* OrderedDictionary+Deprecated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "OrderedDictionary+Deprecated.swift"; sourceTree = "<group>"; };
@@ -314,7 +312,6 @@
 			isa = PBXGroup;
 			children = (
 				ED9F1EE8258B3595003DD400 /* AuthenticationManager.swift */,
-				ED9F1EE9258B3595003DD400 /* DeepLinkShortcutManager.swift */,
 				ED9F1EEA258B3595003DD400 /* EventCalendarManager.swift */,
 				ED9F1EEB258B3595003DD400 /* SpotlightManager.swift */,
 				ED119B1E25748A8600AD0EFA /* CrashlyticManager.swift */,
@@ -500,7 +497,6 @@
 				ED119B1F25748A8600AD0EFA /* PerformanceMonitorManager.swift in Sources */,
 				ED33F9FF255E275100C7C90C /* CustomRadioLabelItem.swift in Sources */,
 				ED9F1EEF258B3595003DD400 /* SpotlightManager.swift in Sources */,
-				ED9F1EED258B3595003DD400 /* DeepLinkShortcutManager.swift in Sources */,
 				ED33F904255D1E9300C7C90C /* CaptchaGenerator.swift in Sources */,
 				EDB9DBA42562178400C6F2A7 /* StringExtension.swift in Sources */,
 				ED33F922255D21FB00C7C90C /* SecureTextToggleButton.swift in Sources */,
