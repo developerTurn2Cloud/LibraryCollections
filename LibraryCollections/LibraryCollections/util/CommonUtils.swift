@@ -56,8 +56,11 @@ public class CommonUtils {
     }
     
     // MARK: - UserDefault
-    public static func writeToUserDefault<DataType:Codable>(key:String, data:DataType) {
-        let userDefaultStand = UserDefaults.standard
+    public static func writeToUserDefault<DataType:Codable>(suiteName:String = "", key:String, data:DataType) {
+        guard let userDefaultStand = suiteName.isEmpty ? UserDefaults.standard : UserDefaults(suiteName: suiteName) else {
+            return
+        }
+        
         if data is Array<Any> {
             let data = try? jsonEncoder.encode(data)
             userDefaultStand.set(data, forKey: key)
@@ -67,8 +70,10 @@ public class CommonUtils {
         userDefaultStand.synchronize()
     }
     
-    public static func readFromUserDefault<DataType:Codable>(key:String) -> DataType? {
-        let userDefaultStand = UserDefaults.standard
+    public static func readFromUserDefault<DataType:Codable>(suiteName:String = "", key:String) -> DataType? {
+        guard let userDefaultStand = suiteName.isEmpty ? UserDefaults.standard : UserDefaults(suiteName: suiteName) else {
+            return nil
+        }
         
         if DataType.self is String.Type {
             return userDefaultStand.string(forKey: key) as? DataType
