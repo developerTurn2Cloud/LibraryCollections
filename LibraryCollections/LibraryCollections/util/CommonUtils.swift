@@ -93,8 +93,8 @@ public class CommonUtils {
             return
         }
         
-        UserDefaults.standard.removeObject(forKey: key)
-        UserDefaults.standard.synchronize()
+        userDefaultStand.removeObject(forKey: key)
+        userDefaultStand.synchronize()
     }
     
     // MARK: - Encryption
