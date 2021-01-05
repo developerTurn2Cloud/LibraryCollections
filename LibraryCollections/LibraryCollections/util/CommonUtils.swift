@@ -88,7 +88,11 @@ public class CommonUtils {
         }
     }
     
-    public static func clearUserDefault(key:String) {
+    public static func clearUserDefault(suiteName:String = "", key:String) {
+        guard let userDefaultStand = suiteName.isEmpty ? UserDefaults.standard : UserDefaults(suiteName: suiteName) else {
+            return
+        }
+        
         UserDefaults.standard.removeObject(forKey: key)
         UserDefaults.standard.synchronize()
     }
