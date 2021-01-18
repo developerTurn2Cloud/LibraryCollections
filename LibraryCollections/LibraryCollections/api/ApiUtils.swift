@@ -41,17 +41,17 @@ public class ApiUtils {
     
     // MARK: - API request
     public static func requestApi<ApiType:TargetType, ResponseType:Codable>(apiType:ApiType
-        , manager: Manager = MoyaProvider<Target>.defaultAlamofireManager()
+        , manager: Manager = MoyaProvider<ApiType>.defaultAlamofireManager()
         , responseType:ResponseType.Type
         , onSuccess: @escaping (ResponseType) -> ()
         , onFail:@escaping (NSError) -> ()
         , onFinally:@escaping () -> ()
         , retryCount:Int = ApiUtils.API_ERROR_RETRY_COUNT) -> Disposable {
         
-        let apiProvider = MoyaProvider<ApiType>(plugins: [NetworkLoggerPlugin(verbose: true, responseDataFormatter: JSONResponseDataFormatter)], manager: manager)
+        let apiProvider = MoyaProvider<ApiType>(manager: manager, plugins: [NetworkLoggerPlugin(verbose: true, responseDataFormatter: JSONResponseDataFormatter)])
         var retryCount = retryCount
         
-        return privider.rx
+        return apiProvider.rx
             .request(apiType)
             .filterSuccessfulStatusAndRedirectCodes()
             .map(responseType)
