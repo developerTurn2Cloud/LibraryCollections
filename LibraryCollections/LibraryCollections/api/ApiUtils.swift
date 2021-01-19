@@ -72,6 +72,7 @@ public class ApiUtils {
                 if retryCount > 0 {
                     retryCount = retryCount - 1
                     let _ = requestApi(apiType: apiType,
+                                       manager: manager,
                                        responseType: responseType,
                                        onSuccess: onSuccess,
                                        onFail: onFail,
