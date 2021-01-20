@@ -154,7 +154,7 @@ public class CommonUtils {
     }
     
     // MARK: - String matcher
-    static func isMatchFormat(data:String, pattern:String, options:NSRegularExpression.Options) -> Bool {
+    public static func isMatchFormat(data:String, pattern:String, options:NSRegularExpression.Options) -> Bool {
         do {
             let regex:NSRegularExpression = try NSRegularExpression(pattern: pattern, options: options)
             return regex.matches(in: data, options: [], range: NSMakeRange(0, data.count)).count > 0
