@@ -2,7 +2,7 @@ import Foundation
 import UIKit
 import LibraryCollections
 
-open protocol IBaseView:UIViewController {
+public protocol IBaseView:UIViewController {
     func showLoading()
     func closeLoading()
 }
