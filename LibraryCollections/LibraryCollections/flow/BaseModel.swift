@@ -3,7 +3,7 @@ import Moya
 import RxSwift
 
 public class BaseModel {
-    let compositeDisposal:CompositeDisposable!
+    public let compositeDisposal:CompositeDisposable!
     
     public init() {
         self.compositeDisposal = CompositeDisposable()
