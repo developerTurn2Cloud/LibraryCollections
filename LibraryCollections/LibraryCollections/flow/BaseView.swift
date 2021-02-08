@@ -7,7 +7,7 @@ public protocol IBaseView:UIViewController {
     func closeLoading()
 }
 
-public extension IBaseView {
+extension IBaseView {
     
     public func showLoading() {
         guard let rootView = UIApplication.shared.windows[0].rootViewController?.view else {

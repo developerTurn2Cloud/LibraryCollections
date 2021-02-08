@@ -1,9 +1,9 @@
 import Foundation
 
 public protocol IBaseViewModel:class {
-    public func release()
+    func release()
 }
 
-public extension IBaseViewModel {
+extension IBaseViewModel {
     public func release() {}
 }
