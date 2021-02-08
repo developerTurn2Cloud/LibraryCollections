@@ -5,7 +5,7 @@ import Alamofire
 public class CustomSSLPinManager: Manager {
     public static var shared:Manager!
     
-    static func configure(apiDomain:String, certificatesPath:String) {
+    public static func configure(apiDomain:String, certificatesPath:String) {
         let serverTrustPolicyManager: CustomServerTrustPoliceManager? = CustomServerTrustPoliceManager(apiDomain: apiDomain, certificatesPath: certificatesPath)
         
         shared = Manager(
