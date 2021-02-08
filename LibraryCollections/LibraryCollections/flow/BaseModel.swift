@@ -2,14 +2,14 @@ import Foundation
 import Moya
 import RxSwift
 
-class BaseModel {
+public class BaseModel {
     let compositeDisposal:CompositeDisposable!
     
-    init() {
+    public init() {
         self.compositeDisposal = CompositeDisposable()
     }
     
-    func release() {
+    public func release() {
         self.compositeDisposal.dispose()
     }
     

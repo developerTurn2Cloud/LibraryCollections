@@ -2,14 +2,14 @@ import Foundation
 import UIKit
 import LibraryCollections
 
-protocol IBaseView:UIViewController {
+public protocol IBaseView:UIViewController {
     func showLoading()
     func closeLoading()
 }
 
-extension IBaseView {
+public extension IBaseView {
     
-    func showLoading() {
+    public func showLoading() {
         guard let rootView = UIApplication.shared.windows[0].rootViewController?.view else {
             return
         }
@@ -18,7 +18,7 @@ extension IBaseView {
         let loadingView = CustomLoadingView(frame: self.view.frame, imageUrl: imageUrl, msg: NSLocalizedString("Global.Loading", comment: ""))
         ViewUtils.showLoading(customLoadingView: loadingView, container: rootView)
     }
-    func closeLoading() {
+    public func closeLoading() {
         ViewUtils.closeLoading()
     }
 }
