@@ -3,7 +3,7 @@ import Moya
 import Alamofire
 
 public class CustomSSLPinManager: Manager {
-    static var shared:Manager!
+    public static var shared:Manager!
     
     static func configure(apiDomain:String, certificatesPath:String) {
         let serverTrustPolicyManager: CustomServerTrustPoliceManager? = CustomServerTrustPoliceManager(apiDomain: apiDomain, certificatesPath: certificatesPath)
