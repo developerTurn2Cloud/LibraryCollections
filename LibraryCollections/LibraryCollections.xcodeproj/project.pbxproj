@@ -49,6 +49,7 @@
 		ED8AC8B825D0EA4A0066378E /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8AC8B525D0EA4A0066378E /* BaseViewModel.swift */; };
 		ED8AC8B925D0EA4A0066378E /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8AC8B625D0EA4A0066378E /* BaseView.swift */; };
 		ED8AC8BA25D0EA4A0066378E /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8AC8B725D0EA4A0066378E /* BaseModel.swift */; };
+		ED8AC8BF25D0EB990066378E /* CustomSSLPinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8AC8BE25D0EB990066378E /* CustomSSLPinManager.swift */; };
 		ED9F1EEC258B3595003DD400 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9F1EE8258B3595003DD400 /* AuthenticationManager.swift */; };
 		ED9F1EEE258B3595003DD400 /* EventCalendarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9F1EEA258B3595003DD400 /* EventCalendarManager.swift */; };
 		ED9F1EEF258B3595003DD400 /* SpotlightManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9F1EEB258B3595003DD400 /* SpotlightManager.swift */; };
@@ -116,6 +117,7 @@
 		ED8AC8B525D0EA4A0066378E /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		ED8AC8B625D0EA4A0066378E /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		ED8AC8B725D0EA4A0066378E /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
+		ED8AC8BE25D0EB990066378E /* CustomSSLPinManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSSLPinManager.swift; sourceTree = "<group>"; };
 		ED9F1EE8258B3595003DD400 /* AuthenticationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		ED9F1EEA258B3595003DD400 /* EventCalendarManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCalendarManager.swift; sourceTree = "<group>"; };
 		ED9F1EEB258B3595003DD400 /* SpotlightManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotlightManager.swift; sourceTree = "<group>"; };
@@ -317,6 +319,7 @@
 		ED5321BB256B61CA00399EC7 /* manager */ = {
 			isa = PBXGroup;
 			children = (
+				ED8AC8BE25D0EB990066378E /* CustomSSLPinManager.swift */,
 				ED9F1EE8258B3595003DD400 /* AuthenticationManager.swift */,
 				ED9F1EEA258B3595003DD400 /* EventCalendarManager.swift */,
 				ED9F1EEB258B3595003DD400 /* SpotlightManager.swift */,
@@ -509,6 +512,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED33F9FE255E275100C7C90C /* CustomRadioTextFieldItem.swift in Sources */,
+				ED8AC8BF25D0EB990066378E /* CustomSSLPinManager.swift in Sources */,
 				EDB9DBA72562178400C6F2A7 /* DateExtension.swift in Sources */,
 				ED33F9FB255E275100C7C90C /* CustomSpinner.swift in Sources */,
 				ED119B1F25748A8600AD0EFA /* PerformanceMonitorManager.swift in Sources */,
