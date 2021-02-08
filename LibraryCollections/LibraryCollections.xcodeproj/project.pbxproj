@@ -46,6 +46,9 @@
 		ED33FA51255E7E7000C7C90C /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33FA50255E7E7000C7C90C /* ViewUtils.swift */; };
 		ED3D73D1257A0C620067CDA4 /* BaseLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3D73D0257A0C620067CDA4 /* BaseLoadingView.swift */; };
 		ED59FE4225665EDD00745289 /* WMSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59FE4125665EDD00745289 /* WMSegment.swift */; };
+		ED8AC8B825D0EA4A0066378E /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8AC8B525D0EA4A0066378E /* BaseViewModel.swift */; };
+		ED8AC8B925D0EA4A0066378E /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8AC8B625D0EA4A0066378E /* BaseView.swift */; };
+		ED8AC8BA25D0EA4A0066378E /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8AC8B725D0EA4A0066378E /* BaseModel.swift */; };
 		ED9F1EEC258B3595003DD400 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9F1EE8258B3595003DD400 /* AuthenticationManager.swift */; };
 		ED9F1EEE258B3595003DD400 /* EventCalendarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9F1EEA258B3595003DD400 /* EventCalendarManager.swift */; };
 		ED9F1EEF258B3595003DD400 /* SpotlightManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9F1EEB258B3595003DD400 /* SpotlightManager.swift */; };
@@ -110,6 +113,9 @@
 		ED33FA50255E7E7000C7C90C /* ViewUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewUtils.swift; sourceTree = "<group>"; };
 		ED3D73D0257A0C620067CDA4 /* BaseLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLoadingView.swift; sourceTree = "<group>"; };
 		ED59FE4125665EDD00745289 /* WMSegment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WMSegment.swift; sourceTree = "<group>"; };
+		ED8AC8B525D0EA4A0066378E /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		ED8AC8B625D0EA4A0066378E /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		ED8AC8B725D0EA4A0066378E /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		ED9F1EE8258B3595003DD400 /* AuthenticationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		ED9F1EEA258B3595003DD400 /* EventCalendarManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCalendarManager.swift; sourceTree = "<group>"; };
 		ED9F1EEB258B3595003DD400 /* SpotlightManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotlightManager.swift; sourceTree = "<group>"; };
@@ -328,6 +334,16 @@
 			path = wmsegmentcontrol;
 			sourceTree = "<group>";
 		};
+		ED8AC8B425D0EA1D0066378E /* flow */ = {
+			isa = PBXGroup;
+			children = (
+				ED8AC8B725D0EA4A0066378E /* BaseModel.swift */,
+				ED8AC8B625D0EA4A0066378E /* BaseView.swift */,
+				ED8AC8B525D0EA4A0066378E /* BaseViewModel.swift */,
+			);
+			path = flow;
+			sourceTree = "<group>";
+		};
 		EDA6074D2563752E004C6530 /* dictionary */ = {
 			isa = PBXGroup;
 			children = (
@@ -363,6 +379,7 @@
 				ED33F7C7255CC90E00C7C90C /* api */,
 				ED33F8E8255D19D400C7C90C /* component */,
 				ED33FA05255E27D400C7C90C /* extension */,
+				ED8AC8B425D0EA1D0066378E /* flow */,
 				ED33F900255D1E0E00C7C90C /* images */,
 				ED5321BB256B61CA00399EC7 /* manager */,
 				ED33F7D6255CCF3300C7C90C /* util */,
@@ -496,9 +513,11 @@
 				ED33F9FB255E275100C7C90C /* CustomSpinner.swift in Sources */,
 				ED119B1F25748A8600AD0EFA /* PerformanceMonitorManager.swift in Sources */,
 				ED33F9FF255E275100C7C90C /* CustomRadioLabelItem.swift in Sources */,
+				ED8AC8B825D0EA4A0066378E /* BaseViewModel.swift in Sources */,
 				ED9F1EEF258B3595003DD400 /* SpotlightManager.swift in Sources */,
 				ED33F904255D1E9300C7C90C /* CaptchaGenerator.swift in Sources */,
 				EDB9DBA42562178400C6F2A7 /* StringExtension.swift in Sources */,
+				ED8AC8BA25D0EA4A0066378E /* BaseModel.swift in Sources */,
 				ED33F922255D21FB00C7C90C /* SecureTextToggleButton.swift in Sources */,
 				EDB9DC932562283300C6F2A7 /* UIButtonExtension.swift in Sources */,
 				ED33F91F255D21FB00C7C90C /* RegexRule.swift in Sources */,
@@ -521,6 +540,7 @@
 				ED33F90F255D20A600C7C90C /* DeviceHelper.swift in Sources */,
 				ED33F90D255D20A600C7C90C /* UIButtonHelper.swift in Sources */,
 				ED33F920255D21FB00C7C90C /* Ruleable.swift in Sources */,
+				ED8AC8B925D0EA4A0066378E /* BaseView.swift in Sources */,
 				EDA607552563752E004C6530 /* OrderedDictionary+Description.swift in Sources */,
 				ED33F9EF255E232900C7C90C /* QRScannerError.swift in Sources */,
 				ED33F91E255D21FB00C7C90C /* PasswordRule.swift in Sources */,
