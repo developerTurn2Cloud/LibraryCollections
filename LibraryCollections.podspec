@@ -9,7 +9,7 @@ Pod::Spec.new do |spec|
   spec.platform     = :ios, "11.0"
   spec.ios.deployment_target = '11.0'
   spec.source       = { :git => "https://github.com/YomiRY/LibraryCollections.git", :tag => "1.1.62" }
-  spec.source_files  = "LibraryCollections", "LibraryCollections/**/*.{jpg,pdf,png,h,m,swift}"
+  spec.source_files  = "LibraryCollections", "LibraryCollections/**/*.{gif,jpg,pdf,png,h,m,swift}"
   spec.resources = "LibraryCollections/**/*.xib"
   spec.swift_versions = ['5.1', '5.2', '5.3']
   spec.static_framework = true

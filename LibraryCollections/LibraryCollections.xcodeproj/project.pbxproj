@@ -50,6 +50,8 @@
 		ED8AC8B925D0EA4A0066378E /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8AC8B625D0EA4A0066378E /* BaseView.swift */; };
 		ED8AC8BA25D0EA4A0066378E /* BaseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8AC8B725D0EA4A0066378E /* BaseModel.swift */; };
 		ED8AC8BF25D0EB990066378E /* CustomSSLPinManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8AC8BE25D0EB990066378E /* CustomSSLPinManager.swift */; };
+		ED8AC8C325D106CA0066378E /* CustomLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8AC8C225D106CA0066378E /* CustomLoadingView.swift */; };
+		ED8AC8C725D107390066378E /* loading.gif in Resources */ = {isa = PBXBuildFile; fileRef = ED8AC8C625D107390066378E /* loading.gif */; };
 		ED9F1EEC258B3595003DD400 /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9F1EE8258B3595003DD400 /* AuthenticationManager.swift */; };
 		ED9F1EEE258B3595003DD400 /* EventCalendarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9F1EEA258B3595003DD400 /* EventCalendarManager.swift */; };
 		ED9F1EEF258B3595003DD400 /* SpotlightManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED9F1EEB258B3595003DD400 /* SpotlightManager.swift */; };
@@ -118,6 +120,8 @@
 		ED8AC8B625D0EA4A0066378E /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		ED8AC8B725D0EA4A0066378E /* BaseModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseModel.swift; sourceTree = "<group>"; };
 		ED8AC8BE25D0EB990066378E /* CustomSSLPinManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSSLPinManager.swift; sourceTree = "<group>"; };
+		ED8AC8C225D106CA0066378E /* CustomLoadingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomLoadingView.swift; sourceTree = "<group>"; };
+		ED8AC8C625D107390066378E /* loading.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = loading.gif; sourceTree = "<group>"; };
 		ED9F1EE8258B3595003DD400 /* AuthenticationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
 		ED9F1EEA258B3595003DD400 /* EventCalendarManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCalendarManager.swift; sourceTree = "<group>"; };
 		ED9F1EEB258B3595003DD400 /* SpotlightManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotlightManager.swift; sourceTree = "<group>"; };
@@ -217,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				ED3D73D0257A0C620067CDA4 /* BaseLoadingView.swift */,
+				ED8AC8C225D106CA0066378E /* CustomLoadingView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -224,6 +229,7 @@
 		ED33F900255D1E0E00C7C90C /* images */ = {
 			isa = PBXGroup;
 			children = (
+				ED8AC8C625D107390066378E /* loading.gif */,
 				ED1D565F258B441100A0CC97 /* ic_deeplink_shortcut.png */,
 				ED1D5660258B441100A0CC97 /* img_sbackground.jpg */,
 				ED1D5661258B441100A0CC97 /* img_splash.jpg */,
@@ -474,6 +480,7 @@
 				ED1D5664258B441100A0CC97 /* img_splash.jpg in Resources */,
 				EDA608C42563BEAC004C6530 /* visibility_on.png in Resources */,
 				EDD2A29D2578ED5900CEEF4D /* ic_blue_down.png in Resources */,
+				ED8AC8C725D107390066378E /* loading.gif in Resources */,
 				ED33F9FA255E275100C7C90C /* CustomSpinner.xib in Resources */,
 				EDA608C32563BEAC004C6530 /* visibility_off.png in Resources */,
 			);
@@ -517,6 +524,7 @@
 				ED33F9FB255E275100C7C90C /* CustomSpinner.swift in Sources */,
 				ED119B1F25748A8600AD0EFA /* PerformanceMonitorManager.swift in Sources */,
 				ED33F9FF255E275100C7C90C /* CustomRadioLabelItem.swift in Sources */,
+				ED8AC8C325D106CA0066378E /* CustomLoadingView.swift in Sources */,
 				ED8AC8B825D0EA4A0066378E /* BaseViewModel.swift in Sources */,
 				ED9F1EEF258B3595003DD400 /* SpotlightManager.swift in Sources */,
 				ED33F904255D1E9300C7C90C /* CaptchaGenerator.swift in Sources */,
