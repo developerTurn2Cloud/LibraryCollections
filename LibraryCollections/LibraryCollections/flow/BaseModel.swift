@@ -2,7 +2,7 @@ import Foundation
 import Moya
 import RxSwift
 
-public class BaseModel {
+open class BaseModel {
     public let compositeDisposal:CompositeDisposable!
     
     public init() {

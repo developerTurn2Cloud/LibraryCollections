@@ -1,6 +1,6 @@
 import Foundation
 
-public protocol IBaseViewModel:class {
+open protocol IBaseViewModel:class {
     func release()
 }
 
