@@ -1,6 +1,6 @@
 import UIKit
 
-protocol IBaseCell:UITableViewCell {
+public protocol IBaseCell:UITableViewCell {
     
     associatedtype DataType
     
