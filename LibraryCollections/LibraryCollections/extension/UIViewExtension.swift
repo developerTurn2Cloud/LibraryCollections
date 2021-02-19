@@ -39,4 +39,11 @@
             self.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: bottom)
         ])
     }
+    
+    // Returns the first constraint with the given identifier, if available.
+    ///
+    /// - Parameter identifier: The constraint identifier.
+    public func constraintWithIdentifier(_ identifier: String) -> NSLayoutConstraint? {
+        self.constraints.first { $0.identifier == identifier }
+    }
  }

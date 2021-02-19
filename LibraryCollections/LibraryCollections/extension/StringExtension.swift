@@ -42,4 +42,8 @@ extension String {
     public func urlDecoded() -> String {
         return self.removingPercentEncoding ?? ""
     }
+    
+    public var localized:String {
+        NSLocalizedString(self, comment: "")
+    }
 }
