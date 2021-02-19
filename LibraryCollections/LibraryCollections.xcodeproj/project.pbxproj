@@ -71,6 +71,7 @@
 		EDD15993255A81EA00011C8E /* LibraryCollections.h in Headers */ = {isa = PBXBuildFile; fileRef = EDD15991255A81EA00011C8E /* LibraryCollections.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EDD2A29A2578ED0C00CEEF4D /* ic_radio_unselected.png in Resources */ = {isa = PBXBuildFile; fileRef = EDD2A2992578ED0C00CEEF4D /* ic_radio_unselected.png */; };
 		EDD2A29D2578ED5900CEEF4D /* ic_blue_down.png in Resources */ = {isa = PBXBuildFile; fileRef = EDD2A29C2578ED5900CEEF4D /* ic_blue_down.png */; };
+		EDEFEEC425DFC82C0044C127 /* IBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEFEEC325DFC82C0044C127 /* IBaseCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -142,6 +143,7 @@
 		EDD15992255A81EA00011C8E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EDD2A2992578ED0C00CEEF4D /* ic_radio_unselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_radio_unselected.png; sourceTree = "<group>"; };
 		EDD2A29C2578ED5900CEEF4D /* ic_blue_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_blue_down.png; sourceTree = "<group>"; };
+		EDEFEEC325DFC82C0044C127 /* IBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBaseCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,6 +207,7 @@
 				ED33F8F0255D1A7B00C7C90C /* textfield */,
 				ED33F8F4255D1B6600C7C90C /* view */,
 				ED33FA01255E276100C7C90C /* NibLoadable.swift */,
+				EDEFEEC325DFC82C0044C127 /* IBaseCell.swift */,
 			);
 			path = component;
 			sourceTree = "<group>";
@@ -532,6 +535,7 @@
 				ED8AC8BA25D0EA4A0066378E /* BaseModel.swift in Sources */,
 				ED33F922255D21FB00C7C90C /* SecureTextToggleButton.swift in Sources */,
 				EDB9DC932562283300C6F2A7 /* UIButtonExtension.swift in Sources */,
+				EDEFEEC425DFC82C0044C127 /* IBaseCell.swift in Sources */,
 				ED33F91F255D21FB00C7C90C /* RegexRule.swift in Sources */,
 				ED33FA07255E280E00C7C90C /* UIViewExtension.swift in Sources */,
 				ED33F912255D20A600C7C90C /* UITextFieldHelper.swift in Sources */,
