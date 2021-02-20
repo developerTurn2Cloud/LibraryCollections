@@ -5,7 +5,7 @@ extension UIViewController {
     
     public func showAlert(title:String,
                    content:String,
-                   conformTitle:String? = NSLocalizedString("Global.Confirm", comment: ""),
+                   conformTitle:String? = "Global.Confirm".localized,
                    confirmHandler:((UIAlertAction) -> Void)? = nil,
                    cancelTitle:String? = nil,
                    cancelHandler:((UIAlertAction) -> Void)? = nil) {
