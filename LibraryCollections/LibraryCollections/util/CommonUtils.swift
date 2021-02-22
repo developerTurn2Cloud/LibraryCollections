@@ -6,6 +6,19 @@ import Alamofire
 public class CommonUtils {
     
     // MARK: - Properties
+    public static var APP_VERSION:String {
+        guard let version = Bundle.main.infoDictionary?["CFBundleShortVersionString"] as? String else {
+            return "Error"
+        }
+        return version
+    }
+    
+    public static var APP_BUNDLE_ID:String {
+        guard let bundleId = Bundle.main.bundleIdentifier else {
+            return "Error"
+        }
+        return bundleId
+    }
     private static let jsonEncoder:JSONEncoder = JSONEncoder()
     private static let jsonDecorder:JSONDecoder = JSONDecoder()
     private static let dateFormatter:DateFormatter = DateFormatter()
