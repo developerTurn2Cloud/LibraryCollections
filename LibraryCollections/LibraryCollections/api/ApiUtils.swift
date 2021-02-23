@@ -60,11 +60,10 @@ public class ApiUtils {
                 onSuccess(data)
                 onFinally()
             }, onError: { error in
-                let moyaError = error as! MoyaError
-                var nsError = moyaError.errorUserInfo[NSUnderlyingErrorKey] as! NSError
-                
-                guard let cfNetworkError = CFNetworkErrors(rawValue: Int32(nsError.code)) else {
-                    onFail(nsError)
+                guard let moyaError = error as? MoyaError,
+                      var nsError = moyaError.errorUserInfo[NSUnderlyingErrorKey] as? NSError,
+                      let cfNetworkError = CFNetworkErrors(rawValue: Int32(nsError.code)) else {
+                    onFail(NSError(domain: "Unknown network error, please check and retry.", code: -1, userInfo: nil))
                     onFinally()
                     return
                 }
