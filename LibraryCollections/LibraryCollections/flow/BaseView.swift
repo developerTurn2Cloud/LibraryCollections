@@ -9,8 +9,8 @@ public protocol IBaseView:UIViewController {
 
 extension IBaseView {
     
-    public func showLoading() {
-        guard let rootView = UIApplication.shared.windows[0].rootViewController?.view else {
+    public func showLoading(container:UIView? = UIApplication.shared.windows[0].rootViewController?.view) {
+        guard let rootView = container else {
             return
         }
         // 使用RootView, 避免Static UITableViewController造成的偏移
