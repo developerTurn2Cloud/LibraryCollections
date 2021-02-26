@@ -46,7 +46,7 @@
         self.constraints.first { $0.identifier == identifier }
     }
     
-    func imageFromView(markerViewContent:UIView) -> UIImage {
+    public func imageFromView(markerViewContent:UIView) -> UIImage {
         var img:UIImage? = nil
         UIGraphicsBeginImageContextWithOptions(markerViewContent.frame.size, false, 0)
         if let context = UIGraphicsGetCurrentContext() {
