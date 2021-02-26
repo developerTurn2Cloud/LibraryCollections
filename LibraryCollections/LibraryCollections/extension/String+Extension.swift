@@ -21,6 +21,14 @@ extension String {
         NSPredicate(format: "SELF MATCHES %@", "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}").evaluate(with: self)
     }
     
+    func isValidDonateFormat() -> Bool {
+        self.count >= 3 && self.count <= 7
+    }
+    
+    func isValidInvoiceFormat() -> Bool {
+        self.first == "/" && self.count == 8
+    }
+    
     public func toHtml() -> String {
         """
         <html><header><meta charset="UTF-8"><style>img{max-width:100%;height:auto !important;width:100% !important;};</style></header><body style='margin:0; padding:10px; -webkit-text-size-adjust: 220%;'>\(self)</body></html>
