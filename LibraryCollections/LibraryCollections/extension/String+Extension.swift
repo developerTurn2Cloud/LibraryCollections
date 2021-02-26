@@ -21,11 +21,11 @@ extension String {
         NSPredicate(format: "SELF MATCHES %@", "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}").evaluate(with: self)
     }
     
-    func isValidDonateFormat() -> Bool {
+    public func isValidDonateFormat() -> Bool {
         self.count >= 3 && self.count <= 7
     }
     
-    func isValidInvoiceFormat() -> Bool {
+    public func isValidInvoiceFormat() -> Bool {
         self.first == "/" && self.count == 8
     }
     
