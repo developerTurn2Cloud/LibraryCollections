@@ -10,7 +10,7 @@ public protocol IBaseView:UIViewController {
 
 extension IBaseView {
     
-    public var contentView:UIView = { self.view }
+    public var contentView:UIView { self.view }
     
     public func showLoading(container:UIView? = UIApplication.shared.windows[0].rootViewController?.view) {
         guard let rootView = container else {
