@@ -4,7 +4,7 @@ import LibraryCollections
 
 public protocol IBaseView:UIViewController {
     var contentView:UIView { get }
-    func showLoading()
+    func showLoading(container:UIView?)
     func closeLoading()
 }
 
