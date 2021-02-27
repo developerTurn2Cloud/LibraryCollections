@@ -46,6 +46,7 @@
 		ED33FA51255E7E7000C7C90C /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33FA50255E7E7000C7C90C /* ViewUtils.swift */; };
 		ED3D73D1257A0C620067CDA4 /* BaseLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3D73D0257A0C620067CDA4 /* BaseLoadingView.swift */; };
 		ED59FE4225665EDD00745289 /* WMSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59FE4125665EDD00745289 /* WMSegment.swift */; };
+		ED81E6BC25EA6DC400E442C1 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED81E6BB25EA6DC400E442C1 /* Dependencies.swift */; };
 		ED825A5E25E8998700C135F4 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED825A5D25E8998700C135F4 /* ShadowView.swift */; };
 		ED8AC8B825D0EA4A0066378E /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8AC8B525D0EA4A0066378E /* BaseViewModel.swift */; };
 		ED8AC8B925D0EA4A0066378E /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8AC8B625D0EA4A0066378E /* BaseView.swift */; };
@@ -118,6 +119,7 @@
 		ED33FA50255E7E7000C7C90C /* ViewUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewUtils.swift; sourceTree = "<group>"; };
 		ED3D73D0257A0C620067CDA4 /* BaseLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLoadingView.swift; sourceTree = "<group>"; };
 		ED59FE4125665EDD00745289 /* WMSegment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WMSegment.swift; sourceTree = "<group>"; };
+		ED81E6BB25EA6DC400E442C1 /* Dependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
 		ED825A5D25E8998700C135F4 /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		ED8AC8B525D0EA4A0066378E /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		ED8AC8B625D0EA4A0066378E /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
@@ -349,6 +351,14 @@
 			path = wmsegmentcontrol;
 			sourceTree = "<group>";
 		};
+		ED81E6BA25EA6DB100E442C1 /* di */ = {
+			isa = PBXGroup;
+			children = (
+				ED81E6BB25EA6DC400E442C1 /* Dependencies.swift */,
+			);
+			path = di;
+			sourceTree = "<group>";
+		};
 		ED8AC8B425D0EA1D0066378E /* flow */ = {
 			isa = PBXGroup;
 			children = (
@@ -393,6 +403,7 @@
 			children = (
 				ED33F7C7255CC90E00C7C90C /* api */,
 				ED33F8E8255D19D400C7C90C /* component */,
+				ED81E6BA25EA6DB100E442C1 /* di */,
 				ED33FA05255E27D400C7C90C /* extension */,
 				ED8AC8B425D0EA1D0066378E /* flow */,
 				ED33F900255D1E0E00C7C90C /* images */,
@@ -532,6 +543,7 @@
 				ED33F9FF255E275100C7C90C /* CustomRadioLabelItem.swift in Sources */,
 				ED8AC8C325D106CA0066378E /* CustomLoadingView.swift in Sources */,
 				ED8AC8B825D0EA4A0066378E /* BaseViewModel.swift in Sources */,
+				ED81E6BC25EA6DC400E442C1 /* Dependencies.swift in Sources */,
 				ED9F1EEF258B3595003DD400 /* SpotlightManager.swift in Sources */,
 				ED33F904255D1E9300C7C90C /* CaptchaGenerator.swift in Sources */,
 				EDB9DBA42562178400C6F2A7 /* String+Extension.swift in Sources */,
