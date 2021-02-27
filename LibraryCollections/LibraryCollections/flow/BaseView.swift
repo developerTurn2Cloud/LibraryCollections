@@ -3,11 +3,14 @@ import UIKit
 import LibraryCollections
 
 public protocol IBaseView:UIViewController {
+    var contentView:UIView { get }
     func showLoading()
     func closeLoading()
 }
 
 extension IBaseView {
+    
+    public var contentView:UIView = { self.view }
     
     public func showLoading(container:UIView? = UIApplication.shared.windows[0].rootViewController?.view) {
         guard let rootView = container else {
