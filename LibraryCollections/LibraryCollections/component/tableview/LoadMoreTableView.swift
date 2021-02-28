@@ -4,7 +4,7 @@ public protocol ILoadMoreEvent {
     func onLoadMore()
 }
 
-public class LoadMoreTableView: UITableView, UITableViewDataSource, UITableViewDelegate {
+open class LoadMoreTableView: UITableView, UITableViewDataSource, UITableViewDelegate {
     
     var loadMoreDelegage:ILoadMoreEvent?
     var datas:[AnyObject] = []
