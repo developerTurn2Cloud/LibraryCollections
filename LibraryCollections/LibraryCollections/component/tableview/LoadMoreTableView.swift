@@ -1,10 +1,10 @@
 import UIKit
 
-protocol ILoadMoreEvent {
+public protocol ILoadMoreEvent {
     func onLoadMore()
 }
 
-class LoadMoreTableView: UITableView, UITableViewDataSource, UITableViewDelegate {
+public class LoadMoreTableView: UITableView, UITableViewDataSource, UITableViewDelegate {
     
     var loadMoreDelegage:ILoadMoreEvent?
     var datas:[AnyObject] = []
