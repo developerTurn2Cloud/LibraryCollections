@@ -47,6 +47,7 @@
 		ED3D73D1257A0C620067CDA4 /* BaseLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3D73D0257A0C620067CDA4 /* BaseLoadingView.swift */; };
 		ED59FE4225665EDD00745289 /* WMSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59FE4125665EDD00745289 /* WMSegment.swift */; };
 		ED81E6BC25EA6DC400E442C1 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED81E6BB25EA6DC400E442C1 /* Dependencies.swift */; };
+		ED81E6F325EBFD2800E442C1 /* LoadMoreTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED81E6F225EBFD2800E442C1 /* LoadMoreTableView.swift */; };
 		ED825A5E25E8998700C135F4 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED825A5D25E8998700C135F4 /* ShadowView.swift */; };
 		ED8AC8B825D0EA4A0066378E /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8AC8B525D0EA4A0066378E /* BaseViewModel.swift */; };
 		ED8AC8B925D0EA4A0066378E /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8AC8B625D0EA4A0066378E /* BaseView.swift */; };
@@ -120,6 +121,7 @@
 		ED3D73D0257A0C620067CDA4 /* BaseLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLoadingView.swift; sourceTree = "<group>"; };
 		ED59FE4125665EDD00745289 /* WMSegment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WMSegment.swift; sourceTree = "<group>"; };
 		ED81E6BB25EA6DC400E442C1 /* Dependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
+		ED81E6F225EBFD2800E442C1 /* LoadMoreTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadMoreTableView.swift; sourceTree = "<group>"; };
 		ED825A5D25E8998700C135F4 /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
 		ED8AC8B525D0EA4A0066378E /* BaseViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		ED8AC8B625D0EA4A0066378E /* BaseView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 				ED33F906255D20A600C7C90C /* LayoutHelper */,
 				ED33F9E8255E232900C7C90C /* qrscanner */,
 				ED33F8F0255D1A7B00C7C90C /* textfield */,
+				ED81E6F125EBFD0600E442C1 /* tableview */,
 				ED33F8F4255D1B6600C7C90C /* view */,
 				ED33FA01255E276100C7C90C /* NibLoadable.swift */,
 				EDEFEEC325DFC82C0044C127 /* IBaseCell.swift */,
@@ -357,6 +360,14 @@
 				ED81E6BB25EA6DC400E442C1 /* Dependencies.swift */,
 			);
 			path = di;
+			sourceTree = "<group>";
+		};
+		ED81E6F125EBFD0600E442C1 /* tableview */ = {
+			isa = PBXGroup;
+			children = (
+				ED81E6F225EBFD2800E442C1 /* LoadMoreTableView.swift */,
+			);
+			path = tableview;
 			sourceTree = "<group>";
 		};
 		ED8AC8B425D0EA1D0066378E /* flow */ = {
@@ -541,6 +552,7 @@
 				ED33F9FB255E275100C7C90C /* CustomSpinner.swift in Sources */,
 				ED119B1F25748A8600AD0EFA /* PerformanceMonitorManager.swift in Sources */,
 				ED33F9FF255E275100C7C90C /* CustomRadioLabelItem.swift in Sources */,
+				ED81E6F325EBFD2800E442C1 /* LoadMoreTableView.swift in Sources */,
 				ED8AC8C325D106CA0066378E /* CustomLoadingView.swift in Sources */,
 				ED8AC8B825D0EA4A0066378E /* BaseViewModel.swift in Sources */,
 				ED81E6BC25EA6DC400E442C1 /* Dependencies.swift in Sources */,
