@@ -23,6 +23,26 @@ public class ViewUtils {
         v.endEditing(true)
     }
     
+    public static func setRootPage(targetStoryboard:String, targetStoryboardId:String) {
+        let targetVc = UIStoryboard(name: targetStoryboard, bundle: nil).instantiateViewController(withIdentifier: targetStoryboardId)
+        
+        ViewUtils.setRootPage(vc: targetVc)
+    }
+    
+    public static func setRootPage(vc:UIViewController) {
+        if #available(iOS 13, *) {
+            let keyWindow = UIApplication.shared.connectedScenes
+                    .filter({$0.activationState == .foregroundActive})
+                    .map({$0 as? UIWindowScene})
+                    .compactMap({$0})
+                    .first?.windows
+                    .filter({$0.isKeyWindow}).first
+            keyWindow?.rootViewController = targetVc
+        } else {
+            UIApplication.shared.keyWindow?.rootViewController = targetVc
+        }
+    }
+    
     public static func showLoading<T:BaseLoadingView>(customLoadingView:T,
                                    container:UIView) {
         closeLoading()
