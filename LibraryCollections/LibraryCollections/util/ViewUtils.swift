@@ -37,9 +37,9 @@ public class ViewUtils {
                     .compactMap({$0})
                     .first?.windows
                     .filter({$0.isKeyWindow}).first
-            keyWindow?.rootViewController = targetVc
+            keyWindow?.rootViewController = vc
         } else {
-            UIApplication.shared.keyWindow?.rootViewController = targetVc
+            UIApplication.shared.keyWindow?.rootViewController = vc
         }
     }
     
