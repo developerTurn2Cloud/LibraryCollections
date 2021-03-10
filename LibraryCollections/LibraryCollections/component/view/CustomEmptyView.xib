@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17132" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17105.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomEmptyView" customModule="LaLaport_iOS" customModuleProvider="target">
+            <connections>
+                <outlet property="contentView" destination="iN0-l3-epB" id="K7g-VM-LyH"/>
+                <outlet property="emptyImageView" destination="biu-fa-I2o" id="wNb-5S-Bsv"/>
+                <outlet property="emptyLabel" destination="SaQ-16-qSr" id="jrX-2p-pLK"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="306" height="153"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_empty_2" translatesAutoresizingMaskIntoConstraints="NO" id="biu-fa-I2o" userLabel="empty_image_view">
+                    <rect key="frame" x="133" y="44" width="40" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="40" id="bsC-1P-uZ3"/>
+                        <constraint firstAttribute="width" secondItem="biu-fa-I2o" secondAttribute="height" multiplier="1:1" id="rVQ-md-8GR"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="No information is available at the moment." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SaQ-16-qSr" userLabel="empty_label">
+                    <rect key="frame" x="0.0" y="112" width="306" height="20"/>
+                    <fontDescription key="fontDescription" name="PingFangTC-Semibold" family="PingFang TC" pointSize="14"/>
+                    <color key="textColor" red="0.55686274509803924" green="0.55686274509803924" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="biu-fa-I2o" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="278-wa-P4S"/>
+                <constraint firstItem="SaQ-16-qSr" firstAttribute="top" secondItem="biu-fa-I2o" secondAttribute="bottom" constant="28" id="NBF-tK-rzS"/>
+                <constraint firstItem="biu-fa-I2o" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="moh-yW-ZKj"/>
+                <constraint firstItem="SaQ-16-qSr" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="qBD-DD-cMF"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="SaQ-16-qSr" secondAttribute="trailing" id="xea-2M-Mes"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-49.275362318840585" y="-173.10267857142856"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_empty_2" width="40" height="40"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

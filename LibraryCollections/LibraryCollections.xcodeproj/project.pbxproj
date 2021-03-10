@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ED09A22825F8C02D0086579A /* CustomEmptyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = ED09A22625F8C02D0086579A /* CustomEmptyView.xib */; };
+		ED09A22925F8C02D0086579A /* CustomEmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED09A22725F8C02D0086579A /* CustomEmptyView.swift */; };
 		ED119B1F25748A8600AD0EFA /* PerformanceMonitorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED119B1D25748A8600AD0EFA /* PerformanceMonitorManager.swift */; };
 		ED119B2025748A8600AD0EFA /* CrashlyticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED119B1E25748A8600AD0EFA /* CrashlyticManager.swift */; };
 		ED1D5662258B441100A0CC97 /* ic_deeplink_shortcut.png in Resources */ = {isa = PBXBuildFile; fileRef = ED1D565F258B441100A0CC97 /* ic_deeplink_shortcut.png */; };
@@ -81,6 +83,8 @@
 		420535B4894ADE9AB2A3F647 /* Pods-LibraryCollections.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LibraryCollections.debug.xcconfig"; path = "Target Support Files/Pods-LibraryCollections/Pods-LibraryCollections.debug.xcconfig"; sourceTree = "<group>"; };
 		6D05BBE899326F0DBB4455D9 /* Pods_LibraryCollections.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LibraryCollections.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C5294EA4EBB0CCAF2BA5D1CC /* Pods-LibraryCollections.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LibraryCollections.release.xcconfig"; path = "Target Support Files/Pods-LibraryCollections/Pods-LibraryCollections.release.xcconfig"; sourceTree = "<group>"; };
+		ED09A22625F8C02D0086579A /* CustomEmptyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CustomEmptyView.xib; sourceTree = "<group>"; };
+		ED09A22725F8C02D0086579A /* CustomEmptyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomEmptyView.swift; sourceTree = "<group>"; };
 		ED119B1D25748A8600AD0EFA /* PerformanceMonitorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PerformanceMonitorManager.swift; sourceTree = "<group>"; };
 		ED119B1E25748A8600AD0EFA /* CrashlyticManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CrashlyticManager.swift; sourceTree = "<group>"; };
 		ED1D565F258B441100A0CC97 /* ic_deeplink_shortcut.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_deeplink_shortcut.png; sourceTree = "<group>"; };
@@ -230,9 +234,11 @@
 		ED33F8F4255D1B6600C7C90C /* view */ = {
 			isa = PBXGroup;
 			children = (
-				ED825A5D25E8998700C135F4 /* ShadowView.swift */,
 				ED3D73D0257A0C620067CDA4 /* BaseLoadingView.swift */,
+				ED09A22725F8C02D0086579A /* CustomEmptyView.swift */,
+				ED09A22625F8C02D0086579A /* CustomEmptyView.xib */,
 				ED8AC8C225D106CA0066378E /* CustomLoadingView.swift */,
+				ED825A5D25E8998700C135F4 /* ShadowView.swift */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -507,6 +513,7 @@
 				EDD2A29A2578ED0C00CEEF4D /* ic_radio_unselected.png in Resources */,
 				ED1D5664258B441100A0CC97 /* img_splash.jpg in Resources */,
 				EDA608C42563BEAC004C6530 /* visibility_on.png in Resources */,
+				ED09A22825F8C02D0086579A /* CustomEmptyView.xib in Resources */,
 				EDD2A29D2578ED5900CEEF4D /* ic_blue_down.png in Resources */,
 				ED8AC8C725D107390066378E /* loading.gif in Resources */,
 				ED33F9FA255E275100C7C90C /* CustomSpinner.xib in Resources */,
@@ -547,6 +554,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED33F9FE255E275100C7C90C /* CustomRadioTextFieldItem.swift in Sources */,
+				ED09A22925F8C02D0086579A /* CustomEmptyView.swift in Sources */,
 				ED8AC8BF25D0EB990066378E /* CustomSSLPinManager.swift in Sources */,
 				EDB9DBA72562178400C6F2A7 /* Date+Extension.swift in Sources */,
 				ED33F9FB255E275100C7C90C /* CustomSpinner.swift in Sources */,
