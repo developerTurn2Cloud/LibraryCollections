@@ -21,13 +21,9 @@ import UIKit
     }
     
     
-    @IBInspectable public var bgColor:UIColor {
-        set {
-            self.contentView.backgroundColor = newValue
-        }
-        
-        get {
-            self.contentView.backgroundColor
+    @IBInspectable public var bgColor:UIColor = UIColor.white {
+        didSet {
+            self.contentView.backgroundColor = self.bgColor
         }
     }
     
