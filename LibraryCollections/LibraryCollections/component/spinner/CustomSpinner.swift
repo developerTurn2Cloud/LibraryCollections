@@ -20,7 +20,7 @@ public protocol ISpinnerDelegate {
         }
     }
     
-    @IBInspectable public override var bgColor:UIColor {
+    @IBInspectable public var bgColor:UIColor {
         didSet {
             self.contentView.backgroundColor = self.bgColor
         }
