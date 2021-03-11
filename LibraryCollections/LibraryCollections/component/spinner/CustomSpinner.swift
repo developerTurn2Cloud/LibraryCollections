@@ -20,6 +20,12 @@ public protocol ISpinnerDelegate {
         }
     }
     
+    @IBInspectable public override var bgColor:UIColor {
+        didSet {
+            self.contentView.backgroundColor = self.bgColor
+        }
+    }
+    
     @IBInspectable public override var borderW:CGFloat {
         didSet {
             self.layer.borderWidth = self.borderW
