@@ -30,4 +30,40 @@ extension UIViewController {
         activityViewController.popoverPresentationController?.sourceView = self.view
         self.present(activityViewController, animated: true, completion: nil)
     }
+    
+    // MARK:- Navigation
+    
+    func popController() {
+        self.navigationController?.popViewController(animated: true)
+    }
+    
+    func dismissController(completion:(() -> Void)? = nil) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    func performSegue(segueId:String, sender:Any? = nil) {
+        self.performSegue(withIdentifier: segueId, sender: sender)
+    }
+    
+    func pushController(storyboardName:String, storyboardId:String) {
+        let storyboard = UIStoryboard(name: storyboardName, bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: storyboardId)
+        
+        self.pushController(vc: vc)
+    }
+    
+    func pushController(vc:UIViewController) {
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
+    
+    func presentController(storyboardName:String, storyboardId:String, completion:(() -> Void)? = nil) {
+        let storyboard = UIStoryboard(name: storyboardName, bundle: nil)
+        let vc = storyboard.instantiateViewController(withIdentifier: storyboardId)
+        
+        self.presentController(vc: vc)
+    }
+    
+    func presentController(vc:UIViewController, completion:(() -> Void)? = nil) {
+        self.present(vc, animated: true, completion: completion)
+    }
 }
