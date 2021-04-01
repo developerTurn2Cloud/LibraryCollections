@@ -1,5 +1,6 @@
 import Foundation
 import UIKit
+import MessageUI
 
 extension UIViewController {
     
@@ -29,6 +30,16 @@ extension UIViewController {
         let activityViewController = UIActivityViewController(activityItems : sharedObjects, applicationActivities: nil)
         activityViewController.popoverPresentationController?.sourceView = self.view
         self.present(activityViewController, animated: true, completion: nil)
+    }
+    
+    
+    public static func mailTo(recipients:[String], subject:String, message:String) {
+        let mail = MFMailComposeViewController()
+        mail.mailComposeDelegate = self
+        mail.setToRecipients(recipients)
+        mail.setSubject(subject)
+        mail.setMessageBody(message, isHTML: false)
+        self.present(mail, animated: true, completion: nil)
     }
     
     // MARK:- Navigation
