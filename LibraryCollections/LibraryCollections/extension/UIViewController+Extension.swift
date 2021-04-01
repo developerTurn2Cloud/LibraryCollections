@@ -35,7 +35,7 @@ extension UIViewController {
     }
     
     
-    public static func mailTo(recipients:[String], subject:String, message:String) {
+    public func mailTo(recipients:[String], subject:String, message:String) {
         let mail = MFMailComposeViewController()
         mail.setToRecipients(recipients)
         mail.setSubject(subject)
