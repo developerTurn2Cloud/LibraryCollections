@@ -23,13 +23,15 @@ extension UIViewController {
             
             alert.addAction(confirmHandler)
         }
-        self.present(alert, animated: true, completion: nil)
+        
+        self.presentController(vc: alert)
     }
     
     public func openShare(sharedObjects:[Any]) {
         let activityViewController = UIActivityViewController(activityItems : sharedObjects, applicationActivities: nil)
         activityViewController.popoverPresentationController?.sourceView = self.view
-        self.present(activityViewController, animated: true, completion: nil)
+        
+        self.presentController(activityViewController)
     }
     
     
@@ -38,7 +40,8 @@ extension UIViewController {
         mail.setToRecipients(recipients)
         mail.setSubject(subject)
         mail.setMessageBody(message, isHTML: false)
-        self.present(mail, animated: true, completion: nil)
+        
+        self.presentController(mail)
     }
     
     // MARK:- Navigation
