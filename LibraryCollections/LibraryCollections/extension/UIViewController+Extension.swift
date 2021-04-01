@@ -31,7 +31,7 @@ extension UIViewController {
         let activityViewController = UIActivityViewController(activityItems : sharedObjects, applicationActivities: nil)
         activityViewController.popoverPresentationController?.sourceView = self.view
         
-        self.presentController(activityViewController)
+        self.presentController(vc: activityViewController)
     }
     
     
@@ -41,7 +41,7 @@ extension UIViewController {
         mail.setSubject(subject)
         mail.setMessageBody(message, isHTML: false)
         
-        self.presentController(mail)
+        self.presentController(vc: mail)
     }
     
     // MARK:- Navigation
