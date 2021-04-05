@@ -2,7 +2,7 @@ import UIKit
 
 @IBDesignable public class CustomEmptyView: UIView, NibLoadable  {
 
-    @IBInspectable public var emptyIcon:UIImage = UIImage(named: "") {
+    @IBInspectable public var emptyIcon:UIImage? = nil {
         didSet {
             self.emptyImageView.image = self.emptyIcon
         }
