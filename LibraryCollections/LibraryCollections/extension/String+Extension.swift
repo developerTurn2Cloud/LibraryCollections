@@ -29,9 +29,9 @@ extension String {
         self.first == "/" && self.count == 8
     }
     
-    public func toHtml() -> String {
+    public func toHtml(textSizePercent:Int = 220) -> String {
         """
-        <html><header><meta charset="UTF-8"><style>img{max-width:100%;height:auto !important;width:100% !important;};</style></header><body style='margin:0; padding:10px; -webkit-text-size-adjust: 220%;'>\(self)</body></html>
+        <html><header><meta charset="UTF-8"><style>img{max-width:100%;height:auto !important;width:100% !important;};</style></header><body style='margin:0; padding:10px; -webkit-text-size-adjust: \(textSizePercent)%;'>\(self)</body></html>
         """
     }
     
