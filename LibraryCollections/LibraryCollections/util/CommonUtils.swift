@@ -157,13 +157,13 @@ public class CommonUtils {
         return matchParam
     }
     
-    public static func openUrl(urlStr:String) {
+    public static func openUrl(urlStr:String, completionHandler:((Bool) -> Void)? = nil) {
         guard let url = URL(string:urlStr), UIApplication.shared.canOpenURL(url) else {
             return
         }
         
         // can open succeeded.. opening the url
-        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+        UIApplication.shared.open(url, options: [:], completionHandler: completionHandler)
     }
     
     // MARK: - String matcher
@@ -178,11 +178,11 @@ public class CommonUtils {
     }
     
     //MARK: - Global
-    public static func openSettings() {
+    public static func openSettings(completionHandler:((Bool) -> Void)? = nil) {
         let url = URL(string:UIApplication.openSettingsURLString)
         if UIApplication.shared.canOpenURL(url!){
             // can open succeeded.. opening the url
-            UIApplication.shared.open(url!, options: [:], completionHandler: nil)
+            UIApplication.shared.open(url!, options: [:], completionHandler: completionHandler)
         }
     }
     
