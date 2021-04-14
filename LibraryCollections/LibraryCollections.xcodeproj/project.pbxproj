@@ -49,6 +49,8 @@
 		ED33FA51255E7E7000C7C90C /* ViewUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED33FA50255E7E7000C7C90C /* ViewUtils.swift */; };
 		ED3D73D1257A0C620067CDA4 /* BaseLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED3D73D0257A0C620067CDA4 /* BaseLoadingView.swift */; };
 		ED59FE4225665EDD00745289 /* WMSegment.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED59FE4125665EDD00745289 /* WMSegment.swift */; };
+		ED5B35C12626BA8A00EFF8E6 /* UITextView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5B35C02626BA8A00EFF8E6 /* UITextView+Extension.swift */; };
+		ED5B35C42626BAB300EFF8E6 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED5B35C32626BAB300EFF8E6 /* CustomTextField.swift */; };
 		ED81E6BC25EA6DC400E442C1 /* Dependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED81E6BB25EA6DC400E442C1 /* Dependencies.swift */; };
 		ED81E6F325EBFD2800E442C1 /* LoadMoreTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED81E6F225EBFD2800E442C1 /* LoadMoreTableView.swift */; };
 		ED825A5E25E8998700C135F4 /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED825A5D25E8998700C135F4 /* ShadowView.swift */; };
@@ -126,6 +128,8 @@
 		ED33FA50255E7E7000C7C90C /* ViewUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewUtils.swift; sourceTree = "<group>"; };
 		ED3D73D0257A0C620067CDA4 /* BaseLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseLoadingView.swift; sourceTree = "<group>"; };
 		ED59FE4125665EDD00745289 /* WMSegment.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WMSegment.swift; sourceTree = "<group>"; };
+		ED5B35C02626BA8A00EFF8E6 /* UITextView+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITextView+Extension.swift"; sourceTree = "<group>"; };
+		ED5B35C32626BAB300EFF8E6 /* CustomTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		ED81E6BB25EA6DC400E442C1 /* Dependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dependencies.swift; sourceTree = "<group>"; };
 		ED81E6F225EBFD2800E442C1 /* LoadMoreTableView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoadMoreTableView.swift; sourceTree = "<group>"; };
 		ED825A5D25E8998700C135F4 /* ShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
@@ -226,6 +230,7 @@
 				ED33F906255D20A600C7C90C /* LayoutHelper */,
 				ED33F9E8255E232900C7C90C /* qrscanner */,
 				ED33F8F0255D1A7B00C7C90C /* textfield */,
+				ED5B35BE2626BA4800EFF8E6 /* textview */,
 				ED81E6F125EBFD0600E442C1 /* tableview */,
 				ED33F8F4255D1B6600C7C90C /* view */,
 				ED33FA01255E276100C7C90C /* NibLoadable.swift */,
@@ -237,6 +242,7 @@
 		ED33F8F0255D1A7B00C7C90C /* textfield */ = {
 			isa = PBXGroup;
 			children = (
+				ED5B35C32626BAB300EFF8E6 /* CustomTextField.swift */,
 				ED33F914255D21FB00C7C90C /* PasswordTextField */,
 			);
 			path = textfield;
@@ -338,6 +344,7 @@
 		ED33FA05255E27D400C7C90C /* extension */ = {
 			isa = PBXGroup;
 			children = (
+				ED5B35C02626BA8A00EFF8E6 /* UITextView+Extension.swift */,
 				EDB9DC922562283300C6F2A7 /* UIButton+Extension.swift */,
 				EDB9DBA02562178400C6F2A7 /* CALayer+Extension.swift */,
 				EDB9DB9F2562178400C6F2A7 /* CGFloat+Extension.swift */,
@@ -369,6 +376,13 @@
 				ED59FE4125665EDD00745289 /* WMSegment.swift */,
 			);
 			path = wmsegmentcontrol;
+			sourceTree = "<group>";
+		};
+		ED5B35BE2626BA4800EFF8E6 /* textview */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = textview;
 			sourceTree = "<group>";
 		};
 		ED81E6BA25EA6DB100E442C1 /* di */ = {
@@ -587,6 +601,7 @@
 				ED33F912255D20A600C7C90C /* UITextFieldHelper.swift in Sources */,
 				ED33F7CD255CC99400C7C90C /* ApiUtils.swift in Sources */,
 				ED3D73D1257A0C620067CDA4 /* BaseLoadingView.swift in Sources */,
+				ED5B35C12626BA8A00EFF8E6 /* UITextView+Extension.swift in Sources */,
 				EDB9DBA52562178400C6F2A7 /* CGFloat+Extension.swift in Sources */,
 				ED33FA02255E276100C7C90C /* NibLoadable.swift in Sources */,
 				ED33FA0F255E29AF00C7C90C /* UITextField+Extension.swift in Sources */,
@@ -597,6 +612,7 @@
 				ED9F1EEE258B3595003DD400 /* EventCalendarManager.swift in Sources */,
 				EDB9DB9A2562177A00C6F2A7 /* UIViewController+Extension.swift in Sources */,
 				ED33F7D8255CCF4200C7C90C /* CommonUtils.swift in Sources */,
+				ED5B35C42626BAB300EFF8E6 /* CustomTextField.swift in Sources */,
 				ED59FE4225665EDD00745289 /* WMSegment.swift in Sources */,
 				EDA607542563752E004C6530 /* OrderedDictionary.swift in Sources */,
 				ED33F90F255D20A600C7C90C /* DeviceHelper.swift in Sources */,
