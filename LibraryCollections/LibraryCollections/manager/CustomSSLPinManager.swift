@@ -2,11 +2,12 @@ import Foundation
 import Moya
 import Alamofire
 
-public class CustomSSLPinManager: Manager {
-    public static var shared:Manager!
+class CustomSSLPinManager: Manager {
     
-    public static func configure(apiDomain:String, certificatesPath:String) {
-        let serverTrustPolicyManager: CustomServerTrustPoliceManager? = CustomServerTrustPoliceManager(apiDomain: apiDomain, certificatesPath: certificatesPath)
+    static var shared:Manager!
+    
+    static func configure(apiDomain:String, certificate:String) {
+        let serverTrustPolicyManager: CustomServerTrustPoliceManager? = CustomServerTrustPoliceManager(apiDomain: apiDomain, certificate: certificate)
         
         shared = Manager(
             configuration: URLSessionConfiguration.default,
@@ -19,14 +20,13 @@ public class CustomSSLPinManager: Manager {
 
 class CustomServerTrustPoliceManager : ServerTrustPolicyManager {
     
-    private var certificatesPath:String = ""
-    private var apiDomain:String = ""
+    private var apiDomain:String
+    private var certificate:String
     
-    init(apiDomain:String, certificatesPath:String = "") {
-        super.init(policies: [:])
-        
+    init(apiDomain:String, certificate:String) {
         self.apiDomain = apiDomain
-        self.certificatesPath = certificatesPath
+        self.certificate = certificate
+        super.init(policies: [:])
     }
     
     //自訂信任協議
@@ -37,7 +37,7 @@ class CustomServerTrustPoliceManager : ServerTrustPolicyManager {
             let filePath = Bundle.main.path(forResource: self.certificate, ofType: "der")!
             let data = try! Data(contentsOf: URL(fileURLWithPath: filePath))
             let certificate = SecCertificateCreateWithData(nil, data as CFData)!
-            
+
             let serverTrustPolicy = ServerTrustPolicy.pinCertificates(
                 //進行比對的參數
                 certificates: [certificate],
