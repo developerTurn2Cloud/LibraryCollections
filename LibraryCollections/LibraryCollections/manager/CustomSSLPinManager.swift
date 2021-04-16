@@ -6,7 +6,7 @@ public class CustomSSLPinManager: Manager {
     
     public static var shared:Manager!
     
-    static func configure(apiDomain:String, certificate:String) {
+    public static func configure(apiDomain:String, certificate:String) {
         let serverTrustPolicyManager: CustomServerTrustPoliceManager? = CustomServerTrustPoliceManager(apiDomain: apiDomain, certificate: certificate)
         
         shared = Manager(
