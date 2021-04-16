@@ -2,7 +2,7 @@ import Foundation
 import Moya
 import Alamofire
 
-class CustomSSLPinManager: Manager {
+public class CustomSSLPinManager: Manager {
     
     static var shared:Manager!
     
