@@ -32,7 +32,7 @@ class CustomServerTrustPoliceManager : ServerTrustPolicyManager {
     //自訂信任協議
     override func serverTrustPolicy(forHost host: String) -> ServerTrustPolicy? {
         //如果網域符合
-        if host.hasSuffix(self.apiDomain) {
+        if apiDomain.hasSuffix(self.host) {
             //從檔案資料夾取出憑證
             let filePath = Bundle.main.path(forResource: self.certificate, ofType: "der")!
             let data = try! Data(contentsOf: URL(fileURLWithPath: filePath))
