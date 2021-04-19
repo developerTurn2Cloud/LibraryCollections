@@ -32,11 +32,11 @@ open class LoadMoreTableView: UITableView, UITableViewDataSource, UITableViewDel
     }
     
     // MARK:- UITableViewDataSource
-   public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+   open func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         datas.count
     }
     
-    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    open func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = dequeueReusableCell(withIdentifier: cellID, for: indexPath)
         cell.selectionStyle = .none
         
