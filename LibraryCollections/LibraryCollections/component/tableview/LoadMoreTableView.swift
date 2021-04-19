@@ -6,15 +6,15 @@ public protocol ILoadMoreEvent {
 
 open class LoadMoreTableView: UITableView, UITableViewDataSource, UITableViewDelegate {
     
-    var loadMoreDelegage:ILoadMoreEvent?
-    var datas:[AnyObject] = []
-    var count:Int {
+    public var loadMoreDelegage:ILoadMoreEvent?
+    public var datas:[AnyObject] = []
+    public var count:Int {
         self.datas.count
     }
-    var cellID:String!
-    var hasReachLast:Bool = false
+    public var cellID:String!
+    public var hasReachLast:Bool = false
     
-    func addDatas(newDatas:[AnyObject]) {
+    public func addDatas(newDatas:[AnyObject]) {
         guard newDatas.count > 0 else {
             return
         }
@@ -25,7 +25,7 @@ open class LoadMoreTableView: UITableView, UITableViewDataSource, UITableViewDel
         self.reloadData()
     }
     
-    func clear() {
+    public func clear() {
         datas = []
         
         self.reloadData()
