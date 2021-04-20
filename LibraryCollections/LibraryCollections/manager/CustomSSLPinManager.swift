@@ -32,20 +32,19 @@ class CustomServerTrustPoliceManager : ServerTrustPolicyManager {
     //自訂信任協議
     override func serverTrustPolicy(forHost host: String) -> ServerTrustPolicy? {
         //如果網域符合
-        if self.apiDomain.hasSuffix(host) {
-            //從檔案資料夾取出憑證
-            let filePath = Bundle.main.path(forResource: self.certificate, ofType: "der")!
-            let data = try! Data(contentsOf: URL(fileURLWithPath: filePath))
-            let certificate = SecCertificateCreateWithData(nil, data as CFData)!
-
-            let serverTrustPolicy = ServerTrustPolicy.pinCertificates(
-                //進行比對的參數
-                certificates: [certificate],
-                validateCertificateChain: true,
-                validateHost: true
-            )
-            return serverTrustPolicy
+        guard self.apiDomain.hasSuffix(host),
+              let filePath = Bundle.main.path(forResource: self.certificate, ofType: "der"),
+              let data = try? Data(contentsOf: URL(fileURLWithPath: filePath)),
+              let certificate = SecCertificateCreateWithData(nil, data as CFData) else {
+            return .performDefaultEvaluation(validateHost: true)
         }
-        return .performDefaultEvaluation(validateHost: true)
+        
+        let serverTrustPolicy = ServerTrustPolicy.pinCertificates(
+            //進行比對的參數
+            certificates: [certificate],
+            validateCertificateChain: true,
+            validateHost: true
+        )
+        return serverTrustPolicy
     }
 }
