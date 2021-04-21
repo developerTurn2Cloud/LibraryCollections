@@ -30,17 +30,7 @@ public class ViewUtils {
     }
     
     public static func setRootPage(vc:UIViewController) {
-        if #available(iOS 13, *) {
-            let keyWindow = UIApplication.shared.connectedScenes
-                    .filter({$0.activationState == .foregroundActive})
-                    .map({$0 as? UIWindowScene})
-                    .compactMap({$0})
-                    .first?.windows
-                    .filter({$0.isKeyWindow}).first
-            keyWindow?.rootViewController = vc
-        } else {
-            UIApplication.shared.keyWindow?.rootViewController = vc
-        }
+        UIApplication.shared.keyWindow?.rootViewController = vc
     }
     
     public static func showLoading<T:BaseLoadingView>(customLoadingView:T,
