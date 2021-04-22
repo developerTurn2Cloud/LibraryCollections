@@ -60,6 +60,7 @@ Pod::Spec.new do |spec|
   spec.dependency 'Firebase/Crashlytics'
   spec.dependency "Firebase/Analytics"
   spec.dependency "Firebase/InAppMessaging"
+  spec.dependency "Firebase/Messaging"
   spec.dependency "IQKeyboardManagerSwift"
   spec.dependency "SwiftEventBus"
   spec.dependency 'ActionSheetPicker-3.0'
