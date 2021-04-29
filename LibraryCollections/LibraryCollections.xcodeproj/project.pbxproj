@@ -80,6 +80,7 @@
 		EDD2A29A2578ED0C00CEEF4D /* ic_radio_unselected.png in Resources */ = {isa = PBXBuildFile; fileRef = EDD2A2992578ED0C00CEEF4D /* ic_radio_unselected.png */; };
 		EDD2A29D2578ED5900CEEF4D /* ic_blue_down.png in Resources */ = {isa = PBXBuildFile; fileRef = EDD2A29C2578ED5900CEEF4D /* ic_blue_down.png */; };
 		EDEFEEC425DFC82C0044C127 /* IBaseCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDEFEEC325DFC82C0044C127 /* IBaseCell.swift */; };
+		EDFA8D32263A8E7D00CFF5B3 /* UIDevice+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDFA8D31263A8E7D00CFF5B3 /* UIDevice+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -160,6 +161,7 @@
 		EDD2A2992578ED0C00CEEF4D /* ic_radio_unselected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_radio_unselected.png; sourceTree = "<group>"; };
 		EDD2A29C2578ED5900CEEF4D /* ic_blue_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ic_blue_down.png; sourceTree = "<group>"; };
 		EDEFEEC325DFC82C0044C127 /* IBaseCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IBaseCell.swift; sourceTree = "<group>"; };
+		EDFA8D31263A8E7D00CFF5B3 /* UIDevice+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIDevice+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -353,6 +355,7 @@
 				EDB9DB982562177900C6F2A7 /* UIViewController+Extension.swift */,
 				ED33FA0E255E29AF00C7C90C /* UITextField+Extension.swift */,
 				ED33FA06255E280E00C7C90C /* UIView+Extension.swift */,
+				EDFA8D31263A8E7D00CFF5B3 /* UIDevice+Extension.swift */,
 			);
 			path = extension;
 			sourceTree = "<group>";
@@ -579,6 +582,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED33F9FE255E275100C7C90C /* CustomRadioTextFieldItem.swift in Sources */,
+				EDFA8D32263A8E7D00CFF5B3 /* UIDevice+Extension.swift in Sources */,
 				ED09A22925F8C02D0086579A /* CustomEmptyView.swift in Sources */,
 				ED8AC8BF25D0EB990066378E /* CustomSSLPinManager.swift in Sources */,
 				EDB9DBA72562178400C6F2A7 /* Date+Extension.swift in Sources */,
@@ -780,7 +784,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.108;
+				MARKETING_VERSION = 1.1.109;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.library-collection.LibraryCollections";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
@@ -809,7 +813,7 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.1.108;
+				MARKETING_VERSION = 1.1.109;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.library-collection.LibraryCollections";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
