@@ -28,7 +28,7 @@ class CustomLoadingView: BaseLoadingView {
         
         let loadingImageView:UIImageView = {
             let loadingImageView = UIImageView()
-            loadingImageView.frame = CGRect(x: self.center.x - 35, y: self.center.y - 20, width: self.loadingW, height: self.loadingH)
+            loadingImageView.frame = CGRect(x: self.center.x - self.loadingW / 2, y: self.center.y - self.loadingH / 2, width: self.loadingW, height: self.loadingH)
             loadingImageView.contentMode = .scaleAspectFill
             
             return loadingImageView
