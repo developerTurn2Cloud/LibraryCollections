@@ -6,10 +6,14 @@ class CustomLoadingView: BaseLoadingView {
     
     var msg:String?
     var imageUrl:URL?
+    var loadingW: CGFloat = 70
+    var loadingH:CGFloat = 40
     
-    init(frame: CGRect, imageUrl:URL, msg:String) {
+    init(frame: CGRect, imageUrl:URL, msg:String, loadingW:CGFloat = 70, loadingH:CGFloat = 40) {
         self.msg = msg
         self.imageUrl = imageUrl
+        self.loadingW = loadingW
+        self.loadingH = loadingH
         
         super.init(frame: frame)
     }
@@ -24,7 +28,7 @@ class CustomLoadingView: BaseLoadingView {
         
         let loadingImageView:UIImageView = {
             let loadingImageView = UIImageView()
-            loadingImageView.frame = CGRect(x: self.center.x - 35, y: self.center.y - 20, width: 70, height: 40)
+            loadingImageView.frame = CGRect(x: self.center.x - 35, y: self.center.y - 20, width: self.loadingW, height: self.loadingH)
             loadingImageView.contentMode = .scaleAspectFill
             
             return loadingImageView
