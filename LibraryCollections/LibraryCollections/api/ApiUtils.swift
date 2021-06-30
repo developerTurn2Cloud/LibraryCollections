@@ -8,10 +8,9 @@ public protocol IApiCallback {
     func onFinally()
 }
 
+let API_ERROR_RETRY_COUNT = 3
+
 public class ApiUtils {
-    
-    // MARK: - Properties
-    public static let API_ERROR_RETRY_COUNT = 3
     
     // MARK: - API Body Handling
     public static func getBodyParams<Type:Codable>(obj:Type) -> [String:Any] {
