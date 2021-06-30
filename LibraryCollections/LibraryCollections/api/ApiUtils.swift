@@ -45,7 +45,7 @@ public class ApiUtils {
         , onSuccess: @escaping (ResponseType) -> ()
         , onFail:@escaping (NSError) -> ()
         , onFinally:@escaping () -> ()
-        , retryCount:Int = ApiUtils.API_ERROR_RETRY_COUNT) -> Disposable {
+        , retryCount:Int = API_ERROR_RETRY_COUNT) -> Disposable {
         
         let apiProvider = MoyaProvider<ApiType>(manager: manager, plugins: [NetworkLoggerPlugin(verbose: true, responseDataFormatter: JSONResponseDataFormatter)])
         var retryCount = retryCount
