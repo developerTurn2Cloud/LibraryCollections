@@ -32,7 +32,7 @@ open class LoadMoreTableView: UITableView, UITableViewDataSource, UITableViewDel
     }
     
     // MARK:- scrollViewDidScroll
-    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+    public func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let isReachLast = self.indexPathsForVisibleRows?.contains(where: { indexPath in
             indexPath.row == self.datas.count - 1
         }) ?? false
