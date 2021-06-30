@@ -8,7 +8,7 @@ public protocol IApiCallback {
     func onFinally()
 }
 
-let API_ERROR_RETRY_COUNT = 3
+public let API_ERROR_RETRY_COUNT = 3
 
 public class ApiUtils {
     
