@@ -26,7 +26,7 @@ extension String {
     }
     
     public var isValidEInvoiceFormat: Bool {
-        NSPredicate(format: "SELF MATCHES %@", "^/[\dA-Z0-9+-\.]{7}$").evaluate(with: self)
+        NSPredicate(format: "SELF MATCHES %@", "^/[\\dA-Z0-9+-\\.]{7}$").evaluate(with: self)
     }
     
     public func toHtml(textSizePercent:Int = 220) -> String {
