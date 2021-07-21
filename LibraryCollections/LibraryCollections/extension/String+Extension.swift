@@ -25,8 +25,8 @@ extension String {
         self.count >= 3 && self.count <= 7
     }
     
-    public var isValidInvoiceFormat: Bool {
-        self.first == "/" && self.count == 8
+    public var isValidEInvoiceFormat: Bool {
+        NSPredicate(format: "SELF MATCHES %@", "^/[\dA-Z0-9+-\.]{7}$").evaluate(with: self)
     }
     
     public func toHtml(textSizePercent:Int = 220) -> String {
