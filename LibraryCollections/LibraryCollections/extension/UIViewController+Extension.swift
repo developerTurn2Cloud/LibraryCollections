@@ -4,6 +4,21 @@ import MessageUI
 
 extension UIViewController {
     
+    public var contentView:UIView { self.view }
+    
+    public func showLoading(loadingW:CGFloat = 70, loadingH:CGFloat = 40) {
+        let imageUrl = Bundle.main.url(forResource: "loading", withExtension: "gif")!
+        let loadingView = CustomLoadingView(frame: self.view.frame,
+                                            imageUrl: imageUrl, msg: NSLocalizedString("Global.Loading", comment: ""),
+                                            loadingW: loadingW,
+                                            loadingH: loadingH)
+        ViewUtils.showLoading(customLoadingView: loadingView, container: self.view)
+    }
+    
+    public func closeLoading() {
+        ViewUtils.closeLoading()
+    }
+    
     public func showAlert(title:String,
                    content:String,
                    conformTitle:String? = "Global.Confirm".localized,
