@@ -55,6 +55,7 @@ Pod::Spec.new do |spec|
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   spec.dependency "Toast-Swift", "~> 5.0.1"
   spec.dependency "Moya/RxSwift", "~> 13.0"
+  spec.dependency 'RxCocoa'
   spec.dependency "Kingfisher", "~> 5.0"
   spec.dependency 'Firebase/Performance'
   spec.dependency 'Firebase/Crashlytics'
