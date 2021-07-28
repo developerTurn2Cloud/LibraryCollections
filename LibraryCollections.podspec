@@ -8,7 +8,7 @@ Pod::Spec.new do |spec|
   spec.author             = { "Randy" => "o1984531@gmail.com" }
   spec.platform     = :ios, "11.0"
   spec.ios.deployment_target = '11.0'
-  spec.source       = { :git => "https://github.com/YomiRY/LibraryCollections.git", :tag => "1.2.3" }
+  spec.source       = { :git => "git@github.com:YomiRY/LibraryCollections.git", :tag => "1.2.3" }
   spec.source_files  = "LibraryCollections", "LibraryCollections/**/*.{gif,jpg,pdf,png,h,m,swift}"
   spec.resources = "LibraryCollections/**/*.xib"
   spec.swift_versions = ['5.1', '5.2', '5.3']
