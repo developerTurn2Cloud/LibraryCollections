@@ -9,7 +9,7 @@ open class BaseModel {
         self.compositeDisposal = CompositeDisposable()
     }
     
-    public func release() {
+    open func release() {
         self.compositeDisposal.dispose()
     }
     
