@@ -52,7 +52,6 @@ public class ApiUtils {
         
         return apiProvider.rx
             .request(apiType)
-            .subscribeOn(ConcurrentDispatchQueueScheduler(qos: .userInitiated))
             .filterSuccessfulStatusAndRedirectCodes()
             .map(responseType)
             .observeOn(MainScheduler.instance)
