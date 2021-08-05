@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name         = "LibraryCollections"
-  spec.version      = "1.2.7"
+  spec.version      = "1.2.8"
   spec.summary      = "Common Library"
   spec.description  = "LibraryCollections is a library for common usage."
   spec.homepage     = "https://github.com/YomiRY/LibraryCollections"
@@ -8,7 +8,7 @@ Pod::Spec.new do |spec|
   spec.author             = { "Randy" => "o1984531@gmail.com" }
   spec.platform     = :ios, "11.0"
   spec.ios.deployment_target = '11.0'
-  spec.source       = { :git => "https://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@github.com/YomiRY/LibraryCollections.git", :tag => "1.2.7" }
+  spec.source       = { :git => "https://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@github.com/YomiRY/LibraryCollections.git", :tag => "1.2.8" }
   spec.source_files  = "LibraryCollections", "LibraryCollections/**/*.{gif,jpg,pdf,png,h,m,swift}"
   spec.resources = "LibraryCollections/**/*.xib"
   spec.swift_versions = ['5.1', '5.2', '5.3']
