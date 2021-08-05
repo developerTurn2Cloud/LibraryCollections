@@ -3,14 +3,9 @@ import Moya
 import RxSwift
 
 open class BaseModel {
-    public let compositeDisposal:CompositeDisposable!
+    public let disposeBag:DisposeBag!
     
     public init() {
-        self.compositeDisposal = CompositeDisposable()
+        self.disposeBag = DisposeBag()
     }
-    
-    open func release() {
-        self.compositeDisposal.dispose()
-    }
-    
 }
